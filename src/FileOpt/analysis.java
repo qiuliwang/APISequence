@@ -1,11 +1,12 @@
 package FileOpt;
 
+import com.sun.xml.internal.ws.api.ha.StickyFeature;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 /**
  * Created by WangQL on 2/14/17.
@@ -14,6 +15,10 @@ public class analysis {
     String path;
     static List<String> keywords;
     static List<String> fileContent;
+    static List<String> contentWithoutKeywords;
+    static List<String> opt;
+    static String contentString;
+    static List<String> splitString; //split by scale
 
     public static void main(String args[])
     {
@@ -26,11 +31,56 @@ public class analysis {
         this.path = path;
         String proj = System.getProperty("user.dir");
         String keywordsPath = proj + "/keywords.txt";
+        String operatorPath = proj + "/opt.txt";
         keywords = new ArrayList<String>();
         fileContent = new ArrayList<String>();
-        getkeywords(keywordsPath);
-        //System.out.println("size is "+keywords.size());
+        contentWithoutKeywords = new ArrayList<String>();
+        opt = new ArrayList<String>();
+        contentString = "";
+
+
+        getkeywords(keywordsPath, keywords);
+        getkeywords(operatorPath, opt);
+
         readFile(path);
+        rmKeywords();
+
+        System.out.println(contentString);
+    }
+
+    /*
+    like
+        public class Uzip {
+        pub......{
+        ....}
+        ...}
+     */
+    private static void splitStringByScale()
+    {
+
+    }
+
+    //remove keywords from content, but leave "class"
+    private static void rmKeywords()
+    {
+        for(int i = 0; i < fileContent.size(); i ++)
+        {
+            String tempString = fileContent.get(i);
+            //System.out.println(tempString);
+            String words[] = tempString.split("\\s+");
+
+            for(String ss : words){
+                //System.out.print(ss + " ");
+                if(!keywords.contains(ss)) {
+                    contentWithoutKeywords.add(ss);
+                }
+            }
+            //System.out.print("\n");
+        }
+        for(int i = 0; i < contentWithoutKeywords.size(); i ++)
+        {
+            contentString += contentWithoutKeywords.get(i) + " ";
+        }
     }
 
     private static void readFile(String fileName) {
@@ -53,7 +103,7 @@ public class analysis {
                     if(tempString.length() != 0) {
                         if(tempString.length()<2)
                         {
-                            System.out.println(tempString);
+                            //System.out.println(tempString);
                             fileContent.add(tempString);
                             line++;
                         }
@@ -61,7 +111,7 @@ public class analysis {
                         {
                             if(!tempString.substring(0, 2).equals("//"))
                             {
-                                System.out.println(tempString);
+                                //System.out.println(tempString);
                                 fileContent.add(tempString);
                                 line++;
                             }
@@ -83,7 +133,7 @@ public class analysis {
         }
     }
 
-    private static void getkeywords(String fileName) {
+    private static void getkeywords(String fileName, List<String> key) {
         File file = new File(fileName);
         BufferedReader reader = null;
         try {
@@ -95,7 +145,7 @@ public class analysis {
             while ((tempString = reader.readLine()) != null) {
                 // 显示行号
                 //System.out.println("line " + line + ": " + tempString);
-                keywords.add(tempString);
+                key.add(tempString);
                 line++;
             }
             reader.close();
