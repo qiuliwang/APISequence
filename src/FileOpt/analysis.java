@@ -45,7 +45,8 @@ public class analysis {
         readFile(path);
         rmKeywords();
 
-        System.out.println(contentString);
+        //System.out.println(contentString);
+        splitStringByScale(contentString);
     }
 
     /*
@@ -55,9 +56,29 @@ public class analysis {
         ....}
         ...}
      */
-    private static void splitStringByScale()
+    private static void splitStringByScale(String content)
     {
+        String innerStr = content;
+        List<String> innerContent = new ArrayList<String>();
+        Stack stk = new Stack();
+        int length = innerStr.length();
+        innerContent.add(innerStr.substring(0, innerStr.indexOf('{')));
+        innerStr = innerStr.substring(innerStr.indexOf('{'), innerStr.length());
+        stk.push('{');
 
+        while(innerStr.contains("{"))
+        {
+            int index = innerStr.indexOf('{');
+            String sp = innerStr.substring(0, index);
+            if(!sp.contains("\""))
+            {
+                innerContent.add(sp);
+            }
+            else
+            {
+
+            }
+        }
     }
 
     //remove keywords from content, but leave "class"
