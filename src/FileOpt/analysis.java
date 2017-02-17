@@ -22,8 +22,8 @@ public class analysis {
 
     public static void main(String args[])
     {
-        analysis ans = new analysis("/Users/WangQL/Documents/git/Java/java-unzip/src/main/java/com/hmkcode/Unzip.java");
-
+        analysis ans = new analysis("/Users/WangQL/Documents/git" +
+                "/Java/java-unzip/src/main/java/com/hmkcode/Unzip.java");
     }
 
     public analysis(String path)
@@ -38,7 +38,6 @@ public class analysis {
         opt = new ArrayList<String>();
         contentString = "";
 
-
         getkeywords(keywordsPath, keywords);
         getkeywords(operatorPath, opt);
 
@@ -46,7 +45,40 @@ public class analysis {
         rmKeywords();
 
         //System.out.println(contentString);
-        splitStringByScale(contentString);
+        //splitStringByScale(contentString);
+        String stringWithoutMarks = removeString(contentString);
+    }
+
+    private static String removeString(String content) {
+        //String res = "";
+        String innerString = content;
+
+        //System.out.println(innerString.substring(0, innerString.indexOf("\"")));
+        while (innerString.contains("\""))
+        {
+            int length = innerString.length();
+            System.out.println(innerString);
+            int ind = innerString.indexOf("\"");
+            //System.out.println(innerString.charAt(ind));
+            for(int i = ind + 1; i < length; i ++)
+            {
+                 if(innerString.charAt(i) == '\"')
+                 {
+                     if(innerString.charAt(i - 1) != '\\')
+                     {
+                         String temp1 = innerString.substring(0, innerString.indexOf("\""));
+                         String temp2 = "#" + innerString.substring(i + 1, length);
+
+                         //System.out.println(temp1);
+                         //System.out.println(temp2);
+                         innerString = temp1 + temp2;
+                         break;
+                     }
+                 }
+            }
+        }
+        System.out.println(innerString);
+        return innerString;
     }
 
     /*

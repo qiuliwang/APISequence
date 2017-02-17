@@ -17,7 +17,8 @@ public class getApiSeqence {
     static StringBuffer stringBuffer=new StringBuffer();
     static List<String> apiList;
     public static void main(String[] args) throws Exception {
-        getApiSeqence test = new getApiSeqence("C:\\Users\\lyh\\Desktop\\Combination.java");
+        getApiSeqence test = new getApiSeqence("/Users/WangQL/Documents/git/Java/" +
+                "java-combinations/Combination.java");
         List<String> temp = test.getApiList();
         for(int i = 0; i < temp.size(); i ++)
         {
@@ -94,6 +95,12 @@ public class getApiSeqence {
     public static List getImportApi(){
         int startimport=stringBuffer.indexOf("import");
         int endimport=stringBuffer.indexOf("public");
+        if(startimport > endimport)
+        {
+            int temp = startimport;
+            startimport = endimport;
+            endimport = temp;
+        }
         if (startimport!=-1){
             String str=stringBuffer.substring(startimport, endimport);
             List<String[]> list=new ArrayList<String[]>();

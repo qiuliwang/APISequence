@@ -23,10 +23,17 @@ public class start {
         for(int i = 0; i < 10; i ++)
         {
             String temp = allfile.get(i);
-            getApiSeqence gap = new getApiSeqence(temp);
-            List<String> inst = gap.getApiList();
-            wa.setApisq(inst);
-            wa.writeApi();
+            System.out.println(temp);
+                getApiSeqence gap = new getApiSeqence(temp);
+                //List<String> inst = gap.getApiList();
+                //wa.setApisq(inst);
+                //wa.writeApi();
+
+
+//            getApiSeqence gap = new getApiSeqence(temp);
+//            List<String> inst = gap.getApiList();
+//            wa.setApisq(inst);
+//            wa.writeApi();
         }
         //analysis ans = new analysis("/Users/WangQL/Documents/git/Java/java-unzip/src/main/java/com/hmkcode/Unzip.java");
         //System.out.println(keywords.size());
