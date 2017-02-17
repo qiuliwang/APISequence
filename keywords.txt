@@ -9,6 +9,7 @@ float
 double
 import
 package
+class
 extends
 implements
 interface

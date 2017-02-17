@@ -13,12 +13,22 @@ import java.util.List;
 public class start {
     static List<String> keywords;
     static List<String> allfile;
-    public static void main(String args[])
+    public static void main(String args[]) throws Exception
     {
-        //getAllFileName gafn = new getAllFileName("/Users/WangQL/Documents/git/Java");
-        //allfile = gafn.getAllfiles();
+        getAllFileName gafn = new getAllFileName("/Users/WangQL/Documents/git/Java");
+        allfile = gafn.getAllfiles();
 
-        analysis ans = new analysis("/Users/WangQL/Documents/git/Java/java-unzip/src/main/java/com/hmkcode/Unzip.java");
+        writeApi wa = new writeApi();
+
+        for(int i = 0; i < 10; i ++)
+        {
+            String temp = allfile.get(i);
+            getApiSeqence gap = new getApiSeqence(temp);
+            List<String> inst = gap.getApiList();
+            wa.setApisq(inst);
+            wa.writeApi();
+        }
+        //analysis ans = new analysis("/Users/WangQL/Documents/git/Java/java-unzip/src/main/java/com/hmkcode/Unzip.java");
         //System.out.println(keywords.size());
 
     }
