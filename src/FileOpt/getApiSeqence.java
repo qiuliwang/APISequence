@@ -24,6 +24,7 @@ public class getApiSeqence {
         {
             System.out.println(temp.get(i));
         }
+        System.out.print("");
 ///Users/WangQL/Documents/git/Java/java-combinations/Combination.java
 
 //        getAllFileName gafn = new getAllFileName("/Users/WangQL/Documents/git/Java");
