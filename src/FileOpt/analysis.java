@@ -15,10 +15,10 @@ public class analysis {
     String path;
     static List<String> keywords;
     static List<String> fileContent;
-    static List<String> contentWithoutKeywords;
     static List<String> opt;
     static String contentString;
-    static List<String> splitString; //split by scale
+
+    static String CLASS_NAME;
 
     public static void main(String args[])
     {
@@ -34,7 +34,7 @@ public class analysis {
         String operatorPath = proj + "/opt.txt";
         keywords = new ArrayList<String>();
         fileContent = new ArrayList<String>();
-        contentWithoutKeywords = new ArrayList<String>();
+        //contentWithoutKeywords = new ArrayList<String>();
         opt = new ArrayList<String>();
         contentString = "";
 
@@ -42,22 +42,69 @@ public class analysis {
         getkeywords(operatorPath, opt);
 
         readFile(path);
-        rmKeywords();
-
-        //System.out.println(contentString);
-        //splitStringByScale(contentString);
+        contentString = rmSpace(fileContent);
         String stringWithoutMarks = removeString(contentString);
+        //System.out.println(stringWithoutMarks);
+        test(stringWithoutMarks);
+        //System.out.println(stringWithoutMarks);
+    }
+
+    private static void test(String str)
+    {
+        int countLeft = 0;
+        int countRight = 0;
+        for(int i = 0; i < str.length(); i ++)
+        {
+            if(str.charAt(i) == '{')
+            {
+                countLeft ++;
+            }
+            else if(str.charAt(i) == '}') {
+                countRight++;
+            }
+        }
+        if(countLeft == countRight) {
+            System.out.println("no error");
+            //System.out.println(str.indexOf("class"));
+            int indexOfClass = str.indexOf("class");
+            int endIndexOfClass = indexOfClass + 5;
+            int beginOfClassName = endIndexOfClass + 1;
+            int endOfClassName = str.indexOf('{');
+            //System.out.println(str.substring(indexOfClass, endIndexOfClass+1));
+            //System.out.println(str.substring(beginOfClassName, endOfClassName));
+            CLASS_NAME = str.substring(beginOfClassName, endOfClassName);
+            str = str.substring(str.indexOf('{') + 2, str.lastIndexOf('}'));
+            System.out.println(str);
+
+            //List<Integer> leftScale = new ArrayList<Integer>();
+            //List<Integer> rightScale = new ArrayList<Integer>();
+
+            //now we start to analysis source code
+
+            //stack, use for { ... }
+            Stack stk = new Stack();
+            Integer temp = str.indexOf('{');
+            stk.push('{');
+
+            //List<String> use for
+            List<String> littStr = new ArrayList<String>();
+            //System.out.println(str.charAt(temp));
+            int i = 0;
+
+//            String []splitedString = str.split("\\}|;");
+//            for(int x = 0; x < splitedString.length; x ++)
+//            {
+//                System.out.println(splitedString[x]);
+//            }
+        }
     }
 
     private static String removeString(String content) {
-        //String res = "";
         String innerString = content;
-
-        //System.out.println(innerString.substring(0, innerString.indexOf("\"")));
         while (innerString.contains("\""))
         {
             int length = innerString.length();
-            System.out.println(innerString);
+            //System.out.println(innerString);
             int ind = innerString.indexOf("\"");
             //System.out.println(innerString.charAt(ind));
             for(int i = ind + 1; i < length; i ++)
@@ -68,16 +115,13 @@ public class analysis {
                      {
                          String temp1 = innerString.substring(0, innerString.indexOf("\""));
                          String temp2 = "#" + innerString.substring(i + 1, length);
-
-                         //System.out.println(temp1);
-                         //System.out.println(temp2);
                          innerString = temp1 + temp2;
                          break;
                      }
                  }
             }
         }
-        System.out.println(innerString);
+        //System.out.println(innerString);
         return innerString;
     }
 
@@ -88,34 +132,12 @@ public class analysis {
         ....}
         ...}
      */
-    private static void splitStringByScale(String content)
-    {
-        String innerStr = content;
-        List<String> innerContent = new ArrayList<String>();
-        Stack stk = new Stack();
-        int length = innerStr.length();
-        innerContent.add(innerStr.substring(0, innerStr.indexOf('{')));
-        innerStr = innerStr.substring(innerStr.indexOf('{'), innerStr.length());
-        stk.push('{');
-
-        while(innerStr.contains("{"))
-        {
-            int index = innerStr.indexOf('{');
-            String sp = innerStr.substring(0, index);
-            if(!sp.contains("\""))
-            {
-                innerContent.add(sp);
-            }
-            else
-            {
-
-            }
-        }
-    }
 
     //remove keywords from content, but leave "class"
-    private static void rmKeywords()
+    private static String rmSpace(List<String> fileContent)
     {
+        List<String> contentWithoutKeywords = new ArrayList<String>();
+        String innerStr = "";
         for(int i = 0; i < fileContent.size(); i ++)
         {
             String tempString = fileContent.get(i);
@@ -123,17 +145,14 @@ public class analysis {
             String words[] = tempString.split("\\s+");
 
             for(String ss : words){
-                //System.out.print(ss + " ");
-                if(!keywords.contains(ss)) {
                     contentWithoutKeywords.add(ss);
-                }
             }
-            //System.out.print("\n");
         }
         for(int i = 0; i < contentWithoutKeywords.size(); i ++)
         {
-            contentString += contentWithoutKeywords.get(i) + " ";
+            innerStr += contentWithoutKeywords.get(i) + " ";
         }
+        return innerStr;
     }
 
     private static void readFile(String fileName) {
