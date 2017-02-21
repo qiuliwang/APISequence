@@ -20,6 +20,8 @@ public class analysis {
 
     static String CLASS_NAME;
 
+    String testCo = "public static void unzip(String zipFile,String outputPath){ if(outputPath == null) outputPath = #; else outputPath+=File.separator; File outputDirectory = new File(outputPath); String str1 = #; String str2 = #; if(outputDirectory.exists()) outputDirectory.delete(); outputDirectory.mkdir(); try { ZipInputStream zip = new ZipInputStream(new FileInputStream(zipFile)); ZipEntry entry = null; int len; byte[] buffer = new byte[1024]; while((entry = zip.getNextEntry()) != null){ if(!entry.isDirectory()){ System.out.println(#+entry.getName()); File file = new File(outputPath +entry.getName()); if(!new File(file.getParent()).exists()) new File(file.getParent()).mkdirs(); FileOutputStream fos = new FileOutputStream(file); while ((len = zip.read(buffer)) > 0) { fos.write(buffer, 0, len); } fos.close(); } } }catch (FileNotFoundException e) { e.printStackTrace(); } catch (IOException e) { e.printStackTrace(); } } ";
+
     public static void main(String args[])
     {
         analysis ans = new analysis("/Users/WangQL/Documents/git" +
