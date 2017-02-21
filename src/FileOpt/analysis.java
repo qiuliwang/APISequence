@@ -35,6 +35,11 @@ public class analysis {
             "public static void test1() {System.out.println(#);}"+
             "public static void test2() {System.out.println(#); {System.out.println(#);}}";
 
+    String testStr = " public static void main() { File fe = new File(); " +
+            "fe.print(); fe.show(); if(a = 2) { fe.print(); } } public static void test() " +
+            "{ File fe = new File(); fe.print(); fe.show(); if(a = 2) { fe.print(); } " +
+            "Excel ecx=new Excel(); ecx.test(); }";
+
     public static void main(String args[])
     {
         analysis ans = new analysis("/Users/WangQL/Documents/git" +
@@ -60,7 +65,7 @@ public class analysis {
 //        //System.out.println(stringWithoutMarks);
         //test(stringWithoutMarks);
         //System.out.println(stringWithoutMarks);
-        String stringWithoutMarks = testCo;
+        String stringWithoutMarks = testStr;
         test1(stringWithoutMarks);
         //test2(stringWithoutMarks);
     }
@@ -99,7 +104,7 @@ public class analysis {
             //functions.add(str.substring())
             if(i == 0)
             {
-                String temp = str.substring(0, indexOfFunction.get(i)) + 1;
+                String temp = str.substring(0, indexOfFunction.get(i) + 1);
                 while(temp.charAt(0) == ' ')
                 {
                     temp = temp.substring(1, temp.length());
@@ -155,6 +160,10 @@ public class analysis {
 //            System.out.println("remove class:\n"+str+"\n\n");
 
             List<String> functions = divideFuntions(str);
+            for(int x = 0; x < functions.size(); x ++)
+            {
+                analysisSingleFunction(functions.get(x));
+            }
            // System.out.println(functions.size());
 
         }
@@ -168,7 +177,13 @@ public class analysis {
     private static void analysisSingleFunction(String content)
     {
         String sample = content;
-
+        String [] temp = sample.split("new");
+        System.out.println(temp.length);
+        for(int i = 0; i < temp.length; i ++)
+        {
+            System.out.println(temp[i]);
+            //System.out.println(temp[i].charAt(temp[i].length() - 1));
+        }
     }
 
     private static String removeString(String content) {
