@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8efcd6d3-686b-4760-8dae-fe707ca229a5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/APISequence/FileOpt/analysis.class" afterPath="$PROJECT_DIR$/out/production/APISequence/FileOpt/analysis.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/APISequence.iml" afterPath="$PROJECT_DIR$/APISequence.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FileOpt/analysis.java" afterPath="$PROJECT_DIR$/src/FileOpt/analysis.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -28,9 +25,11 @@
       <file leaf-file-name="analysis.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/FileOpt/analysis.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1216">
-              <caret line="16" column="20" lean-forward="false" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+            <state relative-caret-position="209">
+              <caret line="44" column="15" lean-forward="true" selection-start-line="44" selection-start-column="15" selection-end-line="44" selection-end-column="15" />
               <folding>
+                <element signature="e#3857#3865#0" expanded="true" />
+                <element signature="e#5422#5430#0" expanded="true" />
                 <element signature="method#getkeywords#0;class#analysis#0" expanded="false" />
               </folding>
             </state>
@@ -59,12 +58,12 @@
       <list>
         <option value="$PROJECT_DIR$/src/FileOpt/getAllFileName.java" />
         <option value="$PROJECT_DIR$/opt.txt" />
-        <option value="$PROJECT_DIR$/src/FileOpt/analysis.java" />
         <option value="$PROJECT_DIR$/keywords.txt" />
         <option value="$PROJECT_DIR$/src/FileOpt/writeApi.java" />
         <option value="$PROJECT_DIR$/src/FileOpt/start.java" />
         <option value="$PROJECT_DIR$/src/FileOpt/getApiSeqence.java" />
         <option value="$PROJECT_DIR$/content.txt" />
+        <option value="$PROJECT_DIR$/src/FileOpt/analysis.java" />
       </list>
     </option>
   </component>
@@ -91,7 +90,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -124,8 +123,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -481,11 +480,34 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/FileOpt/analysis.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#3857#3865#0" expanded="true" />
+            <element signature="e#5422#5430#0" expanded="true" />
+            <element signature="method#getkeywords#0;class#analysis#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FileOpt/analysis.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#3857#3865#0" expanded="true" />
+            <element signature="e#5422#5430#0" expanded="true" />
+            <element signature="method#getkeywords#0;class#analysis#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/opt.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
           <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -493,7 +515,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -502,6 +523,8 @@
         <state relative-caret-position="650">
           <caret line="31" column="53" lean-forward="false" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="53" />
           <folding>
+            <element signature="e#3857#3865#0" expanded="true" />
+            <element signature="e#5422#5430#0" expanded="true" />
             <element signature="method#getkeywords#0;class#analysis#0" expanded="false" />
           </folding>
         </state>
@@ -511,10 +534,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#834#835#0" expanded="false" />
-            <element signature="e#865#866#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -553,6 +573,8 @@
         <state relative-caret-position="475">
           <caret line="31" column="53" lean-forward="true" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="53" />
           <folding>
+            <element signature="e#3857#3865#0" expanded="true" />
+            <element signature="e#5422#5430#0" expanded="true" />
             <element signature="method#getkeywords#0;class#analysis#0" expanded="false" />
           </folding>
         </state>
@@ -562,10 +584,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
           <caret line="26" column="52" lean-forward="true" selection-start-line="26" selection-start-column="2" selection-end-line="26" selection-end-column="52" />
-          <folding>
-            <element signature="e#834#835#0" expanded="false" />
-            <element signature="e#865#866#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -604,6 +623,8 @@
         <state relative-caret-position="247">
           <caret line="13" column="23" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="184" selection-end-column="0" />
           <folding>
+            <element signature="e#3857#3865#0" expanded="true" />
+            <element signature="e#5422#5430#0" expanded="true" />
             <element signature="method#getkeywords#0;class#analysis#0" expanded="false" />
           </folding>
         </state>
@@ -613,10 +634,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#834#835#0" expanded="false" />
-            <element signature="e#865#866#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -635,6 +653,8 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="e#3857#3865#0" expanded="true" />
+            <element signature="e#5422#5430#0" expanded="true" />
             <element signature="method#getkeywords#0;class#analysis#0" expanded="false" />
           </folding>
         </state>
@@ -674,6 +694,8 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="e#3857#3865#0" expanded="true" />
+            <element signature="e#5422#5430#0" expanded="true" />
             <element signature="method#getkeywords#0;class#analysis#0" expanded="false" />
           </folding>
         </state>
@@ -706,6 +728,8 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="e#3857#3865#0" expanded="true" />
+            <element signature="e#5422#5430#0" expanded="true" />
             <element signature="method#getkeywords#0;class#analysis#0" expanded="false" />
           </folding>
         </state>
@@ -763,7 +787,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="3" lean-forward="false" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -771,7 +794,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
           <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -787,17 +809,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#2413#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/FileOpt/analysis.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1216">
-          <caret line="16" column="20" lean-forward="false" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+        <state relative-caret-position="209">
+          <caret line="44" column="15" lean-forward="true" selection-start-line="44" selection-start-column="15" selection-end-line="44" selection-end-column="15" />
           <folding>
+            <element signature="e#3857#3865#0" expanded="true" />
+            <element signature="e#5422#5430#0" expanded="true" />
             <element signature="method#getkeywords#0;class#analysis#0" expanded="false" />
           </folding>
         </state>

@@ -39,10 +39,8 @@ public class analysis {
         //contentWithoutKeywords = new ArrayList<String>();
         opt = new ArrayList<String>();
         contentString = "";
-
         getkeywords(keywordsPath, keywords);
         getkeywords(operatorPath, opt);
-
         readFile(path);
         contentString = rmSpace(fileContent);
         String stringWithoutMarks = removeString(contentString);
