@@ -20,7 +20,20 @@ public class analysis {
 
     static String CLASS_NAME;
 
-    String testCo = "public static void unzip(String zipFile,String outputPath){ if(outputPath == null) outputPath = #; else outputPath+=File.separator; File outputDirectory = new File(outputPath); String str1 = #; String str2 = #; if(outputDirectory.exists()) outputDirectory.delete(); outputDirectory.mkdir(); try { ZipInputStream zip = new ZipInputStream(new FileInputStream(zipFile)); ZipEntry entry = null; int len; byte[] buffer = new byte[1024]; while((entry = zip.getNextEntry()) != null){ if(!entry.isDirectory()){ System.out.println(#+entry.getName()); File file = new File(outputPath +entry.getName()); if(!new File(file.getParent()).exists()) new File(file.getParent()).mkdirs(); FileOutputStream fos = new FileOutputStream(file); while ((len = zip.read(buffer)) > 0) { fos.write(buffer, 0, len); } fos.close(); } } }catch (FileNotFoundException e) { e.printStackTrace(); } catch (IOException e) { e.printStackTrace(); } } ";
+    String testCo = "public static void unzip(String zipFile,String outputPath)" +
+            "{ if(outputPath == null) outputPath = #; else outputPath+=File.separator; " +
+            "File outputDirectory = new File(outputPath); String str1 = #; String str2 = #;" +
+            " if(outputDirectory.exists()) outputDirectory.delete(); outputDirectory.mkdir(); " +
+            "try { ZipInputStream zip = new ZipInputStream(new FileInputStream(zipFile)); " +
+            "ZipEntry entry = null; int len; byte[] buffer = new byte[1024]; " +
+            "while((entry = zip.getNextEntry()) != null){ if(!entry.isDirectory())" +
+            "{ System.out.println(#+entry.getName()); File file = new File(outputPath +entry.getName());" +
+            " if(!new File(file.getParent()).exists()) new File(file.getParent()).mkdirs();" +
+            " FileOutputStream fos = new FileOutputStream(file); while ((len = zip.read(buffer)) > 0) " +
+            "{ fos.write(buffer, 0, len); } fos.close(); } } }catch (FileNotFoundException e) " +
+            "{ e.printStackTrace(); } catch (IOException e) { e.printStackTrace(); } } " +
+            "public static void test1() {System.out.println(#);}"+
+            "public static void test2() {System.out.println(#); {System.out.println(#);}}";
 
     public static void main(String args[])
     {
@@ -37,20 +50,85 @@ public class analysis {
         keywords = new ArrayList<String>();
         fileContent = new ArrayList<String>();
         //contentWithoutKeywords = new ArrayList<String>();
-        opt = new ArrayList<String>();
-        contentString = "";
-        getkeywords(keywordsPath, keywords);
-        getkeywords(operatorPath, opt);
-        readFile(path);
-        contentString = rmSpace(fileContent);
-        String stringWithoutMarks = removeString(contentString);
+//        opt = new ArrayList<String>();
+//        contentString = "";
+//        getkeywords(keywordsPath, keywords);
+//        getkeywords(operatorPath, opt);
+//        readFile(path);
+//        contentString = rmSpace(fileContent);
+//        String stringWithoutMarks = removeString(contentString);
+//        //System.out.println(stringWithoutMarks);
+        //test(stringWithoutMarks);
         //System.out.println(stringWithoutMarks);
-        test(stringWithoutMarks);
-        //System.out.println(stringWithoutMarks);
+        String stringWithoutMarks = testCo;
+        test1(stringWithoutMarks);
+        //test2(stringWithoutMarks);
     }
 
-    private static void test(String str)
+    private static List<String> divideFuntions(String str)
     {
+        //System.out.println(str);
+        String content = str;
+        //List<Integer> LeftScale = new ArrayList<Integer>();
+        List<Integer> indexOfFunction = new ArrayList<Integer>();
+
+        Stack stk = new Stack();
+
+        for(int i = 0; i < str.length(); i ++)
+        {
+            if(str.charAt(i) == '{')
+            {
+                //LeftScale.add(i);
+                stk.push('{');
+            }
+            else if(str.charAt(i) == '}')
+            {
+                //RightScale.add(i);
+                stk.pop();
+                if(stk.size() == 0)
+                {
+                    indexOfFunction.add(i);
+                }
+            }
+        }
+
+        System.out.println("number of funcitons:"+indexOfFunction.size());
+        List<String> functions = new ArrayList<String>();
+        for(int i = 0; i < indexOfFunction.size(); i ++)
+        {
+            //functions.add(str.substring())
+            if(i == 0)
+            {
+                String temp = str.substring(0, indexOfFunction.get(i)) + 1;
+                while(temp.charAt(0) == ' ')
+                {
+                    temp = temp.substring(1, temp.length());
+                }
+                functions.add(temp);
+
+            }
+            else
+            {
+                String temp = str.substring(indexOfFunction.get(i - 1) + 1, indexOfFunction.get(i) + 1);
+                while(temp.charAt(0) == ' ')
+                {
+                    temp = temp.substring(1, temp.length());
+                }
+                functions.add(temp);
+            }
+        }
+
+        for(int i = 0; i < functions.size(); i ++)
+        {
+            System.out.println(functions.get(i));
+        }
+
+        return functions;
+    }
+
+    private static void test1(String str)
+    {
+        System.out.println(str);
         int countLeft = 0;
         int countRight = 0;
         for(int i = 0; i < str.length(); i ++)
@@ -64,39 +142,33 @@ public class analysis {
             }
         }
         if(countLeft == countRight) {
-            System.out.println("no error");
+            System.out.println("no error\n");
             //System.out.println(str.indexOf("class"));
-            int indexOfClass = str.indexOf("class");
-            int endIndexOfClass = indexOfClass + 5;
-            int beginOfClassName = endIndexOfClass + 1;
-            int endOfClassName = str.indexOf('{');
-            //System.out.println(str.substring(indexOfClass, endIndexOfClass+1));
-            //System.out.println(str.substring(beginOfClassName, endOfClassName));
-            CLASS_NAME = str.substring(beginOfClassName, endOfClassName);
-            str = str.substring(str.indexOf('{') + 2, str.lastIndexOf('}'));
-            System.out.println(str);
+//            int indexOfClass = str.indexOf("class");
+//            int endIndexOfClass = indexOfClass + 5;
+//            int beginOfClassName = endIndexOfClass + 1;
+//            int endOfClassName = str.indexOf('{');
+//            //System.out.println(str.substring(indexOfClass, endIndexOfClass+1));
+//            //System.out.println(str.substring(beginOfClassName, endOfClassName));
+//            CLASS_NAME = str.substring(beginOfClassName, endOfClassName);
+//            str = str.substring(str.indexOf('{') + 2, str.lastIndexOf('}'));
+//            System.out.println("remove class:\n"+str+"\n\n");
 
-            //List<Integer> leftScale = new ArrayList<Integer>();
-            //List<Integer> rightScale = new ArrayList<Integer>();
+            List<String> functions = divideFuntions(str);
+           // System.out.println(functions.size());
 
-            //now we start to analysis source code
-
-            //stack, use for { ... }
-            Stack stk = new Stack();
-            Integer temp = str.indexOf('{');
-            stk.push('{');
-
-            //List<String> use for
-            List<String> littStr = new ArrayList<String>();
-            //System.out.println(str.charAt(temp));
-            int i = 0;
-
-//            String []splitedString = str.split("\\}|;");
-//            for(int x = 0; x < splitedString.length; x ++)
-//            {
-//                System.out.println(splitedString[x]);
-//            }
         }
+        else
+        {
+            System.out.println("error");
+        }
+    }
+
+    //analysis function one by one
+    private static void analysisSingleFunction(String content)
+    {
+        String sample = content;
+
     }
 
     private static String removeString(String content) {
