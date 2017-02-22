@@ -97,7 +97,7 @@ public class analysis {
             }
         }
 
-        System.out.println("number of funcitons:"+indexOfFunction.size());
+        //System.out.println("number of funcitons:"+indexOfFunction.size());
         List<String> functions = new ArrayList<String>();
         for(int i = 0; i < indexOfFunction.size(); i ++)
         {
@@ -123,10 +123,10 @@ public class analysis {
             }
         }
 
-        for(int i = 0; i < functions.size(); i ++)
-        {
-            System.out.println(functions.get(i));
-        }
+//        for(int i = 0; i < functions.size(); i ++)
+//        {
+//            System.out.println(functions.get(i));
+//        }
 
         return functions;
     }
@@ -162,7 +162,10 @@ public class analysis {
             List<String> functions = divideFuntions(str);
             for(int x = 0; x < functions.size(); x ++)
             {
+                //System.out.println(functions.get(x));
                 analysisSingleFunction(functions.get(x));
+                //System.out.println(functions.get(x));
+                //System.out.println("=================");
             }
            // System.out.println(functions.size());
 
@@ -176,14 +179,71 @@ public class analysis {
     //analysis function one by one
     private static void analysisSingleFunction(String content)
     {
-        String sample = content;
-        String [] temp = sample.split("new");
-        System.out.println(temp.length);
-        for(int i = 0; i < temp.length; i ++)
+        String [] temp = content.split("new ");
+        System.out.println(content);
+        List<String> varaName = new ArrayList<String>();
+        List<String> className = new ArrayList<String>();
+
+        for(int i = 0; i < temp.length - 1; i ++)
         {
-            System.out.println(temp[i]);
-            //System.out.println(temp[i].charAt(temp[i].length() - 1));
+            String x = temp[i];  //before new
+            String y = temp[i + 1]; //after new
+            //System.out.println("string processing : " + y);
+            String paraName = "";
+            //System.out.println(temp[i].charAt(x.length() - 1));
+
+            //add vars name into list
+            int indexBeforeEqu = x.lastIndexOf('=');
+            if(indexBeforeEqu >= 0)
+            {
+                if(x.charAt(indexBeforeEqu - 1) == ' ')
+                {
+                    //System.out.println("has space ");
+                    indexBeforeEqu = indexBeforeEqu - 2;
+                }
+                else
+                {
+                    indexBeforeEqu --;
+                }
+                //System.out.println("indexBeforeEqu:"+x.charAt(indexBeforeEqu));
+                for(int j = indexBeforeEqu; j > 0; j --)
+                {
+                    if(x.charAt(j) == ' ')
+                    {
+                        paraName = x.substring(j + 1, indexBeforeEqu + 1);
+                        break;
+                    }
+                }
+                //System.out.println(paraName + " Len:" + paraName.length());
+                varaName.add(paraName);
+
+                //add class names into list
+                //System.out.println("y char at 0: "+y.charAt(0));
+                //System.out.println(y.indexOf(' '));
+                int indexOffirstSpace = y.indexOf('(');
+                String classname = y.substring(0, indexOffirstSpace);
+                //System.out.println("classname : "+classname.length());
+                className.add(classname);
+            }
+           // return content;
         }
+
+        if(varaName.size() != className.size())
+        {
+            System.out.println("error, funcions");
+        }
+        else
+        {
+            for(int i = 0; i < varaName.size(); i ++)
+            {
+                content = content.replaceAll(varaName.get(i), className.get(i));
+                //System.out.println(varaName.get(i) + " " + className.get(i));
+               // System.out.println(varaName.get(i).length() + " " + className.get(i).length());
+
+            }
+        }
+        System.out.println(content);
+
     }
 
     private static String removeString(String content) {
