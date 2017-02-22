@@ -38,7 +38,7 @@ public class analysis {
     String testStr = " public static void main() { File fe = new File(); " +
             "fe.print(); fe.show(); if(a = 2) { fe.print(); } } public static void test() " +
             "{ File fe = new File(); fe.print(); fe.show(); if(a = 2) { fe.print(); } " +
-            "Excel ecx=new Excel(); ecx.test(); }";
+            "Excel ecx=new Excel();ecx.test(fe.get());}";
 
     public static void main(String args[])
     {
@@ -183,15 +183,11 @@ public class analysis {
         System.out.println(content);
         List<String> varaName = new ArrayList<String>();
         List<String> className = new ArrayList<String>();
-
         for(int i = 0; i < temp.length - 1; i ++)
         {
             String x = temp[i];  //before new
             String y = temp[i + 1]; //after new
-            //System.out.println("string processing : " + y);
             String paraName = "";
-            //System.out.println(temp[i].charAt(x.length() - 1));
-
             //add vars name into list
             int indexBeforeEqu = x.lastIndexOf('=');
             if(indexBeforeEqu >= 0)
@@ -205,7 +201,6 @@ public class analysis {
                 {
                     indexBeforeEqu --;
                 }
-                //System.out.println("indexBeforeEqu:"+x.charAt(indexBeforeEqu));
                 for(int j = indexBeforeEqu; j > 0; j --)
                 {
                     if(x.charAt(j) == ' ')
@@ -214,20 +209,13 @@ public class analysis {
                         break;
                     }
                 }
-                //System.out.println(paraName + " Len:" + paraName.length());
                 varaName.add(paraName);
-
                 //add class names into list
-                //System.out.println("y char at 0: "+y.charAt(0));
-                //System.out.println(y.indexOf(' '));
                 int indexOffirstSpace = y.indexOf('(');
                 String classname = y.substring(0, indexOffirstSpace);
-                //System.out.println("classname : "+classname.length());
                 className.add(classname);
             }
-           // return content;
         }
-
         if(varaName.size() != className.size())
         {
             System.out.println("error, funcions");
@@ -237,13 +225,16 @@ public class analysis {
             for(int i = 0; i < varaName.size(); i ++)
             {
                 content = content.replaceAll(varaName.get(i), className.get(i));
-                //System.out.println(varaName.get(i) + " " + className.get(i));
-               // System.out.println(varaName.get(i).length() + " " + className.get(i).length());
-
             }
         }
+        //NOW we start to get api sequences
         System.out.println(content);
-
+        int left = content.indexOf('{');
+        content = content.substring(left + 1, content.length());
+        int right = content.lastIndexOf('}');
+        content = content.substring(0, right);
+        System.out.println(content);
+        System.out.println("=====================");
     }
 
     private static String removeString(String content) {
