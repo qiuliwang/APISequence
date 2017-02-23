@@ -31,14 +31,12 @@ public class analysis {
             " if(!new File(file.getParent()).exists()) new File(file.getParent()).mkdirs();" +
             " FileOutputStream fos = new FileOutputStream(file); while ((len = zip.read(buffer)) > 0) " +
             "{ fos.write(buffer, 0, len); } fos.close(); } } }catch (FileNotFoundException e) " +
-            "{ e.printStackTrace(); } catch (IOException e) { e.printStackTrace(); } } " +
-            "public static void test1() {System.out.println(#);}"+
-            "public static void test2() {System.out.println(#); {System.out.println(#);}}";
+            "{ e.printStackTrace(); } catch (IOException e) { e.printStackTrace(); } } " ;
 
     String testStr = " public static void main() { File fe = new File(); " +
-            "fe.print(); fe.show(); if(a = 2) { fe.print(); } } public static void test() " +
-            "{ File fe = new File(); fe.print(); fe.show(); if(a = 2) { fe.print(); } " +
-            "Excel ecx=new Excel();ecx.test(fe.get());}";
+            "fe.print(); fe.show(); if(fe.size() = 2) { fe.print(); fe.print(); } }" +
+            " public static void test(){ File fe = new File(); fe.print(); fe.show(); if(fe.size() = 2) { fe.print(); }} " +
+            "public static void test1() {System.out.println(#);}";
 
     public static void main(String args[])
     {
@@ -55,17 +53,17 @@ public class analysis {
         keywords = new ArrayList<String>();
         fileContent = new ArrayList<String>();
         //contentWithoutKeywords = new ArrayList<String>();
-//        opt = new ArrayList<String>();
+        opt = new ArrayList<String>();
 //        contentString = "";
-//        getkeywords(keywordsPath, keywords);
-//        getkeywords(operatorPath, opt);
+        getkeywords(keywordsPath, keywords);
+        getkeywords(operatorPath, opt);
 //        readFile(path);
 //        contentString = rmSpace(fileContent);
 //        String stringWithoutMarks = removeString(contentString);
 //        //System.out.println(stringWithoutMarks);
         //test(stringWithoutMarks);
         //System.out.println(stringWithoutMarks);
-        String stringWithoutMarks = testStr;
+        String stringWithoutMarks = testCo;
         test1(stringWithoutMarks);
         //test2(stringWithoutMarks);
     }
@@ -233,8 +231,69 @@ public class analysis {
         content = content.substring(left + 1, content.length());
         int right = content.lastIndexOf('}');
         content = content.substring(0, right);
-        System.out.println(content);
+        System.out.println("content to process: "+content);
+
+        List<String> actApi = new ArrayList<String>();
+        for(int z = 0; z < content.length(); z ++)
+        {
+            if(content.charAt(z) == 'n' && content.charAt(z + 1) == 'e' && content.charAt(z + 2) == 'w')
+            {
+                String inner = content.substring(z + 3, content.length());
+                int d = 0;
+                for(d = 0; d < inner.length(); d ++)
+                {
+                    if(inner.charAt(d) == '(' || inner.charAt(d) == '[')
+                        break;
+                }
+                inner = inner.substring(1, d);
+                actApi.add(inner + ".new");
+                System.out.println(inner + ".new");
+            }
+            if(content.charAt(z) == '.')
+            {
+                int leftDot = z;
+                int rightDot = z;
+                while(content.charAt(leftDot) != ';'
+                       && content.charAt(leftDot) != '{' && content.charAt(leftDot) != '('
+                        && content.charAt(leftDot) != '=' && leftDot > 0)
+                {
+                    leftDot --;
+                }
+                while(content.charAt(rightDot) != ';'
+                        && content.charAt(rightDot) != '}' && content.charAt(rightDot) != '(' )
+                {
+                    rightDot ++;
+                }
+                String inner = content.substring(leftDot, rightDot);
+                inner = getapiForanalysisSingleFunction((inner));
+                z = rightDot + 1;
+
+            }
+        }
+
         System.out.println("=====================");
+    }
+
+    public static boolean check(char x)
+    {
+        char c = x;
+        if(((c>='a'&&c<='z') || (c>='A'&&c<='Z')))
+        {
+            return   true;
+        }else{
+            return   false;
+        }
+    }
+    private static String getapiForanalysisSingleFunction(String inner)
+    {
+        while(!check(inner.charAt(0))&&inner.charAt(0) != '.')
+            inner = inner.substring(1, inner.length());
+        while(inner.charAt(inner.length() - 1) == ' ' || inner.charAt(inner.length() - 1) == ';')
+        {
+            inner = inner.substring(0, inner.length() - 1);
+        }
+        System.out.println(inner);
+        return inner;
     }
 
     private static String removeString(String content) {
@@ -242,9 +301,7 @@ public class analysis {
         while (innerString.contains("\""))
         {
             int length = innerString.length();
-            //System.out.println(innerString);
             int ind = innerString.indexOf("\"");
-            //System.out.println(innerString.charAt(ind));
             for(int i = ind + 1; i < length; i ++)
             {
                  if(innerString.charAt(i) == '\"')
@@ -259,17 +316,9 @@ public class analysis {
                  }
             }
         }
-        //System.out.println(innerString);
         return innerString;
     }
 
-    /*
-    like
-        public class Uzip {
-        pub......{
-        ....}
-        ...}
-     */
 
     //remove keywords from content, but leave "class"
     private static String rmSpace(List<String> fileContent)
@@ -279,7 +328,6 @@ public class analysis {
         for(int i = 0; i < fileContent.size(); i ++)
         {
             String tempString = fileContent.get(i);
-            //System.out.println(tempString);
             String words[] = tempString.split("\\s+");
 
             for(String ss : words){
@@ -300,7 +348,7 @@ public class analysis {
             //System.out.println("以行为单位读取文件内容，一次读一整行：");
             reader = new BufferedReader(new FileReader(file));
             String tempString = null;
-            int line = 1;
+            //int line = 1;
             // 一次读入一行，直到读入null为文件结束
             while ((tempString = reader.readLine()) != null) {
                 // 显示行号
@@ -315,7 +363,7 @@ public class analysis {
                         {
                             //System.out.println(tempString);
                             fileContent.add(tempString);
-                            line++;
+                           //line++;
                         }
                         else
                         {
@@ -323,7 +371,7 @@ public class analysis {
                             {
                                 //System.out.println(tempString);
                                 fileContent.add(tempString);
-                                line++;
+                                //line++;
                             }
                         }
 
@@ -350,13 +398,13 @@ public class analysis {
             //System.out.println("以行为单位读取文件内容，一次读一整行：");
             reader = new BufferedReader(new FileReader(file));
             String tempString = null;
-            int line = 1;
+            //int line = 1;
             // 一次读入一行，直到读入null为文件结束
             while ((tempString = reader.readLine()) != null) {
                 // 显示行号
                 //System.out.println("line " + line + ": " + tempString);
                 key.add(tempString);
-                line++;
+                //line++;
             }
             reader.close();
         } catch (IOException e) {
