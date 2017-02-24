@@ -17,35 +17,17 @@ public class analysis {
     static List<String> fileContent;
     static List<String> opt;
     static String contentString;
-
-    static String CLASS_NAME;
-
-    String testCo = "public static void unzip(String zipFile,String outputPath)" +
-            "{ if(outputPath == null) outputPath = #; else outputPath+=File.separator; " +
-            "File outputDirectory = new File(outputPath); String str1 = #; String str2 = #;" +
-            " if(outputDirectory.exists()) outputDirectory.delete(); outputDirectory.mkdir(); " +
-            "try { " +
-            " zip = new ZipInputStream(new FileInputStream(zipFile)); " +
-            "ZipEntry entry = null; int len; byte[] buffer = new byte[1024]; " +
-            "while((entry = zip.getNextEntry()) != null){ if(!entry.isDirectory())" +
-            "{ System.out.println(#+entry.getName()); File file = new File(outputPath +entry.getName());" +
-            " if(!new File(file.getParent()).exists()) new File(file.getParent()).mkdirs();" +
-            " FileOutputStream fos = new FileOutputStream(file); while ((len = zip.read(buffer)) > 0) " +
-            "{ fos.write(buffer, 0, len); } fos.close(); } } }catch (FileNotFoundException e) " +
-            "{ e.printStackTrace(); } catch (IOException e) { e.printStackTrace(); } } " ;
-
-    String testStr = " public static void main() { File fe = new File(); " +
-            "fe.print(); fe.show(); if(fe.size() = 2) { fe.print(); fe.print(); } }" +
-            " public static void test(){ File fe = new File(); fe.print(); fe.show(); if(fe.size() = 2) { fe.print(); }} " +
-            "public static void test1() {System.out.println(#);}";
-
-    public static void main(String args[])
-    {
-        analysis ans = new analysis();
-        ans.setPath("C:\\Users\\WangQL\\Desktop\\Java\\java-excel-poi" +
-                "\\src\\main\\java\\com\\hmkcode\\poi\\AppRead.java");
-        ans.getSeq();
-    }
+    static List<String> CLASS_NAME;  //class get from source code
+    static List<String> importClass;  //class from import
+//    public static void main(String args[])
+//    {
+//        analysis ans = new analysis();
+////        ans.setPath("C:\\Users\\WangQL\\Desktop\\Java\\java-excel-poi" +
+////                "\\src\\main\\java\\com\\hmkcode\\poi\\AppRead.java");
+//
+//        ans.setPath("C:\\Users\\WangQL\\Desktop\\Java\\java-combinations\\Combination.java");
+//        ans.getSeq();
+//    }
 
     public analysis()
     {
@@ -55,8 +37,10 @@ public class analysis {
         keywords = new ArrayList<String>();
         fileContent = new ArrayList<String>();
         opt = new ArrayList<String>();
+        CLASS_NAME = new ArrayList<>();
         getkeywords(keywordsPath, keywords);
         getkeywords(operatorPath, opt);
+        importClass = new ArrayList<>();
     }
 
     public void getSeq()
@@ -64,13 +48,20 @@ public class analysis {
         readFile(path);
         contentString = rmSpace(fileContent);
         String stringWithoutMarks = removeString(contentString);
-        System.out.println(stringWithoutMarks);
-        test1(stringWithoutMarks);
+        //System.out.println(stringWithoutMarks);
+        try {
+            test1(stringWithoutMarks);
+        }
+        catch (Exception e)
+        {
+
+        }
     }
 
     public void setPath(String str)
     {
         path = str;
+        //System.out.println(path);
     }
 
     private static List<String> divideFuntions(String str)
@@ -136,6 +127,7 @@ public class analysis {
     private static void test1(String str)
     {
         //System.out.println(str);
+        List<String> api = new ArrayList<>();
         int countLeft = 0;
         int countRight = 0;
         for(int i = 0; i < str.length(); i ++)
@@ -153,7 +145,11 @@ public class analysis {
             List<String> functions = divideFuntions(str);
             for(int x = 0; x < functions.size(); x ++)
             {
-                analysisSingleFunction(functions.get(x));
+                List<String> temp = analysisSingleFunction(functions.get(x));
+                for(int i = 0; i < temp.size(); i ++)
+                {
+                    System.out.println(temp.get(i));
+                }
             }
         }
         else
@@ -163,7 +159,7 @@ public class analysis {
     }
 
     //analysis function one by one
-    private static void analysisSingleFunction(String content)
+    private static List<String> analysisSingleFunction(String content)
     {
         String [] temp = content.split("new ");
         System.out.println(content);
@@ -198,8 +194,15 @@ public class analysis {
                 varaName.add(paraName);
                 //add class names into list
                 int indexOffirstSpace = y.indexOf('(');
+                //System.out.println(y + indexOffirstSpace);
+                indexOffirstSpace = 0;
+                while(y.charAt(indexOffirstSpace) != '(' && y.charAt(indexOffirstSpace) != '[')
+                {
+                    indexOffirstSpace ++;
+                }
                 String classname = y.substring(0, indexOffirstSpace);
                 className.add(classname);
+                System.out.println(classname);
             }
         }
         if(varaName.size() != className.size())
@@ -211,11 +214,14 @@ public class analysis {
             for(int i = 0; i < varaName.size(); i ++)
             {
                 content = content.replaceAll(varaName.get(i), className.get(i));
+                if(!CLASS_NAME.contains(className.get(i)))
+                {
+                    CLASS_NAME.add(className.get(i));
+                }
             }
         }
         //NOW we start to get api sequences
-        System.out.println(content);
-
+       // System.out.println(content);
         System.out.println("content to process: "+content);
 
         List<String> actApi = new ArrayList<String>();
@@ -233,7 +239,7 @@ public class analysis {
                 }
                 inner = inner.substring(1, d);
                 actApi.add(inner + ".new");
-                System.out.println(inner + ".new");
+                //System.out.println(inner + ".new");
             }
             if(content.charAt(z) == '.')
             {
@@ -241,7 +247,7 @@ public class analysis {
                 int rightDot = z;
                 while(content.charAt(leftDot) != ';'
                        && content.charAt(leftDot) != '{' && content.charAt(leftDot) != '('
-                        && content.charAt(leftDot) != '=' && leftDot > 0)
+                        && content.charAt(leftDot) != '=' && leftDot > 0 && content.charAt(leftDot) != '+')
                 {
                     leftDot --;
                 }
@@ -253,11 +259,31 @@ public class analysis {
                 String inner = content.substring(leftDot, rightDot);
                 inner = getapiForanalysisSingleFunction((inner));
                 z = rightDot + 1;
-
+                if(inner.charAt(0) == '.')
+                {
+                    String te = actApi.get(actApi.size() - 1);
+                    te = te + inner;
+                    actApi.set(actApi.size() - 1, te);
+                }
+                else {
+                    actApi.add(inner);
+                }
             }
         }
 
-        System.out.println("=====================");
+        //System.out.println("========\nreconstruct api sequences\n========");
+
+        List<String> reconsApi = new ArrayList<>();
+        for(int i = 0; i < actApi.size(); i ++)
+        {
+            String cla = actApi.get(i).substring(0, actApi.get(i).indexOf('.'));
+            //System.out.println(cla);
+            if(CLASS_NAME.contains(cla))
+            {
+                reconsApi.add(actApi.get(i));
+            }
+        }
+        return reconsApi;
     }
 
     public static boolean check(char x)
@@ -278,7 +304,7 @@ public class analysis {
         {
             inner = inner.substring(0, inner.length() - 1);
         }
-        System.out.println(inner);
+        //System.out.println(inner);
         return inner;
     }
 
@@ -329,7 +355,7 @@ public class analysis {
 
     private static void readFile(String fileName) {
         //System.out.println("here");
-
+        fileContent.clear();
         File file = new File(fileName);
         BufferedReader reader = null;
         try {
@@ -362,6 +388,13 @@ public class analysis {
                         }
 
                     }
+                }
+                else if(tempString.contains("import"))
+                {
+                    String temp = tempString.substring(tempString.lastIndexOf('.') + 1,
+                            tempString.lastIndexOf(';'));
+                    //System.out.println(temp);
+                    CLASS_NAME.add(temp);
                 }
             }
             reader.close();

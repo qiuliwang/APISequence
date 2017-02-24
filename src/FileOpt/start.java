@@ -15,25 +15,16 @@ public class start {
     static List<String> allfile;
     public static void main(String args[]) throws Exception
     {
-        getAllFileName gafn = new getAllFileName("/Users/WangQL/Documents/git/Java");
+        getAllFileName gafn = new getAllFileName("C:\\Users\\WangQL\\Desktop\\Java");
         allfile = gafn.getAllfiles();
+        analysis ans = new analysis();
 
-        writeApi wa = new writeApi();
-
-        for(int i = 0; i < 10; i ++)
+        for(int i = 0; i < allfile.size(); i ++)
         {
             String temp = allfile.get(i);
-            System.out.println(temp);
-                getApiSeqence gap = new getApiSeqence(temp);
-                List<String> inst = gap.getApiList();
-                //wa.setApisq(inst);
-                //wa.writeApi();
-
-
-//            getApiSeqence gap = new getApiSeqence(temp);
-//            List<String> inst = gap.getApiList();
-//            wa.setApisq(inst);
-//            wa.writeApi();
+            //System.out.println(temp);
+            ans.setPath(temp);
+            ans.getSeq();
         }
         //analysis ans = new analysis("/Users/WangQL/Documents/git/Java/java-unzip/src/main/java/com/hmkcode/Unzip.java");
         //System.out.println(keywords.size());
