@@ -25,7 +25,7 @@ public class start {
             String temp = allfile.get(i);
             System.out.println(temp);
                 getApiSeqence gap = new getApiSeqence(temp);
-                //List<String> inst = gap.getApiList();
+                List<String> inst = gap.getApiList();
                 //wa.setApisq(inst);
                 //wa.writeApi();
 

@@ -24,7 +24,8 @@ public class analysis {
             "{ if(outputPath == null) outputPath = #; else outputPath+=File.separator; " +
             "File outputDirectory = new File(outputPath); String str1 = #; String str2 = #;" +
             " if(outputDirectory.exists()) outputDirectory.delete(); outputDirectory.mkdir(); " +
-            "try { ZipInputStream zip = new ZipInputStream(new FileInputStream(zipFile)); " +
+            "try { " +
+            " zip = new ZipInputStream(new FileInputStream(zipFile)); " +
             "ZipEntry entry = null; int len; byte[] buffer = new byte[1024]; " +
             "while((entry = zip.getNextEntry()) != null){ if(!entry.isDirectory())" +
             "{ System.out.println(#+entry.getName()); File file = new File(outputPath +entry.getName());" +
@@ -40,32 +41,36 @@ public class analysis {
 
     public static void main(String args[])
     {
-        analysis ans = new analysis("/Users/WangQL/Documents/git" +
-                "/Java/java-unzip/src/main/java/com/hmkcode/Unzip.java");
+        analysis ans = new analysis();
+        ans.setPath("C:\\Users\\WangQL\\Desktop\\Java\\java-excel-poi" +
+                "\\src\\main\\java\\com\\hmkcode\\poi\\AppRead.java");
+        ans.getSeq();
     }
 
-    public analysis(String path)
+    public analysis()
     {
-        this.path = path;
         String proj = System.getProperty("user.dir");
         String keywordsPath = proj + "/keywords.txt";
         String operatorPath = proj + "/opt.txt";
         keywords = new ArrayList<String>();
         fileContent = new ArrayList<String>();
-        //contentWithoutKeywords = new ArrayList<String>();
         opt = new ArrayList<String>();
-//        contentString = "";
         getkeywords(keywordsPath, keywords);
         getkeywords(operatorPath, opt);
-//        readFile(path);
-//        contentString = rmSpace(fileContent);
-//        String stringWithoutMarks = removeString(contentString);
-//        //System.out.println(stringWithoutMarks);
-        //test(stringWithoutMarks);
-        //System.out.println(stringWithoutMarks);
-        String stringWithoutMarks = testCo;
+    }
+
+    public void getSeq()
+    {
+        readFile(path);
+        contentString = rmSpace(fileContent);
+        String stringWithoutMarks = removeString(contentString);
+        System.out.println(stringWithoutMarks);
         test1(stringWithoutMarks);
-        //test2(stringWithoutMarks);
+    }
+
+    public void setPath(String str)
+    {
+        path = str;
     }
 
     private static List<String> divideFuntions(String str)
@@ -76,6 +81,11 @@ public class analysis {
         List<Integer> indexOfFunction = new ArrayList<Integer>();
 
         Stack stk = new Stack();
+
+        int left = str.indexOf('{');
+        str = str.substring(left + 1, str.length());
+        int right = str.lastIndexOf('}');
+        str = str.substring(0, right);
 
         for(int i = 0; i < str.length(); i ++)
         {
@@ -95,7 +105,7 @@ public class analysis {
             }
         }
 
-        //System.out.println("number of funcitons:"+indexOfFunction.size());
+        System.out.println("number of funcitons:"+indexOfFunction.size());
         List<String> functions = new ArrayList<String>();
         for(int i = 0; i < indexOfFunction.size(); i ++)
         {
@@ -120,18 +130,12 @@ public class analysis {
                 functions.add(temp);
             }
         }
-
-//        for(int i = 0; i < functions.size(); i ++)
-//        {
-//            System.out.println(functions.get(i));
-//        }
-
         return functions;
     }
 
     private static void test1(String str)
     {
-        System.out.println(str);
+        //System.out.println(str);
         int countLeft = 0;
         int countRight = 0;
         for(int i = 0; i < str.length(); i ++)
@@ -146,27 +150,11 @@ public class analysis {
         }
         if(countLeft == countRight) {
             System.out.println("no error\n");
-            //System.out.println(str.indexOf("class"));
-//            int indexOfClass = str.indexOf("class");
-//            int endIndexOfClass = indexOfClass + 5;
-//            int beginOfClassName = endIndexOfClass + 1;
-//            int endOfClassName = str.indexOf('{');
-//            //System.out.println(str.substring(indexOfClass, endIndexOfClass+1));
-//            //System.out.println(str.substring(beginOfClassName, endOfClassName));
-//            CLASS_NAME = str.substring(beginOfClassName, endOfClassName);
-//            str = str.substring(str.indexOf('{') + 2, str.lastIndexOf('}'));
-//            System.out.println("remove class:\n"+str+"\n\n");
-
             List<String> functions = divideFuntions(str);
             for(int x = 0; x < functions.size(); x ++)
             {
-                //System.out.println(functions.get(x));
                 analysisSingleFunction(functions.get(x));
-                //System.out.println(functions.get(x));
-                //System.out.println("=================");
             }
-           // System.out.println(functions.size());
-
         }
         else
         {
@@ -227,16 +215,14 @@ public class analysis {
         }
         //NOW we start to get api sequences
         System.out.println(content);
-        int left = content.indexOf('{');
-        content = content.substring(left + 1, content.length());
-        int right = content.lastIndexOf('}');
-        content = content.substring(0, right);
+
         System.out.println("content to process: "+content);
 
         List<String> actApi = new ArrayList<String>();
         for(int z = 0; z < content.length(); z ++)
         {
-            if(content.charAt(z) == 'n' && content.charAt(z + 1) == 'e' && content.charAt(z + 2) == 'w')
+            if(content.charAt(z) == 'n' && content.charAt(z + 1) == 'e' && content.charAt(z + 2) == 'w'
+                    && (content.charAt(z - 1) != '(' || content.charAt(z - 2) != ' '))
             {
                 String inner = content.substring(z + 3, content.length());
                 int d = 0;
@@ -342,6 +328,8 @@ public class analysis {
     }
 
     private static void readFile(String fileName) {
+        //System.out.println("here");
+
         File file = new File(fileName);
         BufferedReader reader = null;
         try {
@@ -361,9 +349,7 @@ public class analysis {
                     if(tempString.length() != 0) {
                         if(tempString.length()<2)
                         {
-                            //System.out.println(tempString);
                             fileContent.add(tempString);
-                           //line++;
                         }
                         else
                         {

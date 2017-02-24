@@ -11,6 +11,13 @@ import java.util.List;
 public class getAllFileName {
     String path;
     List<String> allfiles;
+
+    public static void main(String args[])
+    {
+        getAllFileName gaf = new getAllFileName("C:\\Users\\WangQL\\Desktop\\Java");
+        gaf.getAllfiles();
+    }
+
     public getAllFileName(String path)
     {
         this.path = path;
@@ -19,6 +26,10 @@ public class getAllFileName {
 
     List<String> getAllfiles()
     {
+//        for(int i = 0; i < allfiles.size(); i ++)
+//        {
+//            System.out.println(allfiles.get(i));
+//        }
         return allfiles;
     }
 
