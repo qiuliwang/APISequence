@@ -15,7 +15,21 @@ public class start {
     static List<String> allfile;
     public static void main(String args[]) throws Exception
     {
-        getAllFileName gafn = new getAllFileName("C:\\Users\\WangQL\\Desktop\\Java");
+        String sys = System.getProperty("os.name");
+        //Windows  Mac OS X
+        getAllFileName gafn = new getAllFileName("/Users/WangQL/Documents/git/Java");
+
+//        if(sys == "Mac OS X") {
+//            System.out.println(sys);
+//            gafn = new getAllFileName("/Users/WangQL/Documents/git/Java");
+//
+//        }
+//        else
+//        {
+//            System.out.println(sys);
+//            gafn = new getAllFileName("C:\\Users\\WangQL\\Desktop\\Java");
+//        }
+
         allfile = gafn.getAllfiles();
         analysis ans = new analysis();
 
@@ -26,7 +40,6 @@ public class start {
             ans.setPath(temp);
             ans.getSeq();
         }
-        //analysis ans = new analysis("/Users/WangQL/Documents/git/Java/java-unzip/src/main/java/com/hmkcode/Unzip.java");
         //System.out.println(keywords.size());
 
     }

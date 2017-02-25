@@ -19,6 +19,8 @@ public class analysis {
     static String contentString;
     static List<String> CLASS_NAME;  //class get from source code
     static List<String> importClass;  //class from import
+    static writeApi wap;
+
 //    public static void main(String args[])
 //    {
 //        analysis ans = new analysis();
@@ -29,7 +31,7 @@ public class analysis {
 //        ans.getSeq();
 //    }
 
-    public analysis()
+    public analysis() throws Exception
     {
         String proj = System.getProperty("user.dir");
         String keywordsPath = proj + "/keywords.txt";
@@ -41,6 +43,7 @@ public class analysis {
         getkeywords(keywordsPath, keywords);
         getkeywords(operatorPath, opt);
         importClass = new ArrayList<>();
+        wap = new writeApi();
     }
 
     public void getSeq()
@@ -124,7 +127,7 @@ public class analysis {
         return functions;
     }
 
-    private static void test1(String str)
+    private static void test1(String str) throws Exception
     {
         //System.out.println(str);
         List<String> api = new ArrayList<>();
@@ -146,10 +149,12 @@ public class analysis {
             for(int x = 0; x < functions.size(); x ++)
             {
                 List<String> temp = analysisSingleFunction(functions.get(x));
-                for(int i = 0; i < temp.size(); i ++)
-                {
-                    System.out.println(temp.get(i));
-                }
+                //for(int i = 0; i < temp.size(); i ++)
+//                {
+//                    System.out.println(temp.get(i));
+//                }
+                wap.setApisq(temp);
+                wap.writefile();
             }
         }
         else

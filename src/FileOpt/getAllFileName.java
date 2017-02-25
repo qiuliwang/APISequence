@@ -14,7 +14,7 @@ public class getAllFileName {
 
     public static void main(String args[])
     {
-        getAllFileName gaf = new getAllFileName("C:\\Users\\WangQL\\Desktop\\Java");
+        getAllFileName gaf = new getAllFileName("/Users/WangQL/Documents/git/Java");
         gaf.getAllfiles();
     }
 
