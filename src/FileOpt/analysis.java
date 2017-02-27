@@ -54,6 +54,7 @@ public class analysis {
         //System.out.println(stringWithoutMarks);
         try {
             test1(stringWithoutMarks);
+
         }
         catch (Exception e)
         {
@@ -153,6 +154,7 @@ public class analysis {
 //                {
 //                    System.out.println(temp.get(i));
 //                }
+
                 wap.setApisq(temp);
                 wap.writefile();
             }
@@ -257,7 +259,8 @@ public class analysis {
                     leftDot --;
                 }
                 while(content.charAt(rightDot) != ';'
-                        && content.charAt(rightDot) != '}' && content.charAt(rightDot) != '(' )
+                        && content.charAt(rightDot) != '}' && content.charAt(rightDot) != '('
+                        && content.charAt(rightDot) != ')')
                 {
                     rightDot ++;
                 }

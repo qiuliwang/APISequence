@@ -17,34 +17,43 @@ public class writeApi {
     String proj = System.getProperty("user.dir");
     String corpusPath = proj + "/" + corpusName;
     FileWriter writer;
-    List<String> apisq;
+    String contentToWrite;
 
     public static void main(String argc[]) throws Exception
     {
         writeApi wap = new writeApi();
         System.out.println(wap.corpusPath);
         //method2(wap.corpusPath, "fuuckkk!!\n");
+        List<String> test = new ArrayList<>();
+        test.add("aaa");
+        test.add("bbb");
+        test.add("ccc");
+        wap.setApisq(test);
+
+        wap.writefile();
+        //wap.
     }
 
     writeApi() throws Exception
     {
         //String proj = System.getProperty("user.dir");
         writer = new FileWriter(corpusPath, true);
-        apisq = new ArrayList<>();
     }
 
     //set api list prepare to write
     public void setApisq(List<String> aps)
     {
         //System.out.println("hello~~~");
-        apisq.clear();
+        List<String> apisq = new ArrayList<>();
         apisq = aps;
-        //System.out.println("hello!!!" + apisq.size());
-
-//        for(int i = 0; i < apisq.size(); i ++)
-//        {
-//            System.out.println("XXX "+apisq.get(i));
-//        }
+        System.out.println(apisq.size());
+        contentToWrite = "";
+        for(int i = 0; i < apisq.size(); i ++)
+        {
+            contentToWrite += apisq.get(i) + " ";
+        }
+        if(contentToWrite.length() != 0)
+            contentToWrite += "\n";
     }
 
     //write api sequence to file
@@ -52,11 +61,10 @@ public class writeApi {
 
     public void writefile() throws Exception
     {
-        //System.out.println("hewew");
-        for(int i= 0; i < apisq.size(); i ++)
-        {
-            writer.write(apisq.get(i));
-        }
+        System.out.println(contentToWrite);
+        writer.write(contentToWrite);
+        writer.flush();
+
     }
 
     public static void method2(String fileName, String content) {
