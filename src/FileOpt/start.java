@@ -17,7 +17,7 @@ public class start {
     {
         String sys = System.getProperty("os.name");
         //Windows  Mac OS X
-        getAllFileName gafn = new getAllFileName("/Users/WangQL/Documents/git/Java");
+        getAllFileName gafn = new getAllFileName("/Users/WangQL/Documents/git/camel");
 
 //        if(sys == "Mac OS X") {
 //            System.out.println(sys);
@@ -35,10 +35,17 @@ public class start {
 
         for(int i = 0; i < allfile.size(); i ++)
         {
-            String temp = allfile.get(i);
-            //System.out.println(temp);
-            ans.setPath(temp);
-            ans.getSeq();
+            System.out.println("====================");
+            try {
+                String temp = allfile.get(i);
+                System.out.println(temp);
+                ans.setPath(temp);
+                ans.getSeq();
+            }
+            catch (Exception e)
+            {
+
+            }
         }
         //System.out.println(keywords.size());
 

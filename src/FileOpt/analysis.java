@@ -21,15 +21,17 @@ public class analysis {
     static List<String> importClass;  //class from import
     static writeApi wap;
 
-//    public static void main(String args[])
-//    {
-//        analysis ans = new analysis();
-////        ans.setPath("C:\\Users\\WangQL\\Desktop\\Java\\java-excel-poi" +
-////                "\\src\\main\\java\\com\\hmkcode\\poi\\AppRead.java");
-//
-//        ans.setPath("C:\\Users\\WangQL\\Desktop\\Java\\java-combinations\\Combination.java");
-//        ans.getSeq();
-//    }
+    public static void main(String args[]) throws Exception
+    {
+        analysis ans = new analysis();
+//        ans.setPath("C:\\Users\\WangQL\\Desktop\\Java\\java-excel-poi" +
+//                "\\src\\main\\java\\com\\hmkcode\\poi\\AppRead.java");
+
+        ans.setPath("/Users/WangQL/Documents/git/camel/camel-core/src/main/java/org/apache" +
+                "/camel/support/TokenPairExpressionIterator.java");
+
+        ans.getSeq();
+    }
 
     public analysis() throws Exception
     {
@@ -48,9 +50,14 @@ public class analysis {
 
     public void getSeq()
     {
+        //System.out.println("???????");
+
         readFile(path);
         contentString = rmSpace(fileContent);
+
         String stringWithoutMarks = removeString(contentString);
+        //System.out.println("?????WWWW??");
+
         //System.out.println(stringWithoutMarks);
         try {
             test1(stringWithoutMarks);
@@ -64,6 +71,7 @@ public class analysis {
 
     public void setPath(String str)
     {
+
         path = str;
         //System.out.println(path);
     }
@@ -130,7 +138,7 @@ public class analysis {
 
     private static void test1(String str) throws Exception
     {
-        //System.out.println(str);
+        System.out.println("???????");
         List<String> api = new ArrayList<>();
         int countLeft = 0;
         int countRight = 0;
@@ -260,7 +268,7 @@ public class analysis {
                 }
                 while(content.charAt(rightDot) != ';'
                         && content.charAt(rightDot) != '}' && content.charAt(rightDot) != '('
-                        && content.charAt(rightDot) != ')')
+                        && content.charAt(rightDot) != ')' && content.charAt(rightDot) != ',')
                 {
                     rightDot ++;
                 }
@@ -318,8 +326,10 @@ public class analysis {
 
     private static String removeString(String content) {
         String innerString = content;
-        while (innerString.contains("\""))
+        int ct = 0;
+        while (innerString.contains("\"") && ct < 100)
         {
+            ct ++;
             int length = innerString.length();
             int ind = innerString.indexOf("\"");
             for(int i = ind + 1; i < length; i ++)
@@ -373,6 +383,7 @@ public class analysis {
             //int line = 1;
             // 一次读入一行，直到读入null为文件结束
             while ((tempString = reader.readLine()) != null) {
+
                 // 显示行号
                 if(!tempString.contains("import") && !tempString.contains("package")
                      && tempString.length() != 0) {
@@ -405,6 +416,8 @@ public class analysis {
                     CLASS_NAME.add(temp);
                 }
             }
+            //System.out.println("???????");
+
             reader.close();
         } catch (IOException e) {
             e.printStackTrace();
