@@ -7,6 +7,7 @@ public class start {
 		ReadFile rf = new ReadFile();
 		rf.setPath(path);
 		String content = rf.getContent();
-		System.out.println(content.toString());
+		//System.out.println(content.toString());
+		ASTAna asa = new ASTAna(content);
 	}
 }
