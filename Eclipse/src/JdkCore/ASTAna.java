@@ -1,6 +1,7 @@
 package JdkCore;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Iterator;
 import java.util.List;
 
@@ -96,7 +97,7 @@ public class ASTAna {
             //get each statement  
             Statement stmt=(Statement)iter.next();  
             //ExpressionStatement
-           if(stmt instanceof ExpressionStatement)
+            if(stmt instanceof ExpressionStatement)
 			{
                System.out.println(stmt.toString());
 				ExpressionStatement expressStmt=(ExpressionStatement) stmt;
@@ -127,9 +128,17 @@ public class ASTAna {
 				Expression exp = ifstmt.getExpression();
 				Statement stat = ifstmt.getThenStatement();
 				System.out.println(exp.toString());
-				//ifstmt.BLOCK
-				//stat.get
-				//System.out.println(stat.toString());
+				if(exp instanceof MethodInvocation)
+				{
+					MethodInvocation mi=(MethodInvocation) exp;
+					System.out.println("invocation name:"+mi.getName());
+					System.out.println("invocation exp:"+mi.getExpression());
+					System.out.println("invocation arg:"+mi.arguments());
+				}
+				System.out.println(stat.toString());
+				
+				
+				
 //				InfixExpression wex=(InfixExpression) ifstmt.getExpression();
 //				System.out.println("if-LHS:"+wex.getLeftOperand()+"; ");
 //				System.out.println("if-op:"+wex.getOperator()+"; ");
