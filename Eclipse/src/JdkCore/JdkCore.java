@@ -4,6 +4,8 @@ import java.io.BufferedInputStream;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 
@@ -27,10 +29,25 @@ public class JdkCore {
 	}
 	
 	String FILE_PATH;
+	HashMap<String , String> map;
+	static List<String> keyType = new ArrayList<String>(){{
+        add("boolean");
+        add("byte");
+        add("short");
+        add("int");
+        add("long");
+        add("double");
+        add("char");
+        add("float");
+        add("Integer");
+        add("Double");
+        add("Float");
+    }};
 	
 	JdkCore(String path)
 	{
 		FILE_PATH = path;
+		map = new HashMap<String , String>();  
 		char [] content = getFileContent(path, 0);
 		//System.out.println(content.length);
 		processJavaFile(content);
@@ -43,6 +60,7 @@ public class JdkCore {
 	 */
 	void processJavaFile(char [] content)
 	{
+		List<String> api = new ArrayList<String>();
 		ASTParser parser = ASTParser.newParser(AST.JLS3); //initialize    
         parser.setKind(ASTParser.K_COMPILATION_UNIT);     //to parse compilation unit  
         parser.setSource(content);      //content is a string which stores the <a href="http://lib.csdn.net/base/java" class='replace_word' title="Java 鐭ヨ瘑搴�" target='_blank' style='color:#df3434; font-weight:bold;'>Java </a>source  
@@ -90,6 +108,9 @@ public class JdkCore {
     					System.out.println("invocation name:"+mi.getName());
     					System.out.println("invocation exp:"+mi.getExpression());
     					System.out.println("invocation arg:"+mi.arguments());
+    					String exp = mi.getExpression().toString();
+    					//
+    					xxx
     				}
     				System.out.println();
     			}
@@ -123,11 +144,18 @@ public class JdkCore {
     			}
                 else if(stmt instanceof VariableDeclarationStatement)
     			{
+                	//here, we add Class.New
                     System.out.println(stmt.toString());
-    				VariableDeclarationStatement var=(VariableDeclarationStatement) stmt;
-    				System.out.println("Type of variable:"+var.getType());
-    				System.out.println("Name of variable:"+var.fragments());
-    				System.out.println();
+    				VariableDeclarationStatement var=(VariableDeclarationStatement) stmt;			
+    				String type = var.getType().toString();
+    				//System.out.println("Type of variable:"+type);
+    				String frag = var.fragments().toString();
+    				//System.out.println("Name of variable:"+frag);
+    				String variableName = frag.substring(frag.indexOf('[') + 1, frag.indexOf('='));
+    				map.put(variableName, type);
+    				//System.out.println(variableName);
+    				//System.out.println();
+    				api.add(type + ".New");
     			}
                 //ReturnStatement
                 else if(stmt instanceof ReturnStatement)
@@ -325,4 +353,5 @@ public class JdkCore {
 		    return statContent.toCharArray();
 		}
 	}
+		
 }

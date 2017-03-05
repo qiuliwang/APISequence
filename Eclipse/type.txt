@@ -1,0 +1,11 @@
+boolean
+byte
+short
+int
+long
+double
+char
+float
+Integer
+Double
+Float

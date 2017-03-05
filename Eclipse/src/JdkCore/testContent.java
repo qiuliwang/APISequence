@@ -5,6 +5,8 @@ public class testContent {
 	public static void main(String args[])
 	{
 		testContent sct = new testContent("wang", "Jiangsu", 2016);
+		testContent sct2 = null;
+		
 		sct.getAllInfo();
 		sct.testFunc();
 		int x = 10;
