@@ -24,8 +24,18 @@ import org.eclipse.jdt.core.dom.VariableDeclarationStatement;
 
 public class ASTAna {
 	public static void main(String args[])
-	{
-		
+	{			 
+			ASTParser parser = ASTParser.newParser(AST.JLS3);
+			parser.setSource("int i = 9; \n int j = i+1;".toCharArray());
+	 
+			parser.setKind(ASTParser.K_STATEMENTS);
+	 
+			Block block = (Block) parser.createAST(null);
+	 
+			//here can access the first element of the returned statement list
+			String str = block.statements().get(0).toString();
+	 
+			System.out.println(str);
 	}
 	
 	char[] fileContent;
@@ -42,7 +52,7 @@ public class ASTAna {
 	//class name
 	TypeDeclaration getClass(CompilationUnit cu)
 	{
-		List<?> types = cu.types();    
+		List<?> types = cu.types(); 
 	    TypeDeclaration typeDec = (TypeDeclaration) types.get(0);   
 	    System.out.println("className:"+typeDec.getName()); 
 	    return typeDec;
@@ -128,17 +138,39 @@ public class ASTAna {
 				Expression exp = ifstmt.getExpression();
 				Statement stat = ifstmt.getThenStatement();
 				System.out.println(exp.toString());
-				if(exp instanceof MethodInvocation)
-				{
-					MethodInvocation mi=(MethodInvocation) exp;
-					System.out.println("invocation name:"+mi.getName());
-					System.out.println("invocation exp:"+mi.getExpression());
-					System.out.println("invocation arg:"+mi.arguments());
-				}
+//				if(exp instanceof MethodInvocation)
+//				{
+//					MethodInvocation mi=(MethodInvocation) exp;
+//					System.out.println("invocation name:"+mi.getName());
+//					System.out.println("invocation exp:"+mi.getExpression());
+//					System.out.println("invocation arg:"+mi.arguments());
+//				}
 				System.out.println(stat.toString());
-				
-				
-				
+				ASTParser parser = ASTParser.newParser(AST.JLS3); //initialize    
+		        parser.setKind(ASTParser.K_STATEMENTS);     //to parse block  
+		        String statContent = stat.toString();
+		        //System.out.println(statContent.lastIndexOf('}'));
+		        //System.out.println(statContent.length());
+		        statContent = statContent.substring(statContent.indexOf('{') + 1, 
+		        		statContent.lastIndexOf('}'));
+		        while(statContent.charAt(0) == ' ' || statContent.charAt(0) == '\t' ||
+		        		statContent.charAt(0) == '\n')
+		        {
+		        	statContent = statContent.substring(1, statContent.length());
+		        }
+		        
+		        while(statContent.charAt(statContent.length() - 1) == ' ' || statContent.charAt(statContent.length() - 1) == '\t' ||
+		        		statContent.charAt(statContent.length() - 1) == '\n')
+		        {
+		        	statContent = statContent.substring(0, statContent.length() - 1);
+		        }
+		        System.out.println("====\n"+statContent.contains("\n"));
+		        
+		        char [] temp = statContent.toCharArray();
+		        parser.setSource(temp);
+		        Block bck = (Block)parser.createAST(null);
+		        String str = bck.statements().get(1).toString();
+				System.out.println("@@@"+str);
 //				InfixExpression wex=(InfixExpression) ifstmt.getExpression();
 //				System.out.println("if-LHS:"+wex.getLeftOperand()+"; ");
 //				System.out.println("if-op:"+wex.getOperator()+"; ");
@@ -171,7 +203,7 @@ public class ASTAna {
 	{
 		ASTParser parser = ASTParser.newParser(AST.JLS3); //initialize    
         parser.setKind(ASTParser.K_COMPILATION_UNIT);     //to parse compilation unit  
-        parser.setSource(fileContent);      //content is a string which stores the <a href="http://lib.csdn.net/base/java" class='replace_word' title="Java 知识库" target='_blank' style='color:#df3434; font-weight:bold;'>Java </a>source  
+        parser.setSource(fileContent);      //content is a string which stores the <a href="http://lib.csdn.net/base/java" class='replace_word' title="Java 鐭ヨ瘑搴�" target='_blank' style='color:#df3434; font-weight:bold;'>Java </a>source  
         parser.setResolveBindings(true);  
         CompilationUnit result = (CompilationUnit) parser.createAST(null);   
         return result;

@@ -7,6 +7,12 @@ public class testContent {
 		testContent sct = new testContent("wang", "Jiangsu", 2016);
 		sct.getAllInfo();
 		sct.testFunc();
+		int x = 10;
+		if(x > 5)
+		{
+			System.out.println("good");
+			System.out.println("good");
+		}
 	}
 	
 	String name;

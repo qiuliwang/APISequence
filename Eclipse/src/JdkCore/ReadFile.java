@@ -23,7 +23,7 @@ public class ReadFile {
 		this.path = path;
 	}
 	
-	String getContent()
+	char [] getContent()
 	{
 		byte[] input = null;
 		try {  
@@ -37,6 +37,7 @@ public class ReadFile {
 	        e.printStackTrace();  
 	    }          
 	    String content = new String(input);//.toCharArray();
-		return content;
+	    char [] res = content.toCharArray();
+		return res;
 	}
 }
