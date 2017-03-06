@@ -1,7 +1,9 @@
 package JdkCore;
 
+import java.util.List;
+
 public class start {
-	public static void main(String args[])
+	public static void main(String args[]) throws Exception
 	{
 		String osName = System.getProperty("os.name");
 		String path = "";
@@ -11,11 +13,27 @@ public class start {
 		}
 		else if(osName.contains("Windows"))
 		{
-			path = "C:\\Users\\WangQL\\Documents\\GitHub\\APISequence\\Eclipse\\src\\JdkCore\\testContent.java";
+			path = "C:\\Users\\WangQL\\Documents\\Code\\Java";
 		}
-		ReadFile rf = new ReadFile();
-		rf.setPath(path);
-		char [] content = rf.getContent();
+		WriteAPI writer = new WriteAPI("Java");
+		
+		getAllFileName gaf = new getAllFileName(path);
+		List<String> filenames = gaf.getAllfiles();
+
+		for(int i = 0; i < filenames.size(); i ++)
+		{
+			try{
+			JdkCore jcore = new JdkCore(filenames.get(i));
+			List<String> temp = jcore.getAPI();
+			writer.setApisq(temp);
+			writer.writefile();
+			}
+			catch(Exception e)
+			{
+				
+			}
+		}
+		
 		//ASTAna asa = new ASTAna(content);
 	}
 }

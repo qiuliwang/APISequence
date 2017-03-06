@@ -22,7 +22,8 @@ public class JdkCore {
 		}
 		else if(osName.contains("Windows"))
 		{
-			path = "C:\\Users\\WangQL\\Documents\\GitHub\\APISequence\\Eclipse\\src\\JdkCore\\testContent.java";
+			path = "C:\\Users\\WangQL\\Documents\\GitHub"
+					+ "\\APISequence\\Eclipse\\src\\JdkCore\\testContent.java";
 		}
 		JdkCore test = new JdkCore(path);
 		
@@ -43,24 +44,31 @@ public class JdkCore {
         add("Double");
         add("Float");
     }};
+    
+	List<String> api;
+
 	
 	JdkCore(String path)
 	{
 		FILE_PATH = path;
 		map = new HashMap<String , String>();  
+		api = new ArrayList<String>();
 		char [] content = getFileContent(path, 0);
-		//System.out.println(content.length);
+		//
 		processJavaFile(content);
 	}
 	
-	
+	List<String> getAPI()
+	{
+		return api;
+	}
 	/**
 	 * process the java file
 	 * @param content
 	 */
 	void processJavaFile(char [] content)
 	{
-		List<String> api = new ArrayList<String>();
+		api.clear();
 		ASTParser parser = ASTParser.newParser(AST.JLS3); //initialize    
         parser.setKind(ASTParser.K_COMPILATION_UNIT);     //to parse compilation unit  
         parser.setSource(content);      //content is a string which stores the <a href="http://lib.csdn.net/base/java" class='replace_word' title="Java 鐭ヨ瘑搴�" target='_blank' style='color:#df3434; font-weight:bold;'>Java </a>source  
@@ -108,9 +116,37 @@ public class JdkCore {
     					System.out.println("invocation name:"+mi.getName());
     					System.out.println("invocation exp:"+mi.getExpression());
     					System.out.println("invocation arg:"+mi.arguments());
-    					String exp = mi.getExpression().toString();
-    					//
-    					xxx
+    					String exp = "";
+    					if(mi.getExpression() != null)
+    					{
+    						exp = mi.getExpression().toString();
+    					}
+    					String name = mi.getName().toString();
+    					
+    					if(exp.contains("."))
+    					{
+    						String temp1 = exp.substring(0, exp.indexOf('.'));
+    						String temp2 = exp.substring(exp.indexOf('.'), exp.length());
+    						if(map.keySet().contains(temp1))
+    						{
+    							temp1 = map.get(temp1);
+    						}
+    						//System.out.println(temp1 + " " + temp2);
+    						exp = temp1 + temp2;
+    					}
+    					else
+    					{
+    						if(map.keySet().contains(exp))
+    							exp = map.get(exp);
+    					}
+    					
+    					String temp = exp + "." + name;
+    					if(temp.charAt(0) == '.')
+    					{
+    						temp = temp.substring(1, temp.length());
+    					}
+    					if(!temp.contains("out.print"))
+    						api.add(temp);
     				}
     				System.out.println();
     			}
@@ -126,8 +162,11 @@ public class JdkCore {
     				System.out.println(exp.toString());
     				System.out.println(stat.toString());
     				String statContent = stat.toString();
+    				if(statContent.contains("{"))
+    				{
     		        statContent = statContent.substring(statContent.indexOf('{') + 1, 
     		        		statContent.lastIndexOf('}'));
+    				}
     		        while(statContent.charAt(0) == ' ' || statContent.charAt(0) == '\t' ||
     		        		statContent.charAt(0) == '\n')
     		        {
@@ -151,11 +190,20 @@ public class JdkCore {
     				//System.out.println("Type of variable:"+type);
     				String frag = var.fragments().toString();
     				//System.out.println("Name of variable:"+frag);
-    				String variableName = frag.substring(frag.indexOf('[') + 1, frag.indexOf('='));
+    				String variableName = "";
+    				if(frag.contains("="))
+    				{
+    					variableName = frag.substring(frag.indexOf('[') + 1, frag.indexOf('='));
+    				}
+    				else
+    				{
+    					variableName = frag.substring(frag.indexOf('[') + 1, frag.indexOf(']'));
+    				}
     				map.put(variableName, type);
     				//System.out.println(variableName);
     				//System.out.println();
-    				api.add(type + ".New");
+    				if(!keyType.contains(type))
+    					api.add(type + ".New");
     			}
                 //ReturnStatement
                 else if(stmt instanceof ReturnStatement)
@@ -174,8 +222,11 @@ public class JdkCore {
     				System.out.println(exp.toString());
     				System.out.println(stat.toString());
     				String statContent = stat.toString();
+    				if(statContent.contains("{"))
+    				{
     		        statContent = statContent.substring(statContent.indexOf('{') + 1, 
     		        		statContent.lastIndexOf('}'));
+    				}
     		        while(statContent.charAt(0) == ' ' || statContent.charAt(0) == '\t' ||
     		        		statContent.charAt(0) == '\n')
     		        {
@@ -194,7 +245,7 @@ public class JdkCore {
                 
                 else if(stmt instanceof WhileStatement)
                 {
-                	ForStatement fst = (ForStatement)stmt;
+                	WhileStatement fst = (WhileStatement)stmt;
                 	Expression exp = fst.getExpression();
     				Statement stat = fst.getBody();
     				System.out.println(exp.toString());
@@ -257,62 +308,93 @@ public class JdkCore {
 					System.out.println("invocation name:"+mi.getName());
 					System.out.println("invocation exp:"+mi.getExpression());
 					System.out.println("invocation arg:"+mi.arguments());
+					String exp = "";
+					if(mi.getExpression() != null)
+					{
+						exp = mi.getExpression().toString();
+					}
+					String name = mi.getName().toString();
+					
+					if(exp.contains("."))
+					{
+						String temp1 = exp.substring(0, exp.indexOf('.'));
+						String temp2 = exp.substring(exp.indexOf('.'), exp.length());
+						if(map.keySet().contains(temp1))
+						{
+							temp1 = map.get(temp1);
+						}
+						//System.out.println(temp1 + " " + temp2);
+						exp = temp1 + temp2;
+					}
+					else
+					{
+						if(map.keySet().contains(exp))
+							exp = map.get(exp);
+					}
+					
+					String temp = exp + "." + name;
+					if(temp.charAt(0) == '.')
+					{
+						temp = temp.substring(1, temp.length());
+					}					if(!temp.contains("out.print"))
+						api.add(temp);
+					System.out.println();
 				}
-				System.out.println();
-			}
             
-            //IfStatement
+				//IfStatement
+				
+				else if(stmt instanceof IfStatement)
+				{
+					System.out.println(stmt.toString());
+					IfStatement ifstmt=(IfStatement) stmt;
+					Expression exp = ifstmt.getExpression();
+					Statement stat = ifstmt.getThenStatement();
+					System.out.println(exp.toString());
 
-            else if(stmt instanceof IfStatement)
-			{
-                System.out.println(stmt.toString());
-				IfStatement ifstmt=(IfStatement) stmt;
-				Expression exp = ifstmt.getExpression();
-				Statement stat = ifstmt.getThenStatement();
-				System.out.println(exp.toString());
-//				if(exp instanceof MethodInvocation)
-//				{
-//					MethodInvocation mi=(MethodInvocation) exp;
-//					System.out.println("invocation name:"+mi.getName());
-//					System.out.println("invocation exp:"+mi.getExpression());
-//					System.out.println("invocation arg:"+mi.arguments());
-//				}
-				System.out.println(stat.toString());
-			}
-            else if(stmt instanceof VariableDeclarationStatement)
-			{
-                System.out.println(stmt.toString());
-				VariableDeclarationStatement var=(VariableDeclarationStatement) stmt;
-				System.out.println("Type of variable:"+var.getType());
-				System.out.println("Name of variable:"+var.fragments());
-				System.out.println();
-			}
-            //ReturnStatement
-            else if(stmt instanceof ReturnStatement)
-			{
-                System.out.println(stmt.toString());
-				ReturnStatement rtstmt=(ReturnStatement) stmt;
-				System.out.println("return:"+rtstmt.getExpression());
-				System.out.println();
-			}
+					System.out.println(stat.toString());
+				}
+				else if(stmt instanceof VariableDeclarationStatement)
+				{
+					//here, we add Class.New
+					System.out.println(stmt.toString());
+					VariableDeclarationStatement var=(VariableDeclarationStatement) stmt;			
+					String type = var.getType().toString();
+					//System.out.println("Type of variable:"+type);
+					String frag = var.fragments().toString();
+					//System.out.println("Name of variable:"+frag);
+					String variableName = frag.substring(frag.indexOf('[') + 1, frag.indexOf('='));
+					map.put(variableName, type);
+					//System.out.println();
+					if(!keyType.contains(type))
+    					api.add(type + ".New");
+				}
+				//ReturnStatement
+				else if(stmt instanceof ReturnStatement)
+				{
+					System.out.println(stmt.toString());
+					ReturnStatement rtstmt=(ReturnStatement) stmt;
+					System.out.println("return:"+rtstmt.getExpression());
+					System.out.println();
+				}
             
-            else if(stmt instanceof ForStatement)
-            {
-            	ForStatement fst = (ForStatement)stmt;
-            	Expression exp = fst.getExpression();
-				Statement stat = fst.getBody();
-				System.out.println(exp.toString());
-				System.out.println(stat.toString());
-            }
-            
-            else if(stmt instanceof WhileStatement)
-            {
-            	ForStatement fst = (ForStatement)stmt;
-            	Expression exp = fst.getExpression();
-				Statement stat = fst.getBody();
-				System.out.println(exp.toString());
-				System.out.println(stat.toString());
-            }
+	            else if(stmt instanceof ForStatement)
+	            {
+	            	ForStatement fst = (ForStatement)stmt;
+	            	Expression exp = fst.getExpression();
+					Statement stat = fst.getBody();
+					System.out.println(exp.toString());
+					System.out.println(stat.toString());
+	            }
+	            
+	            else if(stmt instanceof WhileStatement)
+	            {
+	            	ForStatement fst = (ForStatement)stmt;
+	            	Expression exp = fst.getExpression();
+					Statement stat = fst.getBody();
+					System.out.println(exp.toString());
+					System.out.println(stat.toString());
+	            }
+			}
         }
 	}
 	

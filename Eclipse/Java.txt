@@ -1,0 +1,43 @@
+double[].New System.err.print System.exit exit_with_help 
+System.exit fp.close BufferedReader.New String.New String.New String.New System.err.println System.exit System.err.println System.exit exit_with_help fp_restore.readLine fp_restore.readLine st.nextToken fp_restore.mark fp_restore.close formatter.format formatter.format fp_save.write fp_save.close output_target System.err.print BufferedReader.close svm_scale.New svm_scale.run 
+System.exit double[].New svm.svm_cross_validation parse_command_line read_problem System.err.print System.exit do_cross_validation svm_train.New svm_train.run System.err.print System.exit svm_print_interface.New svm.svm_set_print_string_function exit_with_help BufferedReader.New Vector<Double>.New Vector<svm_node[]>.New Vector<Double>.addElement Vector<svm_node[]>.addElement BufferedReader.close 
+Object[].New combination c String.New 
+head_t.New lru_delete lru_insert lru_delete lru_delete lru_insert lru_insert 
+org.junit.Assert.assertNotNull org.junit.Assert.assertTrue org.junit.Assert.assertTrue assertThat org.junit.Assert.assertTrue org.junit.Assert.assertTrue org.junit.runner.JUnitCore.runClasses 
+Map.New Map.putAll Map.New Map.putAll 
+Map.New Map.put Map.put Map.put Map.put Map.put Map.put 
+Comparable.New Comparable.New 
+Document.New PdfWriter.New Document.open XMLWorkerHelper.getInstance().parseXHtml Document.close 
+Article.New Article.setTitle Article.setUrl Article.addCategory Article.addTag Article.addTag Article.addTag Article.addTag Article.addTag 
+Article.New Article.setTitle Article.setUrl Article.addCategory Article.addTag Article.addTag Article.addTag Article.addTag Article.addTag 
+Gson.New List<Article>.New List<Article>.add List<Article>.add String.New List.New Type.New Article.New Article.setTitle Article.setUrl Article.addCategory Article.addTag Article.addTag Article.addTag 
+Document.New PdfWriter.New Document.open XMLWorkerHelper.getInstance().parseXHtml Document.close 
+Document.New Document.setPageSize PdfWriter.getInstance Document.open Document.add Document.close 
+cell.setHorizontalAlignment cell.setPaddingTop cell.setPaddingBottom cell.setBackgroundColor cell.setBorder cell.setBorderWidthBottom cell.setHorizontalAlignment cell.setVerticalAlignment cell.setPaddingLeft cell.setPaddingTop cell.setBackgroundColor cell.setBorder cell.setBorderWidthBottom cell.setBorderColorBottom cell.setMinimumHeight cell.setHorizontalAlignment cell.setVerticalAlignment cell.setPaddingTop cell.setPaddingBottom cell.setBorder cell.setBorderWidthBottom cell.setMinimumHeight 
+PdfPTable.New PdfPTable.setWidthPercentage PdfPTable.setWidths Font.New PdfPCell.New PdfPCell.setColspan Style.headerCellStyle PdfPTable.addCell PdfPTable.addCell PdfPTable.addCell PdfPTable.addCell PdfPTable.addCell PdfPTable.addCell PdfPTable.addCell PdfPTable.addCell PdfPTable.addCell PdfPTable.addCell PdfPTable.addCell PdfPTable.addCell PdfPTable.addCell Font.New PdfPCell.New Style.labelCellStyle Font.New PdfPCell.New Style.valueCellStyle 
+ObjectMapper.New Article.New Article.setTitle Article.setUrl Article.addCategory Article.addTag Article.addTag Article.addTag 
+AsyncContext.New AsyncContext.setTimeout AsyncContext.addListener AsyncContext.start 
+String.New resp.getWriter().write 
+InputStream.New 
+List<Person>.New List<Person>.New Collections.sort Person[].New 
+Map<String,Person>.New Map<String,Person>.New TreeMap<String,Person>.New TreeMap<String,Person>.putAll List<Person>.New Person[].New 
+BufferedReader.New String.New ObjectMapper.New Article.New response.setContentType articles.add ObjectMapper.writeValue 
+File.New File.delete File.mkdir 
+String.New String.toUpperCase thrown.expect thrown.expectMessage 
+files.addAll files.remove response.setContentType ObjectMapper.New ObjectMapper.writeValue String.New FileMeta.New 
+List<FileMeta>.New Collection<Part>.New String.New FileMeta.New List<FileMeta>.New FileMeta.New 
+response.setContentType 
+XStream.New XStream.autodetectAnnotations String.New Article.New Article.New Article.setTitle Article.setUrl Article.setPublished Article.addCategory Article.addTag Article.addTag Article.addTag Article.addTag Article.addTag 
+this.categories.add this.tags.add 
+this.categories.add this.tags.add 
+this.categories.add this.tags.add 
+Workbook.New Sheet.New Cell.New String.New Date.New Sheet.New Sheet.show 
+Workbook.New Sheet.New Row.New Row.createCell(0).setCellValue Row.createCell(1).setCellValue CreationHelper.New CellStyle.New CellStyle.setDataFormat Cell.New Cell.setCellValue Cell.setCellStyle Row.createCell(3).setCellValue FileOutputStream.New 
+this.categories.add this.tags.add 
+org.junit.Assert.assertNotNull org.junit.Assert.assertTrue org.junit.Assert.assertTrue assertThat org.junit.Assert.assertTrue org.junit.Assert.assertTrue 
+WebSocketContainer.New String.New App.New App.start BufferedReader.New String.New 
+t.printStackTrace 
+clients.add clients.remove 
+this.categories.add this.tags.add 
+ApplicationContext.New Service.New log.info MyObject.New MyObject.setObjectName Service.insertMyObject MyObject.setObjectName Service.insertMyObject_Annotation List<MyObject>.New 
+log.info List<MyObject>.New assertNotNull assertTrue log.info 
