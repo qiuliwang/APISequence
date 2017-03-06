@@ -6,10 +6,10 @@ public class testContent {
 	{
 		testContent sct = new testContent("wang", "Jiangsu", 2016);
 		testContent sct2 = null;
-		
 		sct.getAllInfo();
 		sct.testFunc();
-		int x = 10;
+		int z;
+		int x = 3;
 		if(x > 5)
 		{
 			System.out.println("good");
