@@ -16,7 +16,7 @@ public class getAllFileName {
     {
     	String str1 = "C:\\Users\\WangQL\\Documents\\Code\\Java";
     	String str2 = "/Users/WangQL/Documents/git/Java";
-        getAllFileName gaf = new getAllFileName(str1);
+        getAllFileName gaf = new getAllFileName(str2);
         List<String> names = gaf.getAllfiles();
         for(int i = 0; i < names.size(); i ++)
         {

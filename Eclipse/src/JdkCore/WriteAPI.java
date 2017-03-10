@@ -29,7 +29,7 @@ public class WriteAPI {
         wap.writefile();
     }
 
-    WriteAPI(String str) throws Exception
+    public WriteAPI(String str) throws Exception
     {
         //String proj = System.getProperty("user.dir");
     	String path = proj + "\\" + str + ".txt";
@@ -66,7 +66,7 @@ public class WriteAPI {
 
     public static void method2(String fileName, String content) {
         try {
-            // 打开一个写文件器，构造函数中的第二个参数true表示以追加形式写文件
+            // 麓貌驴陋脪禄赂枚脨麓脦脛录镁脝梅拢卢鹿鹿脭矛潞炉脢媒脰脨碌脛碌脷露镁赂枚虏脦脢媒true卤铆脢戮脪脭脳路录脫脨脦脢陆脨麓脦脛录镁
             FileWriter writer = new FileWriter(fileName, true);
             writer.write(content);
             writer.close();
