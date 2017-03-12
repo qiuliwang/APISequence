@@ -32,7 +32,7 @@ public class WriteAPI {
     public WriteAPI(String str) throws Exception
     {
         //String proj = System.getProperty("user.dir");
-    	String path = proj + "\\" + str + ".txt";
+    	String path = proj + "/" + str + ".txt";
     	System.out.println(path);
         writer = new FileWriter(path, true);
     }

@@ -18,7 +18,7 @@ public class JdkCore {
 		String path = "";
 		if(osName.contains("Mac"))
 		{
-			path = "/Users/WangQL/Documents/git/APISequence/Eclipse/src/JdkCore/testContent.java";
+			path = "/Users/WangQL/Downloads/ArrayBackedTag.java";
 		}
 		else if(osName.contains("Windows"))
 		{
@@ -100,15 +100,26 @@ public class JdkCore {
                 //ExpressionStatement
                 if(stmt instanceof ExpressionStatement)
     			{
-                   System.out.println(stmt.toString());
+                    //System.out.println(stmt.toString());
     				ExpressionStatement expressStmt=(ExpressionStatement) stmt;
     				Expression express=expressStmt.getExpression();
     				if(express instanceof Assignment)
     				{
     					Assignment assign=(Assignment)express;
-    					System.out.println("LHS:"+assign.getLeftHandSide()+"; ");
-    					System.out.println("Op:"+assign.getOperator()+"; ");
-    					System.out.println("RHS:"+assign.getRightHandSide());
+    					//System.out.println("LHS:"+assign.getLeftHandSide()+"; ");
+    					//System.out.println("Op:"+assign.getOperator()+"; ");
+    					//System.out.println("RHS:"+assign.getRightHandSide());
+    					String RHS = assign.getRightHandSide().toString();
+    					if(RHS.contains("."))
+    					{
+    						RHS+=";";
+    						System.out.println("XXXXXXXXXX:"+RHS);
+    						
+    						char []tpRHS = RHS.toCharArray();
+    						processBlock(tpRHS);
+    					}
+    					System.out.println();
+
     				}
     				else if(express instanceof MethodInvocation)
     				{
@@ -148,19 +159,19 @@ public class JdkCore {
     					if(!temp.contains("out.print"))
     						api.add(temp);
     				}
-    				System.out.println();
+    				//System.out.println();
     			}
                 
                 //IfStatement
 
                 else if(stmt instanceof IfStatement)
     			{
-                    System.out.println(stmt.toString());
+                    //System.out.println(stmt.toString());
     				IfStatement ifstmt=(IfStatement) stmt;
     				Expression exp = ifstmt.getExpression();
     				Statement stat = ifstmt.getThenStatement();
-    				System.out.println(exp.toString());
-    				System.out.println(stat.toString());
+    				//System.out.println(exp.toString());
+    				//System.out.println(stat.toString());
     				String statContent = stat.toString();
     				if(statContent.contains("{"))
     				{
@@ -187,9 +198,9 @@ public class JdkCore {
                     System.out.println(stmt.toString());
     				VariableDeclarationStatement var=(VariableDeclarationStatement) stmt;			
     				String type = var.getType().toString();
-    				//System.out.println("Type of variable:"+type);
+    				System.out.println("Type of variable:"+type);
     				String frag = var.fragments().toString();
-    				//System.out.println("Name of variable:"+frag);
+    				System.out.println("Name of variable:"+frag);
     				String variableName = "";
     				if(frag.contains("="))
     				{
@@ -199,6 +210,7 @@ public class JdkCore {
     				{
     					variableName = frag.substring(frag.indexOf('[') + 1, frag.indexOf(']'));
     				}
+    				x
     				map.put(variableName, type);
     				//System.out.println(variableName);
     				//System.out.println();
@@ -208,10 +220,10 @@ public class JdkCore {
                 //ReturnStatement
                 else if(stmt instanceof ReturnStatement)
     			{
-                    System.out.println(stmt.toString());
+                    //System.out.println(stmt.toString());
     				ReturnStatement rtstmt=(ReturnStatement) stmt;
-    				System.out.println("return:"+rtstmt.getExpression());
-    				System.out.println();
+    				//System.out.println("return:"+rtstmt.getExpression());
+    				//System.out.println();
     			}
                 
                 else if(stmt instanceof ForStatement)
@@ -219,8 +231,8 @@ public class JdkCore {
                 	ForStatement fst = (ForStatement)stmt;
                 	Expression exp = fst.getExpression();
     				Statement stat = fst.getBody();
-    				System.out.println(exp.toString());
-    				System.out.println(stat.toString());
+    				//System.out.println(exp.toString());
+    				//System.out.println(stat.toString());
     				String statContent = stat.toString();
     				if(statContent.contains("{"))
     				{
@@ -248,8 +260,8 @@ public class JdkCore {
                 	WhileStatement fst = (WhileStatement)stmt;
                 	Expression exp = fst.getExpression();
     				Statement stat = fst.getBody();
-    				System.out.println(exp.toString());
-    				System.out.println(stat.toString());
+    				//System.out.println(exp.toString());
+    				//System.out.println(stat.toString());
     				String statContent = stat.toString();
     		        statContent = statContent.substring(statContent.indexOf('{') + 1, 
     		        		statContent.lastIndexOf('}'));
@@ -292,15 +304,15 @@ public class JdkCore {
             //ExpressionStatement
             if(stmt instanceof ExpressionStatement)
 			{
-               System.out.println(stmt.toString());
+                //System.out.println(stmt.toString());
 				ExpressionStatement expressStmt=(ExpressionStatement) stmt;
 				Expression express=expressStmt.getExpression();
 				if(express instanceof Assignment)
 				{
 					Assignment assign=(Assignment)express;
-					System.out.println("LHS:"+assign.getLeftHandSide()+"; ");
-					System.out.println("Op:"+assign.getOperator()+"; ");
-					System.out.println("RHS:"+assign.getRightHandSide());
+					//System.out.println("LHS:"+assign.getLeftHandSide()+"; ");
+					//System.out.println("Op:"+assign.getOperator()+"; ");
+					//System.out.println("RHS:"+assign.getRightHandSide());
 				}
 				else if(express instanceof MethodInvocation)
 				{
@@ -336,7 +348,8 @@ public class JdkCore {
 					if(temp.charAt(0) == '.')
 					{
 						temp = temp.substring(1, temp.length());
-					}					if(!temp.contains("out.print"))
+					}					
+					if(!temp.contains("out.print"))
 						api.add(temp);
 					System.out.println();
 				}
@@ -345,18 +358,18 @@ public class JdkCore {
 				
 				else if(stmt instanceof IfStatement)
 				{
-					System.out.println(stmt.toString());
+					//System.out.println(stmt.toString());
 					IfStatement ifstmt=(IfStatement) stmt;
 					Expression exp = ifstmt.getExpression();
 					Statement stat = ifstmt.getThenStatement();
-					System.out.println(exp.toString());
+					//System.out.println(exp.toString());
 
-					System.out.println(stat.toString());
+					//System.out.println(stat.toString());
 				}
 				else if(stmt instanceof VariableDeclarationStatement)
 				{
 					//here, we add Class.New
-					System.out.println(stmt.toString());
+					//System.out.println(stmt.toString());
 					VariableDeclarationStatement var=(VariableDeclarationStatement) stmt;			
 					String type = var.getType().toString();
 					//System.out.println("Type of variable:"+type);
@@ -371,10 +384,10 @@ public class JdkCore {
 				//ReturnStatement
 				else if(stmt instanceof ReturnStatement)
 				{
-					System.out.println(stmt.toString());
+					//System.out.println(stmt.toString());
 					ReturnStatement rtstmt=(ReturnStatement) stmt;
-					System.out.println("return:"+rtstmt.getExpression());
-					System.out.println();
+					//System.out.println("return:"+rtstmt.getExpression());
+					//System.out.println();
 				}
             
 	            else if(stmt instanceof ForStatement)
@@ -382,8 +395,8 @@ public class JdkCore {
 	            	ForStatement fst = (ForStatement)stmt;
 	            	Expression exp = fst.getExpression();
 					Statement stat = fst.getBody();
-					System.out.println(exp.toString());
-					System.out.println(stat.toString());
+					//System.out.println(exp.toString());
+					//System.out.println(stat.toString());
 	            }
 	            
 	            else if(stmt instanceof WhileStatement)
@@ -391,8 +404,8 @@ public class JdkCore {
 	            	ForStatement fst = (ForStatement)stmt;
 	            	Expression exp = fst.getExpression();
 					Statement stat = fst.getBody();
-					System.out.println(exp.toString());
-					System.out.println(stat.toString());
+					//System.out.println(exp.toString());
+					//System.out.println(stat.toString());
 	            }
 			}
         }
