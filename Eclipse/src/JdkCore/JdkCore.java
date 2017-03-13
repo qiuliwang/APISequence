@@ -22,8 +22,7 @@ public class JdkCore {
 		}
 		else if(osName.contains("Windows"))
 		{
-			path = "C:\\Users\\WangQL\\Documents\\GitHub"
-					+ "\\APISequence\\Eclipse\\src\\JdkCore\\testContent.java";
+			path = "C:\\Users\\WangQL\\Desktop\\ArrayBackedTag.java";
 		}
 		JdkCore test = new JdkCore(path);
 		
@@ -83,13 +82,13 @@ public class JdkCore {
    	 		System.out.println("=================="); 
    	 		//get method name  
    	 		SimpleName methodName=method.getName();  
-   	 		System.out.println("method name:"+methodName);  
+   	 		//System.out.println("method name:"+methodName);  
    	 		//get method parameters  
    	 		List<?> param=method.parameters();  
-         	System.out.println("method parameters:"+param);  
+         	//System.out.println("method parameters:"+param);  
          	//get method return type  
          	Type returnType=method.getReturnType2();  
-         	System.out.println("method return type:"+returnType); 
+         	//System.out.println("method return type:"+returnType); 
          	Block body=method.getBody();  
          	List<?> statements=body.statements();   //get the statements of the method body  
          	Iterator<?> iter=statements.iterator();  
@@ -113,20 +112,19 @@ public class JdkCore {
     					if(RHS.contains("."))
     					{
     						RHS+=";";
-    						System.out.println("XXXXXXXXXX:"+RHS);
+    						//System.out.println("XXXXXXXXXX:"+RHS);
     						
     						char []tpRHS = RHS.toCharArray();
     						processBlock(tpRHS);
     					}
-    					System.out.println();
-
+    					//System.out.println();
     				}
     				else if(express instanceof MethodInvocation)
     				{
     					MethodInvocation mi=(MethodInvocation) express;
-    					System.out.println("invocation name:"+mi.getName());
-    					System.out.println("invocation exp:"+mi.getExpression());
-    					System.out.println("invocation arg:"+mi.arguments());
+    					//System.out.println("invocation name:"+mi.getName());
+    					//System.out.println("invocation exp:"+mi.getExpression());
+    					//System.out.println("invocation arg:"+mi.arguments());
     					String exp = "";
     					if(mi.getExpression() != null)
     					{
@@ -157,7 +155,11 @@ public class JdkCore {
     						temp = temp.substring(1, temp.length());
     					}
     					if(!temp.contains("out.print"))
+    					{	
     						api.add(temp);
+        					System.out.println(temp);
+
+    					}
     				}
     				//System.out.println();
     			}
@@ -195,12 +197,13 @@ public class JdkCore {
                 else if(stmt instanceof VariableDeclarationStatement)
     			{
                 	//here, we add Class.New
-                    System.out.println(stmt.toString());
+                    //System.out.println(stmt.toString());
     				VariableDeclarationStatement var=(VariableDeclarationStatement) stmt;			
     				String type = var.getType().toString();
-    				System.out.println("Type of variable:"+type);
+    				//System.out.println("Type of variable:"+type);
     				String frag = var.fragments().toString();
-    				System.out.println("Name of variable:"+frag);
+    				String fragAll = frag;
+    				//System.out.println("Name of variable:"+frag);
     				String variableName = "";
     				if(frag.contains("="))
     				{
@@ -210,12 +213,23 @@ public class JdkCore {
     				{
     					variableName = frag.substring(frag.indexOf('[') + 1, frag.indexOf(']'));
     				}
-    				x
+    				
     				map.put(variableName, type);
-    				//System.out.println(variableName);
-    				//System.out.println();
+    				fragAll = fragAll.substring(fragAll.indexOf('=') + 1, fragAll.indexOf(']'));
+    				fragAll += ";";
+    				//System.out.println("YYYYYYYYY:"+fragAll);
+    				if((type != "float" && type != "Float" && type != "Double" && type != "double" ) 
+    						&& fragAll.contains("."))
+    				{
+    					//System.out.println(fragAll);
+    					char [] temp = fragAll.toCharArray();
+    					processBlock(temp);
+    				}
     				if(!keyType.contains(type))
+    				{
     					api.add(type + ".New");
+    					System.out.println(type + ".New");
+    				}
     			}
                 //ReturnStatement
                 else if(stmt instanceof ReturnStatement)
@@ -317,9 +331,9 @@ public class JdkCore {
 				else if(express instanceof MethodInvocation)
 				{
 					MethodInvocation mi=(MethodInvocation) express;
-					System.out.println("invocation name:"+mi.getName());
-					System.out.println("invocation exp:"+mi.getExpression());
-					System.out.println("invocation arg:"+mi.arguments());
+					//System.out.println("invocation name:"+mi.getName());
+					//System.out.println("invocation exp:"+mi.getExpression());
+					//System.out.println("invocation arg:"+mi.arguments());
 					String exp = "";
 					if(mi.getExpression() != null)
 					{
@@ -350,8 +364,10 @@ public class JdkCore {
 						temp = temp.substring(1, temp.length());
 					}					
 					if(!temp.contains("out.print"))
+					{	
 						api.add(temp);
-					System.out.println();
+    					System.out.println(temp);
+					}
 				}
             
 				//IfStatement
@@ -379,7 +395,11 @@ public class JdkCore {
 					map.put(variableName, type);
 					//System.out.println();
 					if(!keyType.contains(type))
-    					api.add(type + ".New");
+    				{
+						api.add(type + ".New");
+    					System.out.println(type + ".New");
+
+    				}
 				}
 				//ReturnStatement
 				else if(stmt instanceof ReturnStatement)
