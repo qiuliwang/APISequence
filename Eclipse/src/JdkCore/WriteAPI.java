@@ -26,13 +26,24 @@ public class WriteAPI {
         test.add("bbb");
         test.add("ccc");
         wap.setApisq(test);
-        wap.writefile();
+        wap.writeapi();
     }
 
     public WriteAPI(String str) throws Exception
     {
+    	String osName = System.getProperty("os.name");
+    	String path = "";
+		if(osName.contains("Mac"))
+		{
+			path =  proj + "/" + str + ".txt";
+		}
+		else if(osName.contains("Windows"))
+		{
+			//path = "C:\\Users\\WangQL\\Desktop\\ArrayBackedTag.java";
+			path= proj + "\\" + str + ".txt";;
+		}
         //String proj = System.getProperty("user.dir");
-    	String path = proj + "/" + str + ".txt";
+    	
     	System.out.println(path);
         writer = new FileWriter(path, true);
     }
@@ -43,25 +54,32 @@ public class WriteAPI {
         //System.out.println("hello~~~");
         List<String> apisq = new ArrayList<>();
         apisq = aps;
-        System.out.println(apisq.size());
         contentToWrite = "";
         for(int i = 0; i < apisq.size(); i ++)
         {
+        	if(apisq.get(i).contains("\n"))
+        		break;
             contentToWrite += apisq.get(i) + " ";
         }
-        if(contentToWrite.length() != 0)
-            contentToWrite += "\n";
+        if(contentToWrite.contains("\n"))
+        	contentToWrite = contentToWrite.substring(0, contentToWrite.indexOf('\n'));
+        contentToWrite += "\n";
     }
 
     //write api sequence to file
     //append
 
-    public void writefile() throws Exception
+    public void writeapi() throws Exception
     {
-        System.out.println(contentToWrite);
+        //System.out.println(contentToWrite);
         writer.write(contentToWrite);
         writer.flush();
-
+    }
+    
+    public void writeString(String content) throws Exception
+    {
+    	writer.write(content);
+    	writer.flush();
     }
 
     public static void method2(String fileName, String content) {

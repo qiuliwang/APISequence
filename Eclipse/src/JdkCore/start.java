@@ -13,27 +13,25 @@ public class start {
 		}
 		else if(osName.contains("Windows"))
 		{
-			path = "C:\\Users\\WangQL\\Documents\\Code\\Java";
-		}
-		WriteAPI writer = new WriteAPI("Java");
-		
+			path = "C:\\Users\\WangQL\\Desktop\\hbase";
+		}		
 		getAllFileName gaf = new getAllFileName(path);
 		List<String> filenames = gaf.getAllfiles();
+		JdkCore jcore = new JdkCore(filenames.get(0), path.substring(path.lastIndexOf("\\"), path.length()));
 
-		for(int i = 0; i < filenames.size(); i ++)
+		for(int i = 1; i < filenames.size(); i ++)
 		{
+			
 			try{
-			JdkCore jcore = new JdkCore(filenames.get(i));
-			List<String> temp = jcore.getAPI();
-			writer.setApisq(temp);
-			writer.writefile();
+				jcore.setPath(filenames.get(i));
+				System.out.println(i + "/" + filenames.size());
 			}
 			catch(Exception e)
 			{
-				
+				//System.out.println(e.getMessage());
 			}
 		}
-		
+		System.out.println("Done!");
 		//ASTAna asa = new ASTAna(content);
 	}
 }
