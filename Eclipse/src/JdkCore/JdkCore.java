@@ -56,6 +56,7 @@ public class JdkCore {
         add("Integer");
         add("Double");
         add("Float");
+        add("String");
     }};
     
 	List<String> api;
@@ -178,7 +179,7 @@ public class JdkCore {
     					{
     						temp = temp.substring(1, temp.length());
     					}
-    					if(!temp.contains("out.print"))
+    					if(!temp.contains("out.print") && temp != "log")
     					{	
     						api.add(temp);
     					}
@@ -394,7 +395,7 @@ public class JdkCore {
 					{
 						temp = temp.substring(1, temp.length());
 					}					
-					if(!temp.contains("out.print"))
+					if(!temp.contains("out.print") && temp != "log")
 					{	
 						api.add(temp);
 					}

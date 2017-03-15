@@ -9,7 +9,7 @@ public class start {
 		String path = "";
 		if(osName.contains("Mac"))
 		{
-			path = "/Users/WangQL/Downloads";
+			path = "/Users/WangQL/Downloads/ant";
 		}
 		else if(osName.contains("Windows"))
 		{
@@ -17,7 +17,8 @@ public class start {
 		}		
 		getAllFileName gaf = new getAllFileName(path);
 		List<String> filenames = gaf.getAllfiles();
-		JdkCore jcore = new JdkCore(filenames.get(0), path.substring(path.lastIndexOf("\\"), path.length()));
+		//JdkCore jcore = new JdkCore(filenames.get(0), path.substring(path.lastIndexOf("\\"), path.length()));
+		JdkCore jcore = new JdkCore(filenames.get(0), path.substring(path.lastIndexOf("/"), path.length()));
 
 		for(int i = 1; i < filenames.size(); i ++)
 		{
