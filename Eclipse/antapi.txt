@@ -1,0 +1,3630 @@
+nestedTasks.addElement 
+nestedTask.perform nestedEcho.reconfigure nestedEcho.perform 
+Calendar.getInstance Calendar.New 
+setParent setClassPath setProject 
+setParent 
+setParent setProject setClassPath 
+setParent setParentFirst addJavaLibraries 
+setParent 
+project.addBuildListener 
+pathComponents.removeAllElements 
+project.log 
+LoaderUtils.setContextClassLoader 
+LoaderUtils.setContextClassLoader 
+File.New 
+pathComponents.addElement 
+pathComponents.addElement pathMap.get 
+StringBuilder.New pathComponents.elements Enumeration<File>.New StringBuilder.append 
+theClass.getDeclaredConstructors Constructor<?>[].New 
+systemPackages.addElement 
+loaderPackages.addElement 
+log Class<?>.New 
+log Class<?>.New 
+InputStream.New log log 
+InputStream.New pathComponents.elements Enumeration<File>.New 
+getClass().getClassLoader ClassLoader.New 
+URL.New log log 
+Enumeration<URL>.New Enumeration<URL>.New 
+Class<?>.New resolveClass 
+definePackage Project.class.getProtectionDomain ProtectionDomain.New CodeSource.New ProtectionDomain.New 
+className.lastIndexOf className.substring Manifest.New definePackage 
+jarFiles.get JarFile.New 
+jarFiles.get JarFile.New JarFile.getJarEntry JarEntry.New 
+URL.New Manifest.getAttributes Attributes.New Manifest.getMainAttributes Attributes.New definePackage 
+ByteArrayOutputStream.New byte[].New ByteArrayOutputStream.write ByteArrayOutputStream.toByteArray byte[].New 
+log 
+pathComponents.elements Enumeration<File>.New 
+FileUtils.close project.removeBuildListener 
+cleanup 
+cleanup 
+JavaEnvUtils.getJrePackages Vector<String>.New Vector<String>.elements Enumeration<String>.New addSystemPackageRoot 
+cleanup 
+Class<?>.New Object.New TypeAdapter.New TypeAdapter.setProxy 
+adapter.checkProxyClass 
+Constructor<T>.New T.New project.setProjectReference 
+other.getClassLoader ClassLoader.New ClassLoader.New 
+target.getProject 
+task.getProject task.getOwningTarget 
+ComponentHelper.New ComponentHelper.setProject project.addReference 
+Hashtable<String,AntTypeDefinition>.New helper.getCheckedNamespace Set<String>.New helper.getRestrictedDefinition Map<String,List<AntTypeDefinition>>.New 
+Object.New task.setLocation task.setTaskType task.setTaskName task.setOwningTarget task.init 
+AntTypeDefinition.New 
+AntTypeDefinition.New 
+checkNamespace 
+initTasks initTypes new DefaultDefinitions(this).execute 
+checkTaskClass AntTypeDefinition.New AntTypeDefinition.setName AntTypeDefinition.setClassLoader AntTypeDefinition.setClass AntTypeDefinition.setAdapterClass AntTypeDefinition.setClassName AntTypeDefinition.setAdaptToClass updateDataTypeDefinition 
+project.log project.log TaskAdapter.checkTaskClass 
+AntTypeDefinition.New AntTypeDefinition.setName AntTypeDefinition.setClass updateDataTypeDefinition project.log 
+updateDataTypeDefinition 
+Task.New addTaskDefinition 
+Class<?>.New Object.New Task.New Task.setTaskType Task.setTaskName project.log 
+o.getClass Class<?>.New Class<?>.getName 
+AntTypeDefinition.getName List<AntTypeDefinition>.New 
+AntTypeDefinition.getName 
+antLibStack.push 
+antLibStack.pop 
+ClassLoader.New Properties.New Properties.propertyNames Enumeration<?>.New AntTypeDefinition.setName AntTypeDefinition.setClassName AntTypeDefinition.setClassLoader AntTypeDefinition.setAdaptToClass AntTypeDefinition.setAdapterClass antTypeTable.put 
+ClassLoader.New Properties.New Properties.propertyNames Enumeration<?>.New AntTypeDefinition.setName AntTypeDefinition.setClassName AntTypeDefinition.setClassLoader antTypeTable.put 
+ProjectHelper.extractUriFromComponentName checkedNamespaces.add initDefaultDefinitions Typedef.New Typedef.setProject Typedef.init Typedef.setURI Typedef.setTaskName Typedef.setResource Typedef.setOnError Typedef.execute 
+StringWriter.New PrintWriter.New PrintWriter.println System.getProperty File.New System.getProperty StringBuffer.New StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.toString AntTypeDefinition.New printUnknownDefinition PrintWriter.flush PrintWriter.close 
+componentName.startsWith ProjectHelper.extractUriFromComponentName PrintWriter.println PrintWriter.println PrintWriter.println PrintWriter.println 
+PrintWriter.println PrintWriter.println PrintWriter.println PrintWriter.println 
+PrintWriter.println PrintWriter.println PrintWriter.println PrintWriter.println PrintWriter.println PrintWriter.println 
+List<AntTypeDefinition>.New 
+attributeNamespaceDef attributeNamespaceDef ifUnlessDef ifUnlessDef ifUnlessDef 
+System.currentTimeMillis 
+event.getException Throwable.New StringBuffer.New StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.toString printMessage log 
+printMessage log 
+event.getPriority log 
+stream.println 
+Date.New DateFormat.getDateTimeInstance DateFormat.New DateFormat.format 
+event.getProject Project.New 
+byte[].New 
+Thread.currentThread Thread.New BufferInfo.New buffers.put 
+Thread.currentThread Thread.New BufferInfo.New FileUtils.close 
+Thread.currentThread Thread.New buffers.remove 
+BufferInfo.New BufferInfo.buffer.write processBuffer processBuffer 
+buffer.toString project.demuxOutput resetBufferInfo 
+buffer.toString project.demuxFlush resetBufferInfo 
+flush removeBuffer 
+BufferInfo.New processFlush 
+BufferInfo.New 
+System.getProperty File.New 
+FilenameFilter.New File.listFiles File[].New 
+doReport 
+SAXParser.New SAXParser.getClass().getName 
+Transformer.New Transformer.getClass().getName 
+SAXParserFactory.newInstance SAXParserFactory.New SAXParser.New 
+TransformerFactory.newInstance TransformerFactory.New Transformer.New 
+SAXParser.New getClassLocation URL.New 
+Transformer.New getClassLocation URL.New 
+doReport 
+header header doReportAntProperties header doReportAntHomeLibraries header doReportUserHomeLibraries header doReportTasksAvailability header doReportWhich header doReportParserInfo header doReportXSLTProcessorInfo header doReportSystemProperties header doReportTempDir header doReportLocale header doReportProxy 
+Properties.New 
+Project.New Project.initProperties 
+File[].New printLibraries 
+System.getProperty File.New File[].New printLibraries 
+Throwable.New Throwable.printStackTrace 
+Main.class.getResourceAsStream InputStream.New 
+printParserInfo printParserInfo 
+printParserInfo 
+System.getProperty File.New System.currentTimeMillis File.New FileOutputStream.New FileInputStream.New 
+Calendar.getInstance Calendar.New Calendar.getTimeZone TimeZone.New 
+printProperty printProperty printProperty printProperty printProperty printProperty printProperty printProperty printProperty printProperty printProperty printProperty printProperty printProperty printProperty printProperty ProxyDiagnostics.New 
+setBasedir 
+p.replace('/',File.separatorChar).replace 
+File.New 
+ensureNonPatternSetsReady Map<TokenizedPath,String>.New scandir 
+scannedDirs.clear notFollowedSymlinks.clear 
+scandir 
+dir.list String[].New scandir 
+processIncluded 
+processIncluded scandir 
+ensureNonPatternSetsReady 
+ensureNonPatternSetsReady 
+String[].New Arrays.sort 
+slowScan String[].New filesNotIncluded.copyInto 
+slowScan String[].New filesExcluded.copyInto 
+String[].New Arrays.sort 
+slowScan String[].New dirsNotIncluded.copyInto 
+slowScan String[].New dirsExcluded.copyInto 
+String[].New Arrays.sort 
+String[].New String[].New System.arraycopy 
+includeNonPatterns.clear excludeNonPatterns.clear 
+ArrayList<TokenizedPattern>.New 
+bean.getMethods Method[].New Method.New 
+HELPERS.get IntrospectionHelper.New 
+attributeSetters.get AttributeSetter.New 
+setAttribute 
+ProjectHelper.extractUriFromComponentName ProjectHelper.extractNameFromComponentName NestedCreator.New throwNotSupported 
+Object.New 
+NestedCreator.New 
+NestedCreator.New 
+ProjectHelper.extractNameFromComponentName ProjectHelper.extractUriFromComponentName 
+nestedCreators.get NestedCreator.New 
+ite.getTargetException Throwable.New 
+nestedTypes.get Class<?>.New 
+attributeTypes.get Class<?>.New 
+nestedCreators.get Object.New 
+attributeSetters.get Object.New 
+Class<?>.New AttributeSetter.New Constructor<?>.New Constructor<?>.New 
+HELPERS.clear 
+ComponentHelper.getComponentHelper ComponentHelper.New MethodAndObject.New MethodAndObject.New MethodAndObject.New Object.New Object.New Object.New 
+Class<?>.New addTypeMethods.size addTypeMethods.add 
+Class<?>.New Method.New Method[].size 
+StringBuffer.New StringBuffer.append StringBuffer.append 
+t.getMessage System.err.println 
+Main.New Main.startAnt 
+exit 
+System.exit 
+FileUtils.close FileUtils.close 
+start 
+processArgs 
+PrintStream.New ArgumentProcessorRegistry.getInstance ArgumentProcessorRegistry.New printVersion FileUtils.getFileUtils().normalize loadPropertyFiles System.setOut System.setErr 
+String.substring String.indexOf definedProps.put 
+file.getParentFile File.New 
+File.New File.New 
+ArgumentProcessorRegistry.getInstance ArgumentProcessorRegistry.New Project.New Project.setCoreLoader Throwable.New 
+Project.addBuildListener listeners.size Project.setProjectReference Project.addBuildListener 
+InputHandler.New Project.setInputHandler 
+BuildLogger.New BuildLogger.setMessageOutputLevel BuildLogger.setOutputPrintStream BuildLogger.setErrorPrintStream BuildLogger.setEmacsMode 
+getAntVersion 
+Project.log 
+Map<Location,Target>.New Map<String,Target>.New 
+removeDuplicateTargets Map<String,Target>.New Vector<String>.New Vector<String>.New Vector<Enumeration<String>>.New Vector<String>.New Vector<Enumeration<String>>.New printTargets printTargets Project.getDefaultTarget Project.log 
+names.size 
+System.getProperty StringBuilder.New StringBuilder.append(heading).append(lSep).append names.size StringBuilder.append StringBuilder.append StringBuilder.append Project.log 
+Project.New initSubProject 
+ComponentHelper.getComponentHelper(subProject).initSubProject Project.setDefaultInputStream Project.setKeepGoingMode Project.setExecutor 
+initProperties ComponentHelper.getComponentHelper(this).initDefaultDefinitions 
+setJavaVersionProperty setSystemProperties setPropertyInternal setAntLib 
+org.apache.tools.ant.launch.Locator.getClassSource File.New setPropertyInternal 
+log 
+log 
+fireMessageLogged 
+fireMessageLogged 
+fireMessageLogged 
+log 
+fireMessageLogged 
+PropertyHelper.getPropertyHelper(this).setProperty 
+PropertyHelper.getPropertyHelper(this).setNewProperty 
+PropertyHelper.getPropertyHelper(this).setUserProperty 
+PropertyHelper.getPropertyHelper(this).setInheritedProperty 
+PropertyHelper.getPropertyHelper(this).setProperty 
+PropertyHelper.getPropertyHelper(this).getProperty Object.New 
+PropertyHelper.getPropertyHelper(this).copyUserProperties 
+PropertyHelper.getPropertyHelper(this).copyInheritedProperties 
+setDefault 
+setUserProperty 
+setUserProperty 
+globalFilterSet.addFilter 
+setBaseDir 
+FILE_UTILS.normalize setPropertyInternal log 
+JavaEnvUtils.getJavaVersion setPropertyInternal log log 
+System.getProperties Properties.New Properties.propertyNames Enumeration<?>.New 
+ComponentHelper.getComponentHelper(this).addTaskDefinition 
+ComponentHelper.getComponentHelper(this).checkTaskClass log log TaskAdapter.checkTaskClass 
+ComponentHelper.getComponentHelper(this).addDataTypeDefinition 
+addTarget 
+addOrReplaceTarget 
+addOrReplaceTarget 
+log target.setProject targets.put 
+addReference 
+getReference Object.New log setExecutor 
+setUserProperty getExecutor().executeTargets 
+getThreadTask Task.New log 
+System.out.flush 
+getThreadTask Task.New 
+getThreadTask Task.New fireMessageLogged 
+executeSortedTargets 
+Set<String>.New BuildException.New 
+FILE_UTILS.copyFile 
+FILE_UTILS.copyFile 
+FILE_UTILS.copyFile 
+FILE_UTILS.copyFile 
+FILE_UTILS.copyFile 
+FILE_UTILS.copyFile 
+FILE_UTILS.copyFile 
+FILE_UTILS.copyFile 
+FILE_UTILS.setFileLastModified log 
+Vector<Target>.New Hashtable<String,String>.New Stack<String>.New StringBuffer.New StringBuffer.append((j == 0) ? " `" : ", `").append(root[j]).append StringBuffer.append(" is ").append log Vector<Target>.New log 
+Hashtable<String,String>.put Stack<String>.push targetTable.get Target.New sb.append sb.append sb.append sb.append Stack<String>.pop Stack<String>.pop Hashtable<String,String>.put Vector<Target>.addElement 
+StringBuilder.New StringBuilder.append 
+idReferences.put 
+((AntRefTable)references).getReal Object.New log log references.put 
+T.New 
+BuildEvent.New BuildListener[].New currListeners[i].buildStarted 
+BuildEvent.New BuildEvent.setException BuildListener[].New currListeners[i].buildFinished IntrospectionHelper.clearCache 
+BuildEvent.New BuildListener[].New 
+BuildEvent.New BuildEvent.setException BuildListener[].New 
+BuildEvent.New BuildListener[].New currListeners[i].targetStarted 
+BuildEvent.New BuildEvent.setException BuildListener[].New currListeners[i].targetFinished 
+registerThreadTask BuildEvent.New BuildListener[].New currListeners[i].taskStarted 
+registerThreadTask System.out.flush System.err.flush BuildEvent.New BuildEvent.setException BuildListener[].New currListeners[i].taskFinished 
+BuildEvent.setMessage 
+fireMessageLogged 
+BuildEvent.New BuildEvent.setException fireMessageLoggedEvent 
+fireMessageLogged 
+BuildEvent.New BuildEvent.setException fireMessageLoggedEvent 
+fireMessageLogged 
+BuildEvent.New BuildEvent.setException fireMessageLoggedEvent 
+((ProjectComponent)obj).setProject 
+log 
+getProject().log 
+FileResource.New ProjectHelperRepository.getInstance().getProjectHelperForBuildFile ProjectHelper.New project.addReference ProjectHelper.parse 
+targetPrefix.set 
+prefixSeparator.set 
+inIncludeMode.set 
+IntrospectionHelper.getHelper IntrospectionHelper.New 
+addText 
+IntrospectionHelper.getHelper(project,target.getClass()).addText 
+IntrospectionHelper.getHelper IntrospectionHelper.New IntrospectionHelper.storeElement 
+PropertyHelper.getPropertyHelper PropertyHelper.New 
+PropertyHelper.parsePropertyStringDefault 
+componentName.lastIndexOf 
+componentName.lastIndexOf 
+registerProjectHelper 
+LoaderUtils.getContextClassLoader ClassLoader.New 
+add add add add 
+PropertyHelper.getPropertyHelper(project).setProperty 
+PropertyHelper.getPropertyHelper(project).setNewProperty 
+PropertyHelper.New PropertyHelper.setProject project.addReference 
+parsePropertyStringDefault 
+Object.New 
+setNewProperty 
+setUserProperty 
+project.log 
+setInheritedProperty 
+project.log 
+fragments.addElement 
+List<D>.New 
+HashSet<Class<? extends Delegate>>.New d.getClass Class<?>.New HashSet<Class<? extends Delegate>>.remove 
+Boolean.New 
+setProxy setElementTag ((Task)proxy).setRuntimeConfigurableWrapper 
+ComponentHelper.getComponentHelper ComponentHelper.New IntrospectionHelper.getHelper IntrospectionHelper.New 
+setAttribute 
+setAttribute 
+attributeMap.remove 
+children.add 
+((characters == null) ? new StringBuffer(count) : characters).append 
+maybeConfigure 
+Object.New IntrospectionHelper.getHelper IntrospectionHelper.New ComponentHelper.getComponentHelper ComponentHelper.New ProjectHelper.addText p.addReference 
+maybeConfigure 
+newChildren.addAll 
+children.add 
+children.add 
+List<Task>.New 
+dependencies.add 
+Project.New Hashtable<String,Target>.New 
+setIf 
+setUnless 
+project.log project.log LocalProperties.get LocalProperties.New LocalProperties.enterScope 
+RuntimeException.New project.fireTargetStarted 
+children.set 
+children.set 
+wrapper.reconfigure 
+log 
+handleOutput 
+log 
+handleErrorOutput 
+log 
+getProject().log 
+log 
+getProject().log 
+getProject().fireTaskStarted 
+replacement.setProject replacement.setTaskType replacement.setTaskName replacement.setLocation replacement.setOwningTarget replacement.setRuntimeConfigurableWrapper wrapper.setProxy replaceChildren target.replaceChild replacement.maybeConfigure 
+wrapper.getChildren Enumeration<RuntimeConfigurable>.New parentElement.addChild childElement.setProject childElement.setRuntimeConfigurableWrapper childWrapper.setProxy replaceChildren 
+setProject setOwningTarget setTaskName setDescription setLocation setTaskType 
+setProxy 
+checkTaskClass 
+errors.add 
+errors.add 
+sb.append sb.append sb.append sb.append 
+configure 
+getWrapper().setProxy Task.New Task.setRuntimeConfigurableWrapper Task.maybeConfigure handleChildren 
+((Task)realThing).handleOutput 
+((Task)realThing).handleFlush 
+((Task)realThing).handleErrorOutput 
+((Task)realThing).handleErrorFlush 
+children.add 
+parent.getClass Class<?>.New IntrospectionHelper.getHelper IntrospectionHelper.New 
+getWrapper().applyPreSet newChildren.addAll 
+ComponentHelper.getComponentHelper ComponentHelper.New ue.getComponentName ComponentHelper.createComponent Object.New ue.applyPreSet ((Task)o).setOwningTarget ((ProjectComponent)o).setLocation 
+getProject().createTask Task.New Task.setLocation Task.setOwningTarget Task.init 
+ComponentHelper.getComponentHelper ComponentHelper.New ComponentHelper.diagnoseCreationFailure 
+ProjectHelper.genComponentName creator.setPolyType childWrapper.setCreator childWrapper.setProxy childWrapper.maybeConfigure child.handleChildren creator.store 
+UnknownElement.New 
+UnknownElement.New UnknownElement.setNamespace UnknownElement.setProject UnknownElement.setQName UnknownElement.setTaskType UnknownElement.setTaskName UnknownElement.setLocation t.setProject UnknownElement.setOwningTarget RuntimeConfigurable.New RuntimeConfigurable.setPolyType getWrapper().getAttributeMap Map<String,Object>.New RuntimeConfigurable.addText RuntimeConfigurable.addChild UnknownElement.addChild 
+System.currentTimeMillis doc.createElement 
+buildElement.element.setAttribute buildElement.element.setAttribute stacktrace.appendChild synchronizedAppend getProperty getProperty Writer.New 
+threadStacks.get Stack<TimedElement>.New threadStacks.put 
+event.getTarget Target.New TimedElement.New System.currentTimeMillis doc.createElement TimedElement.element.setAttribute targets.put getStack().push 
+event.getTarget Target.New targets.get TimedElement.New TimedElement.element.setAttribute targets.remove 
+TimedElement.New System.currentTimeMillis doc.createElement event.getTask Task.New event.getTask().getTaskName TimedElement.element.setAttribute TimedElement.element.setAttribute tasks.put getStack().push 
+event.getTask Task.New tasks.get TimedElement.New TimedElement.element.setAttribute Task.getOwningTarget Target.New TimedElement.New synchronizedAppend Stack<TimedElement>.New tasks.remove 
+tasks.get TimedElement.New 
+event.getPriority doc.createElement Element.New Element.setAttribute event.getException Throwable.New stacktrace.appendChild synchronizedAppend doc.createCDATASection Text.New Element.appendChild TimedElement.New event.getTask Task.New event.getTarget Target.New synchronizedAppend 
+fallbackSort 
+fswap 
+int[].New char[].New byte[].New 
+int[].New int[].New int[].New int[].New byte[].New 
+init initBlock setupBlock 
+Data.New char[][].New int[].New int[][].New int[][].New int[][].New hbCreateDecodeTables 
+int[].New int[].New int[].New 
+init 
+write0 
+this.crc.updateCRC 
+finish 
+connect sendHelo 
+sendFrom 
+this.replyto.addElement 
+sendRcpt this.to.addElement 
+sendRcpt this.cc.addElement 
+sendRcpt 
+setHeader 
+headersKeys.add headersValues.add 
+setFromHeader setReplyToHeader setToHeader setCcHeader setHeader sendData flushHeaders 
+result.setLength reader.readLine result.append result.append append 
+reader.close 
+result.append result.append 
+TarUtils.parseBoolean 
+System.err.println 
+System.err.println byte[].New System.arraycopy 
+System.err.println writeBlock System.arraycopy 
+System.err.println writeBlock System.arraycopy 
+System.err.println outStream.write outStream.flush Arrays.fill 
+System.err.println writeBlock 
+System.err.println flushBlock 
+System.getProperty 
+name.endsWith 
+parseTarHeader 
+parseTarHeader 
+setUserId 
+setGroupId 
+setUserId setGroupId 
+setUserName setGroupName 
+file.list String[].New TarEntry[].New 
+TarUtils.formatNameBytes TarUtils.formatNameBytes TarUtils.formatNameBytes TarUtils.formatNameBytes TarUtils.formatNameBytes TarUtils.formatNameBytes TarUtils.computeCheckSum TarUtils.formatCheckSumOctalBytes 
+parseTarHeader 
+System.getProperty("os.name").toLowerCase fileName.replace 
+byte[].New 
+ZipEncodingHelper.getZipEncoding 
+buffer.setDebug 
+buffer.close 
+byte[].New System.err.println currEntry.getSize currEntry.setLinkName currEntry.setName paxHeaders readGNUSparse currEntry.getSize 
+ByteArrayOutputStream.New ByteArrayOutputStream.write getNextEntry ByteArrayOutputStream.toByteArray byte[].New System.arraycopy 
+buffer.readRecord byte[].New 
+System.arraycopy 
+byte[].New out.write 
+ZipEncodingHelper.getZipEncoding 
+buffer.setDebug 
+writeEOFRecord writeEOFRecord buffer.flushBlock 
+finish buffer.close out.close 
+Map<String,String>.New entry.getName handleLongName entry.getLinkName addPaxHeadersForBigNumbers Map<String,String>.put Map<String,String>.put writePaxHeaders entry.writeEntryHeader buffer.writeRecord 
+buffer.writeRecord 
+write 
+write 
+buffer.writeRecord 
+TarEntry.New transferModTime StringWriter.New StringWriter.toString().getBytes byte[].New TarEntry.setSize putNextEntry write closeEntry 
+buffer.writeRecord 
+encoding.encode ByteBuffer.New 
+System.arraycopy 
+name.length encoding.encode ByteBuffer.New System.arraycopy 
+formatUnsignedOctalString 
+formatUnsignedOctalString 
+formatLongBinary formatBigIntegerBinary 
+formatUnsignedOctalString 
+CRC32.New CRC32.update CRC32.getValue 
+this.assembleData byte[].New System.arraycopy 
+assembleData 
+ZipLong.getValue System.arraycopy 
+byte[].New System.arraycopy getLinkedFile().getBytes byte[].New System.arraycopy System.arraycopy System.arraycopy System.arraycopy crc.reset crc.update crc.getValue byte[].New System.arraycopy System.arraycopy 
+ZipLong.getValue byte[].New System.arraycopy crc.reset crc.update crc.getValue ZipShort.getValue byte[].New ZipShort.getValue ZipShort.getValue setDirectory setMode 
+implementations.get Class<?>.New UnrecognizedExtraField.New UnrecognizedExtraField.setHeaderId 
+List<ZipExtraField>.New ZipExtraField[].New 
+byte[].New System.arraycopy System.arraycopy System.arraycopy System.arraycopy 
+byte[].New System.arraycopy System.arraycopy System.arraycopy System.arraycopy 
+useEncryption 
+byte[].New encode 
+ZipShort.putShort 
+ZipShort.getValue GeneralPurposeBit.New GeneralPurposeBit.useDataDescriptor GeneralPurposeBit.useUTF8ForNames GeneralPurposeBit.useStrongEncryption GeneralPurposeBit.useEncryption 
+bb.put this.encodeHighChar Simple8BitChar.New bb.put 
+System.arraycopy 
+System.arraycopy parseFromLocalFileData 
+ZipUtil.copy 
+ZipUtil.copy 
+addSizes 
+byte[].New System.arraycopy System.arraycopy 
+System.arraycopy parseFromLocalFileData 
+ZipEightByteInteger.getValue 
+byte[].New value.longValue 
+BigInteger.valueOf BigInteger.New 
+b.limit b.rewind ByteBuffer.allocate ByteBuffer.New ByteBuffer.put 
+bb.put bb.put bb.put bb.put bb.put bb.put 
+simpleEncodings.get SimpleEncodingHolder.New 
+setName 
+setName entry.getExtra byte[].New setExtraFields setMethod entry.getSize 
+setInternalAttributes setExternalAttributes setExtraFields setPlatform entry.getGeneralPurposeBit GeneralPurposeBit.New setGeneralPurposeBit 
+setSize setTime 
+ZipEntry.New ZipEntry.setInternalAttributes ZipEntry.setExternalAttributes ZipEntry.setExtraFields 
+setExternalAttributes 
+List<ZipExtraField>.New List<ZipExtraField>.toArray setExtra 
+setExtra 
+setExtra 
+List<ZipExtraField>.New List<ZipExtraField>.toArray setExtra 
+setExtra 
+byte[].New 
+setCompressedSize 
+setName 
+System.arraycopy 
+setExtraFields 
+f.getAbsolutePath ZipEncodingHelper.getZipEncoding 
+archive.close 
+ZipEntry[].New Arrays.sort 
+nameMap.get LinkedList<ZipEntry>.New 
+nameMap.get List<ZipEntry>.New 
+ZipEntry[].New Arrays.sort 
+((Entry)ze).getOffsetEntry OffsetEntry.New ZipUtil.checkRequestedFeatures BoundedInputStream.New 
+HashMap<ZipEntry,NameAndComment>.New positionAtCentralDirectory archive.readFully ZipLong.getValue readCentralDirectoryEntry archive.readFully 
+archive.readFully OffsetEntry.New Entry.New ZipShort.getValue Entry.setPlatform GeneralPurposeBit.parse GeneralPurposeBit.New GeneralPurposeBit.usesUTF8ForNames ZipEncoding.New Entry.setGeneralPurposeBit Entry.setMethod ZipUtil.dosToJavaTime Entry.setTime Entry.setCrc Entry.setCompressedSize Entry.setSize ZipShort.getValue ZipShort.getValue ZipShort.getValue ZipShort.getValue Entry.setInternalAttributes Entry.setExternalAttributes byte[].New archive.readFully Entry.setName ZipLong.getValue entries.add byte[].New archive.readFully Entry.setCentralDirectoryExtra setSizesAndOffsetFromZip64Extra byte[].New archive.readFully Entry.setComment HashMap<ZipEntry,NameAndComment>.put 
+Zip64ExtendedInformationExtraField.New Zip64ExtendedInformationExtraField.reparseCentralDirectoryData 
+positionAtEndOfCentralDirectoryRecord archive.seek archive.readFully positionAtCentralDirectory32 
+skipBytes archive.readFully archive.seek archive.readFully skipBytes archive.readFully archive.seek 
+skipBytes archive.readFully archive.seek 
+tryToLocateSignature 
+Math.max archive.seek 
+archive.seek archive.readFully archive.readFully archive.readFully Entry.setExtra ZipEntry[].addLast 
+archive.seek archive.readFully 
+ZipLong.getValue 
+byte[].New putLong 
+RandomAccessFile.New 
+ZipEncodingHelper.getZipEncoding 
+closeEntry writeCentralDirectoryInChunks writeZip64CentralDirectory writeCentralDirectoryEnd offsets.clear entries.clear def.end 
+preClose flushDeflater getEffectiveZip64Mode Zip64Mode.New crc.getValue crc.reset closeEntry 
+def.finish 
+entry.entry.setSize entry.entry.setCompressedSize entry.entry.setCrc def.reset 
+isZip64Required 
+raf.getFilePointer raf.seek writeOut writeOut writeOut raf.seek writeOut writeOut raf.seek 
+closeEntry entries.add setDefaults getEffectiveZip64Mode Zip64Mode.New validateSizeInformation z64.setSize z64.setCompressedSize entry.entry.setExtra def.setLevel writeLocalFileHeader 
+entry.setMethod entry.setTime 
+entry.entry.setCompressedSize 
+ZipUtil.checkRequestedFeatures writeDeflated crc.update 
+writeCounted 
+finish destroy 
+out.flush 
+def.deflate writeCounted 
+zipEncoding.canEncode ByteBuffer.New addUnicodeExtraFields byte[].New offsets.put writeCounted 
+ze.addExtraField ze.getComment 
+writeCounted writeCounted writeCounted writeCounted 
+byte[].New writeCounted 
+ze.getCentralDirectoryExtra byte[].New ze.getComment getEntryEncoding(ze).encode ByteBuffer.New byte[].New System.arraycopy putShort ze.getMethod zipEncoding.canEncode putShort getGeneralPurposeBits(zipMethod,!encodable && fallbackToUTF8).encode putShort ZipUtil.toDosTime putLong ZipLong.ZIP64_MAGIC.putLong ZipLong.ZIP64_MAGIC.putLong putShort putShort putShort System.arraycopy putShort putLong putLong System.arraycopy System.arraycopy System.arraycopy 
+ze.setExtra 
+writeCounted writeCounted writeCounted entries.size ZipShort.getBytes byte[].New writeCounted writeCounted writeCounted writeCounted this.zipEncoding.encode ByteBuffer.New writeCounted writeCounted 
+writeOut writeOut writeOut writeOut writeOut writeOut ZipEightByteInteger.getBytes byte[].New writeOut writeOut writeOut writeOut writeOut writeOut writeOut writeOut 
+writeOut 
+raf.write 
+Zip64ExtendedInformationExtraField.New ze.addAsFirstExtraField 
+raf.close out.close 
+ZipShort.getValue 
+byte[].New putShort 
+byte[].New 
+byte[].New toDosTime 
+toDosTime 
+zipDosTime.getValue 
+Calendar.getInstance Calendar.New Calendar.set Calendar.set Calendar.set Calendar.set Calendar.set Calendar.set Calendar.set 
+UnicodePathExtraField.New ze.getName ze.setName 
+crc32.update 
+System.arraycopy 
+Map.New el.getWrapper RuntimeConfigurable.New RuntimeConfigurable.getAttributeMap Map.New 
+Dispatchable.New 
+FileUtils.close 
+in.read StringBuffer.New StringBuffer.append 
+setInitialized 
+ClassConstants.New 
+initialize setInitialized 
+ConcatFilter.New ConcatFilter.setPrepend ConcatFilter.setAppend 
+Parameter[].New 
+initialize setInitialized 
+EscapeUnicode.New EscapeUnicode.setInitialized 
+ExpandProperties.New ExpandProperties.setProject ExpandProperties.add 
+initInternalFilters 
+attr.resolve 
+attr.resolve 
+attr.resolve 
+lineTokenizer.setIncludeDelims 
+initialize setInitialized line.charAt 
+HeadFilter.New HeadFilter.setLines HeadFilter.setSkip HeadFilter.setInitialized 
+Parameter[].New 
+initialize setInitialized 
+this.contains.addElement 
+LineContains.New LineContains.setContains LineContains.setNegate 
+Parameter[].New 
+initialize setInitialized 
+this.regexps.addElement 
+LineContainsRegExp.New LineContainsRegExp.setRegexps LineContainsRegExp.setNegate LineContainsRegExp.setCaseSensitive 
+RegexpUtil.asOptions 
+Parameter[].New 
+initialize setInitialized 
+PrefixLines.New PrefixLines.setPrefix PrefixLines.setInitialized 
+Parameter[].New 
+initialize setInitialized 
+makeTokensFromProperties 
+hash.put 
+InputStream.New Properties.New 
+ReplaceTokens.New ReplaceTokens.setBeginToken ReplaceTokens.setEndToken ReplaceTokens.setTokens ReplaceTokens.setInitialized 
+Parameter[].New 
+initialize setInitialized 
+SortFilter.New SortFilter.setReverse SortFilter.setComparator SortFilter.setInitialized 
+setComparator 
+Parameter[].New 
+StripJavaComments.New 
+initialize setInitialized in.read 
+StripLineBreaks.New StripLineBreaks.setLineBreaks StripLineBreaks.setInitialized 
+Parameter[].New 
+initialize setInitialized 
+comments.addElement 
+StripLineComments.New StripLineComments.setComments StripLineComments.setInitialized 
+Parameter[].New 
+initialize setInitialized 
+SuffixLines.New SuffixLines.setSuffix SuffixLines.setInitialized 
+Parameter[].New 
+initialize setInitialized 
+TabsToSpaces.New TabsToSpaces.setTablength TabsToSpaces.setInitialized 
+Parameter[].New 
+lineTokenizer.setIncludeDelims 
+initialize setInitialized line.charAt 
+TailFilter.New TailFilter.setLines TailFilter.setSkip TailFilter.setInitialized 
+Parameter[].New 
+line.charAt 
+TokenFilter.New TokenFilter.setProject 
+add 
+add 
+add 
+filters.addElement 
+filters.addElement 
+filters.addElement 
+filters.addElement 
+filters.addElement 
+filters.addElement 
+filters.addElement 
+filters.addElement 
+implicitTarget.setProject implicitTarget.setName targetVector.addElement 
+implicitTarget.setLocation 
+implicitTarget.setLocation 
+wStack.addElement 
+wStack.removeElementAt 
+targetVector.addElement 
+attr.getValue project.addIdReference 
+prefixMapping.get List<String>.New prefixMapping.put List<String>.add 
+prefixMapping.get List<String>.New List<String>.remove 
+prefixMapping.get List<String>.New 
+BuildException.New 
+project.getTargets Hashtable<String,Target>.New BuildException.New 
+resource.as URLProvider.New 
+Target.New Target.setProject AntXMLContext.New AntXMLContext.addTarget AntXMLContext.setImplicitTarget parse Target.getTasks Task[].New 
+getImportStack().addElement AntXMLContext.New project.addReference project.addReference AntXMLContext.setIgnoreProjectTag 
+AntXMLContext.New File.New URL.New AntXMLContext.setBuildFile InputStream.New InputSource.New ZipFile.New 
+implicitTarget.setName 
+File.New FileInputStream.New InputSource.New 
+attr.getValue project.addReference 
+project.executeSortedTargets 
+BufferedReader.New 
+request.getPrompt request.getDefaultValue sb.append 
+InputStream.New 
+readProps props.get Object.New request.setInput 
+System.exit 
+StringTokenizer.New libPathURLs.add 
+System.getProperty File.New Locator.getClassSource File.New File.getParentFile File.New setProperty List<String>.New List<String>.New String[].New logPath logPath logPath URL[].New URL[].New URL[].New Locator.getToolsJar File.New logPath URL[].New StringBuffer.New StringBuffer.setLength StringBuffer.append StringBuffer.append setProperty URLClassLoader.New Thread.currentThread().setContextClassLoader Class<?>.New Throwable.New System.err.println System.err.println System.err.println System.err.println 
+List<URL>.New addPath 
+File.New System.getProperty setProperty 
+File.New 
+URL[].New System.arraycopy System.arraycopy System.arraycopy 
+System.setProperty 
+URL.New 
+uri.indexOf uri.substring 
+ByteArrayOutputStream.New CharacterIterator.New 
+String.length StringBuffer.New 
+System.getProperty File.New 
+URL[].New File[].New 
+System.getProperty InputStream.New 
+stream.println 
+maybeRaiseSubBuildStarted 
+maybeRaiseSubBuildStarted 
+maybeRaiseSubBuildStarted subBuildFinished 
+maybeRaiseSubBuildStarted 
+event.getProject Project.New File.New printMessage 
+printMessage 
+Log.New realLog 
+realLog 
+realLog 
+Logger.getLogger Logger.New Logger.getRootLogger Logger.New Logger.error 
+Logger.info 
+Logger.info 
+Logger.info 
+event.getProject Project.New Project.getProperties Hashtable<String,Object>.New Properties.New Hashtable<String,Object>.put 
+buffer.append(message).append 
+MailMessage.New MailMessage.setHeader MailMessage.from StringTokenizer.New MailMessage.to MailMessage.setSubject MailMessage.setHeader MailMessage.getPrintStream PrintStream.New PrintStream.println MailMessage.sendAndClose 
+Mailer.New vectorizeEmailAddresses Vector<EmailAddress>.New Mailer.setHost Mailer.setPort Mailer.setUser Mailer.setPassword Mailer.setSSL Mailer.setEnableStartTLS Message.New Message.setProject Message.setMimeType Message.setCharset Mailer.setMessage Mailer.setFrom Mailer.setReplyToList vectorizeEmailAddresses Vector<EmailAddress>.New Mailer.setToList vectorizeEmailAddresses Vector<EmailAddress>.New Mailer.setCcList vectorizeEmailAddresses Vector<EmailAddress>.New Mailer.setBccList Mailer.setFiles Mailer.setSubject Mailer.setHeaders Mailer.send 
+Date.New logStart profileData.put 
+Date.New logFinish 
+event.getTask().getTaskName Date.New logStart profileData.put 
+Date.New event.getTask().getTaskName logFinish 
+LocalProperties.New project.addReference PropertyHelper.getPropertyHelper(project).add 
+current().addLocal 
+current().enterScope 
+current().exitScope 
+set 
+Map<String,Object>.New Map<String,Object>.get Object.New Map<String,Object>.put 
+Map<String,Object>.New Map<String,Object>.put 
+value.length ParsePosition.New Object.New StringBuffer.New StringBuffer.append ParsePosition.setIndex 
+value.length ParsePosition.setIndex 
+ParsePosition.getIndex 
+resolveAllProperties 
+resolveAllProperties 
+setExecuteStreamHandler 
+Environment.New var.setKey var.setValue Environment.addVariable var.setKey var.setValue Environment.addVariable var.setKey var.setValue Environment.addVariable Execute.New Execute.setAntRun dest.mkdirs Execute.setWorkingDirectory Execute.setCommandline Execute.setEnvironment 
+this.setCommand this.getCommand Commandline.New Commandline.createArgument(true).setLine this.addConfiguredCommandline 
+StringBuffer.New cmdLine.indexOf 
+addCommandArgument 
+this.addCommandArgument 
+String.createArgument().setValue 
+addCommandArgument addCommandArgument 
+String.setExecutable String.createArgument().setLine String.createArgument(true).setValue String.createArgument(true).setValue String.createArgument(true).setValue String.createArgument(true).setValue String.createArgument(true).setLine 
+vecCommandlines.removeElement 
+this.addConfiguredCommandline 
+this.configureCommandline vecCommandlines.insertElementAt 
+setCompressionLevel 
+modules.add 
+filesets.addElement 
+sysProperties.addVariable 
+RedirectorElement.New RedirectorElement.setInputString RedirectorElement.setLogInputString rx.setPattern filter.addConfiguredRegexp filter.setNegate RedirectorElement.createErrorFilterChain().addLineContainsRegExp 
+addValue addValue addValue 
+addValue addValue addValue addValue 
+ExecTask.New ExecTask.setExecutable ExecTask.setTaskType ExecTask.setFailonerror ExecTask.addConfiguredRedirector 
+Vector<FileSet>.New sourceJar.setProject sourceJar.setFile Vector<FileSet>.add 
+Path.New 
+ExecTask.createArg().setValue 
+bindToOwner 
+getProject().createSubProject newProject.setJavaVersionProperty 
+init 
+newProject.setInputHandler Iterator<BuildListener>.New newProject.addBuildListener addAlmostAll newProject.initProperties 
+newProject.demuxOutput 
+newProject.demuxFlush 
+newProject.demuxOutput 
+newProject.demuxFlush 
+File.New Vector<String>.New 
+Set<String>.New properties.elements Enumeration<Property>.New p.setProject p.execute addAlmostAll 
+Hashtable<String,Object>.New 
+getProject().getReference Object.New log Object.getClass Class<?>.New Object.New ((ProjectComponent)copy).setProject newProject.addReference 
+props.keys Enumeration<?>.New 
+targets.add 
+Property.New Property.setProject Property.setTaskName properties.addElement 
+references.addElement 
+t.getName targets.add 
+propertySets.addElement 
+reinit 
+ComponentHelper.getComponentHelper ComponentHelper.New ComponentHelper.enterAntLib URLResource.New 
+tasks.add 
+setLocation ue.maybeConfigure def.setURI def.setAntlibClassLoader def.init def.execute 
+PrintWriter.New 
+ProjectHelper.nsToComponentName AntTypeDefinition.New AntTypeDefinition.setName AntTypeDefinition.setClassName AntTypeDefinition.setClass AntTypeDefinition.setRestrict AntTypeDefinition.setClassLoader ComponentHelper.getComponentHelper(getProject()).addDataTypeDefinition 
+hijackId log 
+restoreWrapperId 
+log wrapper.setAttribute wrapper.setElementTag 
+createClasspath().append 
+createClasspath().setRefid 
+createFilepath().append 
+setValue 
+FILE_UTILS.removeLeadingPath 
+log 
+InputStream.New 
+file.getName getProject().setNewProperty 
+File.New validate Properties.New Properties.put FileOutputStream.New getProject().setNewProperty 
+Properties.getProperty(DEFAULT_PROPERTY_NAME,"0").trim 
+FileInputStream.New 
+log 
+CBZip2OutputStream.New 
+callee.init 
+init callee.setAntfile callee.setInheritAll callee.setInheritRefs callee.execute 
+init 
+init callee.addReference 
+init callee.addPropertyset 
+init callee.setTarget 
+init callee.addConfiguredTarget 
+callee.handleOutput 
+callee.handleFlush 
+callee.handleErrorOutput 
+callee.handleErrorFlush 
+e.getFormat 
+add 
+resources.add 
+getProject().setNewProperty 
+FileInputStream.New FileOutputStream.New byte[].New 
+byte[].New 
+BufferedReader.New 
+defaultSet.setProject 
+FileSet.New FileSet.setFile addFileset 
+defaultSet.setDir 
+createArg().setValue 
+defaultSet.setIncludes 
+defaultSet.setExcludes 
+defaultSet.setDefaultexcludes 
+addFileset 
+setRestrict 
+reset 
+setDest 
+setForce 
+Path.New add 
+add 
+add 
+rc.add 
+filterChains.addElement 
+textBuffer.append 
+crlf.getValue 
+validate ResourceCollection.New log 
+validate 
+sanitizeText 
+checkDestNotInSources.setProject checkDestNotInSources.add checkDestNotInSources.add Restrict.New Restrict.add Restrict.add Restrict.New Restrict.add Restrict.add 
+setValue 
+setElse 
+Condition.New log PropertyHelper.getPropertyHelper(getProject()).setNewProperty 
+FileUtils.getFileUtils fileUtils.getFileTimestampGranularity 
+FilterChain.New filterChains.addElement 
+FilterSet.New filterSets.addElement 
+setPreserveLastModified 
+add 
+rcs.add 
+createMapper().add 
+File.New File.New File.New ResourceCollection.New 
+FileNameMapper.New buildMap buildMap 
+String[].New v.copyInto 
+HashMap<Resource,String[]>.New Resource[].New v.copyInto 
+log 
+log 
+l.addAll 
+add 
+FileNameMapper.New 
+StringBuffer.New StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append 
+log log DirectoryScanner.New 
+Project.toBoolean 
+log log 
+createPath().append 
+createPath().setRefid 
+log validateAttributes path.list String[].New log 
+log log log BufferedReader.New BufferedWriter.New 
+DirectoryScanner.resetDefaultExcludes DirectoryScanner.addDefaultExclude DirectoryScanner.removeDefaultExclude message.append log 
+getDelegate().setClasspath 
+getDelegate().setClasspathref 
+getDelegate().setLoaderRef 
+((AntClassLoader)createdLoader).addSystemPackageRoot 
+onError.getIndex 
+format.getIndex 
+ClassLoader.New addDefinition 
+uri.substring 
+InputStream.New 
+tooManyDefinitions 
+tooManyDefinitions 
+tooManyDefinitions setURI 
+tooManyDefinitions 
+Class<?>.New 
+getImplicitFileSet().setDir 
+filesets.addElement 
+rcs.setCache rcs.add 
+log Resources.New Resources.setProject Resources.setCache Resources.New Resources.setProject Resources.setCache FileSet.New FileSet.setProject filesets.add filesets.size Resources.add exists.add exists.add s.add s.add Resources.add 
+d.list String[].New log handle 
+log 
+log log 
+createSources().add 
+createSources().add 
+createTargets().add 
+createTargets().add 
+log delete.bindToOwner delete.add delete.perform 
+Diagnostics.main 
+setDestFile 
+ZipFileSet.New ZipFileSet.setFile ZipFileSet.setFullpath 
+ZipFileSet.setPrefix 
+setOutput 
+output.as FileProvider.New 
+getProject().replaceProperties 
+echoLevel.getLevel 
+DOMElementWriter.New OutputStream.New 
+System.err.println System.err.println System.err.println 
+run 
+System.getProperty log log 
+getProject().resolveFile 
+log 
+fos.close 
+bindToOwner 
+setTimeout 
+cmdl.setExecutable 
+log 
+redirector.setLogError 
+redirector.setOutputProperty 
+redirector.setErrorProperty 
+env.addVariable 
+getProject().setNewProperty 
+redirector.setAppend 
+osFamily.toLowerCase 
+getProject().resolveFile File.New 
+File.New cmdl.setExecutable checkConfiguration 
+getProject().log getProject().log getProject().log setupRedirector 
+redirector.setInput redirector.setInputString redirector.setOutput redirector.setError 
+System.getProperty log log 
+redirectorElement.configure Execute.New Execute.setAntRun Execute.setWorkingDirectory Execute.setVMLauncher env.getVariables String[].New Execute.setNewenvironment Execute.setEnvironment 
+maybeSetResultPropertyValue redirector.complete 
+log Execute.setCommandline 
+Vector<String>.New 
+setStreamHandler 
+CommandLauncher.getVMLauncher CommandLauncher.New CommandLauncher.New 
+Process.New streamHandler.start 
+Process.New OutputStream.New ExecuteStreamHandler.New ExecuteStreamHandler.setProcessErrorStream ExecuteStreamHandler.setProcessOutputStream ExecuteStreamHandler.start Process.getOutputStream().close project.log 
+Map<String,String>.New Map<String,String>.put ArrayList<String>.New 
+FileUtils.close FileUtils.close FileUtils.close 
+HashMap<String,String>.New HashMap<String,String>.put 
+javaCommand.getExecutable AntClassLoader.New 
+Object[].New 
+thread.interrupt notifyAll 
+CommandlineJava.New CommandlineJava.setClassname javaCommand.getArguments String[].New CommandlineJava.createArgument().setValue CommandlineJava.createClasspath(pc.getProject()).append CommandlineJava.addSysproperties Redirector.New Execute.New Execute.setAntRun setupCommandLineForVMS 
+Execute.setVMLauncher File.New 
+filesets.addElement 
+filesets.addElement 
+add 
+resources.add 
+type.getValue 
+cmdl.createMarker 
+cmdl.createMarker 
+createMapper().add 
+log 
+redirector.setAppendProperties 
+log 
+Vector<String>.New String[].New cmdl.getCommandline String[].New String[].New 
+String[].New fileNames.copyInto File[].New baseDirs.copyInto log exe.setCommandline runExecute 
+System.arraycopy 
+watchdog.addTimeoutObserver 
+watchdog.start 
+watchdog.stop cleanUp 
+setIf 
+setUnless 
+log 
+getProject().replaceProperties 
+log 
+log ZipFile.New FileNameMapper.New 
+FileNameMapper.New 
+log FileNameMapper.mapFileName String[].New File.New 
+patternsets.addElement 
+add 
+resources.add 
+createMapper().add 
+internalSetEncoding 
+internalSetScanForUnicodeExtraFields 
+getProject().getGlobalFilterSet().addFilter readFilters 
+log getProject().getGlobalFilterSet().readFiltersFromFile 
+filter.setJavafiles 
+filter.setEol 
+log log attr.getValue CrLf.New CrLf.setValue setEol 
+filter.setTab 
+filter.setEof 
+filter.setFixlast 
+validate log DirectoryScanner.New DirectoryScanner.getIncludedFiles String[].New processFile 
+StringBuffer.New StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append log ExecTask.New ExecTask.setExecutable ExecTask.createArg Commandline.Argument.New Commandline.Argument.setLine ExecTask.setFailonerror ExecTask.setTaskName ExecTask.execute 
+checkAttributes 
+checkAttributes 
+log log log GetThread.New GetThread.setDaemon getProject().registerThreadTask GetThread.start GetThread.closeStreams 
+destination.mkdirs 
+add 
+sources.add 
+log 
+createMapper().add 
+log 
+GZIPOutputStream.New 
+executeLocal 
+resources.add 
+ProjectHelper.setCurrentTargetPrefix ProjectHelper.setCurrentPrefixSeparator ProjectHelper.setInIncludeMode 
+getProject().replaceProperties 
+log InputRequest.New InputRequest.setDefaultValue InputHandler.New InputHandler.handleInput InputRequest.getInput getProject().setNewProperty 
+setEncoding setZip64Mode 
+log 
+we.getValue 
+setDestFile 
+fs.setPrefix 
+indexJars.append 
+service.check serviceList.add 
+writeManifest writeServices 
+createIndexList 
+ByteArrayOutputStream.New PrintWriter.New PrintWriter.println PrintWriter.println PrintWriter.println writeIndexLikeList PrintWriter.println PrintWriter.close ByteArrayInputStream.New 
+log 
+ZipOutputStream.New 
+checkJarSpec rootEntries.removeAllElements 
+System.getProperty StringBuffer.New Section.New StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append("Location: ").append StringBuffer.append 
+Collections.sort Collections.sort 
+fileName.replace TreeMap<String,String>.New 
+bindToOwner 
+File.New Permissions.New 
+getCommandLine().getClassname getCommandLine().getModule log getProject().log getProject().log getProject().log log log setupRedirector 
+createClasspath().append 
+createModulepath().append 
+createModulepath().setRefid 
+createClasspath().setRefid 
+getCommandLine().setJar 
+getCommandLine().setClassname 
+getCommandLine().setModule 
+log getCommandLine().createArgument().setLine 
+getCommandLine().setCloneVm 
+Integer.toString getProject().setNewProperty 
+log getCommandLine().createVmArgument().setLine 
+getCommandLine().setVm 
+getCommandLine().addSysproperty 
+getCommandLine().addSyspropertyset 
+redirector.setLogError 
+redirector.setOutputProperty 
+redirector.setErrorProperty 
+getCommandLine().setMaxmemory 
+getCommandLine().setVmversion 
+env.addVariable 
+redirector.setAppend 
+getCommandLine().setAssertions 
+redirector.handleOutput 
+redirector.handleFlush 
+redirector.handleErrorOutput 
+redirector.handleErrorFlush 
+redirector.setInput redirector.setInputString redirector.setOutput redirector.setError redirectorElement.configure redirector.setInputStream 
+Execute.New setupExecutable 
+Execute.New setupExecutable 
+Execute.setAntRun setupWorkingDir setupEnvironment setupCommandLine 
+env.getVariables String[].New Execute.setNewenvironment Execute.setEnvironment 
+Execute.setWorkingDirectory 
+setupCommandLineForVMS 
+ExecuteJava.setupCommandLineForVMS 
+CommandlineJava.New CommandlineJava.setClassname args.size CommandlineJava.createArgument().setValue run 
+getCommandLine().clearJavaArgs 
+log 
+createSourcepath().setRefid 
+createModulesourcepath().setRefid 
+createClasspath().setRefid 
+createModulepath().setRefid 
+createUpgrademodulepath().setRefid 
+createBootclasspath().setRefid 
+Boolean.valueOf 
+ImplementationSpecificArgument.New facade.addImplementationArgument 
+facade.getExplicitChoice 
+GlobPatternMapper.New String[].New GlobPatternMapper.setFrom GlobPatternMapper.setTo 
+facade.setImplementation 
+facade.setMagicValue 
+log 
+log adapter.setJavac 
+Map<String,Collection<File>>.New 
+List<StringBuilder>.New List<StringBuilder>.add StringBuilder.New 
+Collection<CharSequence>.New Collection<CharSequence>.addAll 
+pattern.replace('/',File.separatorChar).replace pattern.indexOf findModules 
+FileUtils.getFileUtils FileUtils.New FileUtils.resolveFile File.New File.listFiles File[].New 
+cmd.createArgument().setValue 
+cmd.createArgument().setValue cmd.createArgument().setValue 
+cmd.createArgument().setValue 
+cmd.createArgument().setLine 
+createSourcepath().setRefid 
+cmd.createArgument().setValue cmd.createArgument().setFile 
+StringTokenizer.New sf.setFile addSource 
+sourceFiles.addElement 
+StringTokenizer.New pn.setName addPackage 
+packageNames.addElement 
+StringTokenizer.New pn.setName addExcludePackage 
+excludePackageNames.addElement 
+cmd.createArgument().setValue cmd.createArgument().setFile 
+addArgIf 
+addArgIf 
+addArgIf 
+addArgIf 
+cmd.createArgument().setValue 
+doclet.setProject doclet.setName 
+doclet.setProject doclet.setPath 
+doclet.setProject doclet.createPath().setRefid 
+tags.addElement 
+log 
+createClasspath().setRefid 
+createBootclasspath().setRefid 
+cmd.createArgument().setValue cmd.createArgument().setValue 
+cmd.createArgument().setValue cmd.createArgument().setPath 
+addArgIf 
+cmd.createArgument(true).setValue cmd.createArgument(true).setValue 
+cmd.createArgument().setValue cmd.createArgument().setValue 
+addArgIf 
+addArgIf 
+addArgIfNotEmpty 
+Html.New Html.addText addDoctitle 
+Html.New Html.addText addHeader 
+Html.New Html.addText addFooter 
+Html.New Html.addText addBottom 
+LinkArgument.New LinkArgument.setOffline StringTokenizer.New LinkArgument.setHref LinkArgument.setPackagelistLoc 
+createLink().setHref 
+addArgIf 
+addArgIf 
+addArgIf 
+addArgIf 
+addArgIf 
+addArgIf 
+addArgIf 
+cmd.createArgument().setValue cmd.createArgument().setFile 
+cmd.createArgument().setValue cmd.createArgument().setFile 
+cmd.createArgument().setValue cmd.createArgument().setValue 
+LinkArgument.New links.addElement 
+TagArgument.New tags.addElement 
+GroupArgument.New groups.addElement 
+this.addArgIfNotEmpty 
+packageSets.addElement 
+createSourceFiles().add 
+checkTaskName Vector<String>.New Path.New checkPackageAndSourcePath Path.addExisting parsePackages checkPackages Vector<SourceFile>.New addSourceFiles checkPackagesToDoc log Commandline.New Commandline.setExecutable generalJavadocArguments doSourcePath doDoclet doBootPath doLinks doGroup doGroups doDocFilesSubDirs doJava14 Commandline.createArgument().setValue writeExternalArgs File.New FileWriter.New Commandline.createArgument().setValue log log JavadocOutputStream.New JavadocOutputStream.New Execute.New Execute.setAntRun Execute.setWorkingDirectory 
+nestedSourceFiles.iterator Iterator<ResourceCollection>.New 
+HashSet<String>.New Vector<DirSet>.New ps.setProject Vector<DirSet>.elements Enumeration<DirSet>.New log 
+createClasspath().setRefid 
+driver.trim 
+connectionProperties.add 
+Driver.New 
+System.err.println System.err.println System.err.println 
+String[].New File.New 
+parseOutput 
+System.err.println System.err.println System.err.println 
+parseEmacsOutput 
+log log log BufferedReader.New BufferedWriter.New 
+StringBuffer.New StringBuffer.append StringBuffer.append 
+add 
+add 
+add 
+resources.add 
+setWhen 
+m.getValue 
+validate PrintStream.New PrintStream.print PrintStream.close 
+validate Long.New 
+addConfigured 
+addConfigured 
+getRequiredJavaResource().setName 
+getRequiredJavaResource().setClasspath 
+getRequiredJavaResource().setClasspathRef 
+BufferedInputStream.New Reader.New ByteArrayInputStream.New 
+filterChains.addElement 
+a.iterator().next 
+InputStream.New BufferedInputStream.New Reader.New log 
+filterChains.addElement 
+a.iterator().next 
+LocalProperties.get(getProject()).addLocal 
+processLine 
+pc.log 
+FileUtils.close FileUtils.close 
+text.getName 
+UnknownElement.New UnknownElement.setTaskName UnknownElement.setNamespace UnknownElement.setQName nestedSequential.getNested().size UnknownElement.addChild UnknownElement.getWrapper().addChild 
+attributes.size attributes.add 
+element.isImplicit elements.put 
+ProjectHelper.genComponentName MyAntTypeDefinition.New MyAntTypeDefinition.setName MyAntTypeDefinition.setClass ComponentHelper.getComponentHelper ComponentHelper.New ComponentHelper.addDataTypeDefinition log 
+MacroDef.New 
+map.put 
+unknownElements.add 
+getNsElements processTasks Set<String>.New Set<String>.remove localAttributes.put copy UnknownElement.New UnknownElement.init LocalProperties.get LocalProperties.New LocalProperties.enterScope 
+filesets.add 
+paths.add 
+StringBuilder.New filesets.listIterator ListIterator<FileSet>.New 
+StringBuilder.delete 
+StringBuilder.New paths.listIterator ListIterator<Path>.New 
+validate validateFile log getProject().setNewProperty 
+FileUtils.getFileUtils().toURI 
+InputStream.New InputStreamReader.New 
+BufferedReader.New mainSection.read mainSection.getAttributeValue mainSection.removeAttribute section.setName addConfiguredSection 
+section.getName sections.put 
+merge 
+merge 
+write 
+writer.print mainSection.getAttributeValue writer.print mainSection.removeAttribute mainSection.write 
+StringWriter.New 
+Vector<String>.New mainSection.getWarnings Enumeration<String>.New Vector<String>.addElement 
+StringBuffer.New StringBuffer.append StringBuffer.toString FileUtils.getFileUtils FileUtils.New FileUtils.normalize path.list String[].New StringBuffer.New StringBuffer.append StringBuffer.append getProject().setNewProperty 
+jarfile.getParentFile File.New 
+mode.setValue 
+section.getAttributeKeys Enumeration<String>.New checkAttribute nestedManifest.addConfiguredSection 
+checkAttribute nestedManifest.addConfiguredAttribute 
+attribute.getName String.charAt 
+Manifest.getDefaultManifest Manifest.New Manifest.New BuildException.New log log PrintWriter.New 
+fileset.setProject 
+fileset.setIncludes 
+log createInclude().setName 
+fileset.setExcludes 
+log 
+fileset.setDefaultexcludes 
+fileset.setDir 
+fileset.setIncludesfile 
+fileset.setExcludesfile 
+fileset.setCaseSensitive 
+fileset.setFollowSymlinks 
+fileset.appendSelector 
+fileset.addSelector 
+fileset.addAnd 
+fileset.addOr 
+fileset.addNot 
+fileset.addNone 
+fileset.addMajority 
+fileset.addDate 
+fileset.addSize 
+fileset.addFilename 
+fileset.addCustom 
+fileset.addContains 
+fileset.addPresent 
+fileset.addDepth 
+fileset.addDepend 
+fileset.addContainsRegexp 
+fileset.addDifferent 
+fileset.addType 
+fileset.addModified 
+fileset.add 
+log 
+setOverwrite 
+completeDirMap.put 
+fileCopyMap.size log 
+copyFile 
+d.list String[].New 
+deleteDir 
+d.list String[].New log 
+destFile.getParentFile File.New File.mkdirs 
+Thread.currentThread Thread.New Thread.getPriority getProject().setNewProperty 
+setZipfile 
+setSrcResource 
+src.as FileProvider.New 
+setSrcResource 
+validate Resource.New log 
+byte[].New 
+zipResource 
+nestedTasks.addElement 
+updateThreadCounts spinThreads 
+nestedTasks.size TaskRunnable[].New TaskRunnable[].New ThreadGroup.New TaskRunnable[].New processExceptions processExceptions 
+cmd.createArgument().setValue cmd.createArgument().setFile 
+cmd.createArgument().setValue cmd.createArgument().setFile 
+cmd.createArgument().setValue 
+cmd.createArgument().setValue 
+cmd.createArgument().setValue 
+cmd.createArgument().setValue 
+cmd.createArgument().setValue 
+Commandline.New Commandline.setExecutable Commandline.createArgument().setFile Execute.New Execute.setCommandline log 
+Path.New add 
+getPath().add 
+MapEntry.New prefixMap.addElement 
+TargetOs.New TargetOs.setValue setTargetos 
+target.getValue 
+Resources.New 
+prefixMap.size 
+Mapper.New Mapper.add addMapper 
+ProjectHelper.genComponentName ComponentHelper.getComponentHelper ComponentHelper.New ProjectHelper.genComponentName ComponentHelper.getDefinition AntTypeDefinition.New PreSetDefinition.New PreSetDefinition.setName ComponentHelper.addDataTypeDefinition log 
+destroyProcessThread.setShouldDestroy 
+internalSetValue 
+internalSetValue 
+setValue 
+internalSetValue 
+createClasspath().setRefid 
+loadFile loadUrl loadResource loadEnvironment 
+Properties.New log 
+Properties.loadFromXML 
+Properties.New log 
+Properties.New log InputStream.New ClassLoader.New 
+Properties.New log Execute.getEnvironmentVariables Map.New Properties.put addProperties 
+HashMap.New resolveAllProperties 
+addProperty 
+PropertyHelper.getPropertyHelper PropertyHelper.New 
+PropertyHelper.getPropertyHelper PropertyHelper.New new ResolvePropertyMap(getProject(),propertyHelper,propertyHelper.getExpanders()).resolveAllProperties 
+getAddDelegateList().add 
+DelegateElement.New getAddDelegateList().add 
+PropertyHelper.New log getProject().addReference 
+createProcessOutputPump 
+createProcessErrorPump 
+outputThread.start errorThread.start inputThread.start 
+finish finish finish 
+StreamPumper.New StreamPumper.setAutoflush Thread.New Thread.setDaemon 
+getProject().addBuildListener 
+level.getLevel 
+getProject().log RecorderEntry.New RecorderEntry.setMessageOutputLevel RecorderEntry.setEmacsMode 
+recorderEntries.get Object.New RecorderEntry.New RecorderEntry.setProject recorderEntries.put 
+cleanup 
+cleanup 
+Hashtable.New Hashtable.entrySet().iterator Iterator.New getProject().removeBuildListener 
+flush 
+log 
+log cleanup 
+cleanup 
+log log System.currentTimeMillis 
+log formatTime log flush 
+log 
+log flush 
+log StringBuffer.New StringBuffer.append log 
+closeFile 
+setOutputPrintStream 
+project.addBuildListener 
+openFileImpl 
+out.close 
+openFileImpl 
+setInput 
+setOutput 
+setError 
+BufferedReader.New StringBuffer.New StringBuffer.append managingTask.getProject().setNewProperty 
+createStreams 
+System.out.flush System.err.flush setProperties 
+Project.toBoolean 
+log 
+ArrayList.New Properties.New stringReplace stringReplace stringReplace stringReplace firstFilter.setToken firstFilter.setValue 
+replacefilters.size element.validate 
+Properties.New InputStream.New 
+logFilterChain 
+replacefilters.size filter.flush 
+replacefilters.size 
+StringBuffer.New replacefilters.size filter.setInputBuffer 
+replacefilters.size log 
+setReplaceFilterResource 
+createReplaceToken().addText 
+createReplaceValue().addText 
+setPropertyResource 
+Replacefilter.New replacefilters.add 
+resources.add 
+Replacefilter.New replacefilters.add 
+str.indexOf str1.length str2.length str.replace 
+List<Object>.New Collections.sort 
+r.getReferencedObject Object.New add 
+log 
+StringBuffer.New 
+createClasspath().setRefid 
+facade.setImplementation 
+facade.setMagicValue 
+ImplementationSpecificArgument.New facade.addImplementationArgument 
+getCompiler 
+loader.cleanup 
+adapter.getMapper().mapFileName String[].New 
+String[].New log compileList.addElement 
+setMailport 
+nestedTasks.addElement 
+LocalProperties.get LocalProperties.New LocalProperties.enterScope 
+Arrays.stream(perms.split(",")).map(null).filter(null).map(null).forEach 
+Integer.parseInt permissions.addAll 
+resources.add 
+beginExecution 
+File.New jarSource.lastModified ExecTask.New setCommonOptions bindToKeystore addValue addValue addValue addValue addValue addValue addValue addValue addTimestampAuthorityCommands addValue addValue log ExecTask.execute FILE_UTILS.setFileLastModified 
+addValue addValue addValue addValue 
+add 
+resources.add 
+Transaction.New transactions.addElement 
+delimiterType.getValue 
+setOutput 
+action.getValue 
+Vector.New sqlCommand.trim 
+StringBuffer.New BufferedReader.New StringBuffer.append(keepformat ? "\n" : " ").append execSQL 
+ResultSet.New 
+log 
+statement.setEscapeProcessing 
+byte[].New 
+wait 
+notifyAll 
+ant.handleOutput 
+ant.handleFlush 
+ant.handleErrorOutput 
+ant.handleErrorFlush 
+buildpath.list String[].New log BuildException.New 
+log file.getAbsolutePath ant.setAntfile targets.size ant.addConfiguredTarget 
+t.getName targets.add 
+properties.addElement 
+references.addElement 
+propertySets.addElement 
+add 
+add 
+add 
+getBuildpath().add 
+getBuildpath().append 
+createBuildpath().setRefid 
+Ant.New Ant.init Ant.setTarget Ant.setOutput Ant.setDir Ant.setInheritAll copyProperty Ant.addPropertyset Ant.setInheritRefs Ant.addReference 
+to.setName to.setValue to.setFile to.setResource to.setPrefix to.setRefid to.setEnvironment to.setClasspath 
+configureTask myCopy.setFiltering myCopy.setIncludeEmptyDirs myCopy.setPreserveLastModified 
+myCopy.getToDir File.New Set.New log myCopy.execute log Set.New log int[].New logRemovedCount logRemovedCount log logRemovedCount 
+int[].New String[].New DirectoryScanner.New fs.setDir fs.appendExcludes fs.appendIncludes fs.setDefaultexcludes DirectoryScanner.addExcludes DirectoryScanner.scan DirectoryScanner.getIncludedFiles String[].New log f.delete DirectoryScanner.getIncludedDirectories String[].New Boolean.New fs.setDir 
+myCopy.setTodir 
+myCopy.setVerbose 
+myCopy.setOverwrite 
+myCopy.setIncludeEmptyDirs 
+myCopy.setFailOnError 
+add 
+myCopy.add 
+myCopy.setGranularity 
+TarFileSet.New TarFileSet.setProject filesets.addElement 
+resourceCollections.add 
+log longFileMode.setValue 
+Vector<TarFileSet>.New 
+tarResource 
+TarEntry.New TarEntry.setModTime TarEntry.setMode TarEntry.setSize InputStream.New 
+SourceFileScanner.New MergingMapper.New MergingMapper.setTo 
+ArchiveFileSet.New TarFileSet.New 
+TarFileSet.getDirectoryScanner DirectoryScanner.New DirectoryScanner.getIncludedDirectories String[].New DirectoryScanner.getIncludedFiles String[].New String[].New System.arraycopy System.arraycopy 
+TarFileSet.New 
+setAdapterClass setAdaptToClass 
+System.err.println System.err.println System.err.println 
+line.toString task.log 
+FILE_UTILS.createTempFile File.New getProject().setNewProperty 
+log 
+add 
+filesets.add add 
+add 
+resources.add 
+log setMillis 
+checkConfiguration touch 
+touch filesets.size 
+touch 
+add 
+getPath().add 
+CustomFormat.New customFormats.addElement 
+getProject().setNewProperty 
+setSrcResource 
+src.as FileProvider.New 
+setSrcResource 
+File.New 
+FileInputStream.New 
+InputStream.New 
+sourceFileSets.addElement 
+createMapper().add 
+log sourceFileSets.elements Enumeration.New 
+getProject().setNewProperty 
+SourceFileScanner.New FileNameMapper.New File.New 
+beginExecution RedirectorElement.New RedirectorElement.setAlwaysLog RedirectorElement.createOutputFilterChain FilterChain.New FilterChain.add 
+ExecTask.New setCommonOptions bindToKeystore addValue addValue addValue log outputCache.clear BuildException.New outputCache.toString 
+unit.getMultiplier 
+unit.getMultiplier 
+Condition.New processTimeout 
+log 
+log getProject().setNewProperty 
+ZipFileSet.New ZipFileSet.setFile ZipFileSet.setFullpath 
+ZipFileSet.setPrefix 
+ZipFileSet.setPrefix 
+ZipFileSet.setPrefix 
+createClasspath().setRefid 
+validate getProject().log 
+xmlCatalog.setProject 
+Resource.New 
+Object.New 
+Object.New 
+log getProject().setProperty addedAttributes.put getProject().addReference 
+attributeNode.getNodeName 
+attributeNode.getNodeValue().trim 
+setSrcResource 
+setSrcResource 
+prefix.trim 
+xmlCatalog.addConfiguredXMLCatalog 
+handleError 
+resources.add 
+handleError 
+Mapper.New Mapper.add addMapper 
+log File.New DirectoryScanner.New String[].New String[].New handleError handleError handleError 
+createClasspath().append 
+createClasspath().setRefid 
+this.xmlCatalog.addConfiguredXMLCatalog 
+sysProperties.addVariable 
+sysProperties.addSyspropertyset 
+setupLoader 
+loader.setThreadContextLoader 
+handleError 
+File.New File.New 
+targetFile.getParentFile File.New 
+xmlCatalog.setProject 
+Param.New params.add 
+OutputProperty.New outputProperties.addElement 
+xmlCatalog.setProject XPathFactory.newInstance xpathFactory.newXPath xpath.setXPathVariableResolver 
+FileResource.New FileResource.setProject FileResource.setFile configureLiaison 
+param.getType param.getExpression ParamType.New 
+liaison.addParam liaison.addParam 
+handleError 
+log 
+setDestFile 
+setDestFile 
+add 
+add 
+resources.add 
+groupfilesets.addElement 
+df.getValue 
+we.getValue 
+executeMain executeMain 
+checkAttributesAndElements File.New processDoUpdate processGroupFilesets Vector<ResourceCollection>.New fs.setDir Vector<ResourceCollection>.addElement resources.size Vector<ResourceCollection>.addElement ResourceCollection[].New Vector<ResourceCollection>.copyInto 
+FILE_UTILS.createTempFile File.New 
+logWhenWriting 
+groupfilesets.size logWhenWriting 
+ArchiveFileSet.New addParentDirs ZipFile.New 
+name.lastIndexOf addParentDirs zipDir 
+addResources 
+log OutputStream.New 
+ArrayList<ResourceCollection>.New ArrayList<ResourceCollection>.New ResourceCollection[].New ArchiveState.New FileSet[].New getResourcesToAdd ArchiveState.New Resource[][].New 
+Resource[][].New Resource[][].New 
+Resource[][].New HAVE_NON_FILE_SET_RESOURCES_TO_ADD.set Resource[][].New 
+Resource[][].New resources.copyInto 
+Resource[][].New Collections.sort rs.addAll 
+zipDir 
+zipDir 
+logWhenWriting logWhenWriting addedDirs.put ze.setSize ze.setMethod ze.setCrc ze.setUnixMode zOut.putNextEntry 
+CURRENT_ZIP_EXTRA.set 
+entries.put ze.setTime ze.setMethod ze.setUnixMode zOut.putNextEntry addedFiles.addElement 
+addedDirs.clear addedFiles.removeAllElements entries.clear filesetsFromGroupfilesets.elements Enumeration<ZipFileSet>.New resources.removeElement filesetsFromGroupfilesets.removeAllElements HAVE_NON_FILE_SET_RESOURCES_TO_ADD.set 
+resources.removeAllElements groupfilesets.removeAllElements 
+ArrayList<Resource>.New 
+log 
+setProject 
+dieOnCircularReference 
+PatternSet.New additionalPatterns.add 
+setDir createInclude().setName 
+defaultPatterns.setIncludes 
+defaultPatterns.setExcludes 
+defaultPatterns.setIncludesfile 
+defaultPatterns.setExcludesfile 
+dieOnCircularReference 
+dieOnCircularReference 
+dieOnCircularReference 
+dieOnCircularReference DirectoryScanner.New DirectoryScanner.scan 
+setupDirectoryScanner 
+getRef(p).setupDirectoryScanner dieOnCircularReference DirectoryScanner.setBasedir PatternSet.New p.log DirectoryScanner.setIncludes DirectoryScanner.setExcludes ss.setSelectors DirectoryScanner.addDefaultExcludes DirectoryScanner.setCaseSensitive 
+dieOnCircularReference 
+dieOnCircularReference 
+dieOnCircularReference 
+dieOnCircularReference 
+dieOnCircularReference 
+selectors.add setChecked 
+appendSelector 
+appendSelector 
+appendSelector 
+appendSelector 
+appendSelector 
+appendSelector 
+appendSelector 
+appendSelector 
+appendSelector 
+appendSelector 
+appendSelector 
+appendSelector 
+appendSelector 
+appendSelector 
+appendSelector 
+appendSelector 
+appendSelector 
+appendSelector 
+appendSelector 
+dieOnCircularReference DirectoryScanner.New DirectoryScanner.getIncludedFiles String[].New StringBuffer.New StringBuffer.append 
+dieOnCircularReference PatternSet.New additionalPatterns.size PatternSet.append 
+dieOnCircularReference 
+parameters.addElement 
+setChecked 
+setChecked 
+((AntFilterReader)getCheckedRef()).getClasspath dieOnCircularReference 
+createClasspath().setRefid 
+((AntFilterReader)getCheckedRef()).getParams dieOnCircularReference Parameter[].New parameters.copyInto 
+checkAttributesAllowed 
+checkChildrenAllowed setSrcResource 
+setSrcResource 
+checkArchiveAttributesAllowed setChecked 
+checkAttributesAllowed 
+dieOnCircularReference 
+checkArchiveAttributesAllowed 
+dieOnCircularReference 
+checkArchiveAttributesAllowed 
+dieOnCircularReference 
+checkAttributesAllowed 
+setSrc 
+src.as FileProvider.New 
+scanme 
+scanme 
+scanme 
+scanme 
+scanme 
+scanme 
+scanme 
+checkChildrenAllowed assertionList.add 
+checkChildrenAllowed assertionList.add 
+checkAttributesAllowed 
+Assertions.New 
+getProject().log Assertions.New getProject().log commandList.add 
+Assertions.New addVmArgument 
+getProject().log Assertions.New getProject().log commandIterator.add 
+Commandline.Argument.New command.createVmArgument Commandline.Argument.setValue 
+Assertions.New 
+String[].New setExecutable 
+Argument.New arguments.add 
+setExecutable 
+createArgument().setValue 
+List<String>.New addCommandToList 
+list.add addArgumentsToList 
+List<String>.New addArgumentsToList 
+arguments.size 
+StringBuilder.New StringBuilder.append 
+StringTokenizer.New ArrayList<String>.New StringBuilder.New ArrayList<String>.add 
+arguments.clear 
+arguments.clear 
+StringBuffer.New StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append 
+StringBuffer.New StringBuffer.append StringBuffer.append(":").append StringBuffer.append("\'").append(args[i]).append("\'").append StringBuffer.append 
+setVm setVmversion 
+sysProperties.addVariable 
+sysProperties.addSyspropertyset 
+sysProperties.addSysproperties 
+vmCommand.setExecutable 
+javaCommand.setExecutable 
+javaCommand.setExecutable 
+javaCommand.setExecutable 
+List<String>.New addCommandsToList 
+getActualVMCommand().addCommandToList sysProperties.addDefinitionsToList sys.setValue ps.appendBuiltin clonedSysProperties.addSyspropertyset clonedSysProperties.addDefinitionsToList Path.New listIterator.add listIterator.add listIterator.add listIterator.add listIterator.add listIterator.add listIterator.add getAssertions().applyAssertions listIterator.add javaCommand.addCommandToList 
+Commandline.New 
+sysProperties.setSystem 
+sysProperties.restoreSystem 
+javaCommand.clearArgs 
+Path.New 
+Path.New 
+Path.New 
+moduleClassPair.split String[].New 
+moduleClassPair.split String[].New 
+setValue 
+int[].New 
+dieOnCircularReference 
+dieOnCircularReference 
+ref.getReferencedObject Object.New 
+dt.dieOnCircularReference 
+stk.push dt.dieOnCircularReference stk.pop 
+dieOnCircularReference ref.getReferencedObject Object.New log T.New 
+getProject().getReference ProjectHelper.New getProject().getDescription getProject().setDescription 
+project.getReference List<Target>.New StringBuilder.New 
+DirectoryScanner.New DirectoryScanner.getIncludedDirectories String[].New StringBuffer.New StringBuffer.append 
+variables.addElement 
+String[].New 
+setProject 
+checkAttributesAllowed 
+checkAttributesAllowed 
+filenames.add 
+setChecked filterReaders.addElement 
+dieOnCircularReference 
+setChecked filterReaders.addElement 
+setChecked filterReaders.addElement 
+setChecked filterReaders.addElement 
+setChecked filterReaders.addElement 
+setChecked filterReaders.addElement 
+setChecked filterReaders.addElement 
+setChecked filterReaders.addElement 
+setChecked filterReaders.addElement 
+setChecked filterReaders.addElement 
+setChecked filterReaders.addElement 
+setChecked filterReaders.addElement 
+setChecked filterReaders.addElement 
+setChecked filterReaders.addElement 
+setChecked filterReaders.addElement 
+setChecked filterReaders.addElement 
+setChecked filterReaders.addElement 
+setChecked filterReaders.addElement 
+setChecked filterReaders.addElement 
+setChecked filterReaders.addElement 
+setChecked filterReaders.addElement 
+setChecked filterReaders.addElement 
+setChecked filterReaders.addElement 
+Vector<Filter>.New 
+dieOnCircularReference filtersFiles.clear 
+dieOnCircularReference 
+filtersFiles.add 
+handleMissingFile log 
+filters.addElement 
+addFilter 
+propertySet.getProperties Properties.New Properties.entrySet Set<Map.Entry<Object,Object>>.New 
+line.indexOf 
+passedTokens.addElement 
+addFilterSet 
+filterSets.add 
+Integer.decode 
+setProject 
+add 
+container.add setChecked 
+add 
+setChecked 
+createClasspath().setRefid 
+dieOnCircularReference 
+ClassLoader.New 
+createPathElement().setPath 
+setProject 
+checkAttributesAllowed createPathElement().setLocation 
+checkAttributesAllowed createPathElement().setPath 
+PathElement.New add 
+fs.setProject add 
+fl.setProject add 
+dset.setProject add 
+path.setProject add 
+checkChildrenAllowed union.setProject union.setCache union.add setChecked 
+Path.New add 
+add 
+addExisting 
+source.list String[].New File.New 
+checkAttributesAllowed union.setCache 
+Vector<String>.New PathTokenizer.New StringBuffer.New Vector<String>.addElement 
+StringBuffer.New translateFileSep 
+buffer.setCharAt 
+dieOnCircularReference 
+Path.New Path.addExisting 
+msZipFiles.setDir msZipFiles.setIncludes addFileset 
+extdirs.list String[].New 
+dieOnCircularReference 
+dieOnCircularReference assertFilesystemOnly 
+p.getIncludePatterns String[].New p.getExcludePatterns String[].New 
+NameEntry.New list.add 
+createIncludesFile().setName 
+createExcludesFile().setName 
+BufferedReader.New 
+dieOnCircularReference other.getIncludePatterns String[].New other.getExcludePatterns String[].New 
+dieOnCircularReference readFiles 
+dieOnCircularReference readFiles 
+dieOnCircularReference 
+ArrayList<String>.New 
+includesFileList.clear excludesFileList.clear 
+addConfiguredPatternset 
+grantedPermissions.add 
+revokedPermissions.add 
+System.getSecurityManager init System.setSecurityManager 
+granted.add granted.add granted.add granted.add granted.add granted.add granted.add granted.add granted.add granted.add granted.add granted.add granted.add granted.add granted.add granted.add granted.add granted.add granted.add granted.add granted.add 
+System.setSecurityManager 
+PropertyRef.New PropertyRef.setName addPropertyref 
+PropertyRef.New PropertyRef.setRegex addPropertyref 
+PropertyRef.New PropertyRef.setPrefix addPropertyref 
+PropertyRef.New PropertyRef.setBuiltin addPropertyref 
+Mapper.New Mapper.MapperType.New Mapper.MapperType.setValue Mapper.setType Mapper.setFrom Mapper.setTo 
+assertNotReference setChecked ptyRefs.add 
+assertNotReference setChecked setRefs.add 
+assertNotReference setChecked 
+createMapper().add 
+assertNotReference 
+assertNotReference 
+dieOnCircularReference 
+dieOnCircularReference 
+Hashtable<String,Object>.New Hashtable<String,Object>.put 
+Properties.New Properties.putAll 
+dieOnCircularReference StringBuilder.New TreeMap<String,Object>.New 
+dieOnCircularReference Set<String>.New Mapper.New FileNameMapper.New Set<String>.iterator Iterator<String>.New 
+dieOnCircularReference 
+setValue 
+setChecked 
+setChecked 
+setChecked 
+FilterChain.New FilterChain.setProject inputFilterChains.add setChecked 
+FilterChain.New FilterChain.setProject outputFilterChains.add setChecked 
+FilterChain.New FilterChain.setProject errorFilterChains.add setChecked 
+configure 
+getRef().configure dieOnCircularReference redirector.setAlwaysLog redirector.setLogError redirector.setAppend redirector.setCreateEmptyFiles redirector.setOutputProperty redirector.setErrorProperty redirector.setInputString redirector.setLogInputString redirector.setInputFilterChains redirector.setOutputFilterChains redirector.setErrorFilterChains redirector.setInputEncoding redirector.setOutputEncoding redirector.setErrorEncoding redirector.setBinaryOutput 
+Mapper.New Mapper.setClassname Mapper.setTo 
+ArrayList<File>.New 
+setRefId 
+setRefId setProject 
+Object.New 
+init setPattern 
+init setPattern 
+setName setExists setLastModified setDirectory setSize 
+checkAttributesAllowed 
+checkAttributesAllowed 
+lastmodified.longValue 
+checkAttributesAllowed 
+checkAttributesAllowed 
+checkAttributesAllowed 
+checkTarFileSetAttributesAllowed 
+checkTarFileSetAttributesAllowed 
+checkTarFileSetAttributesAllowed 
+checkTarFileSetAttributesAllowed 
+TarScanner.New TarScanner.setEncoding 
+dieOnCircularReference getRefid().getReferencedObject Object.New 
+tfs.setUserName tfs.setGroup tfs.setUid tfs.setGid 
+checkAttributesAllowed 
+TarEntry.New TarInputStream.New 
+setValue 
+Math.abs 
+setChecked 
+setChecked 
+setChecked 
+createClasspath().setRefid setChecked 
+setChecked 
+createCatalogPath().setRefid setChecked 
+getElements().addElement setChecked 
+addDTD 
+getElements().addAll catalog.getClasspath Path.New createClasspath().append catalog.getCatalogPath Path.New createCatalogPath().append setChecked 
+dieOnCircularReference log getCatalogResolver().resolveEntity InputSource.New log 
+dieOnCircularReference SAXSource.New log log setEntityResolver 
+String.indexOf 
+matchingEntry.getLocation String.replace URL.New InputSource.New URL.New 
+InputSource.New AntClassLoader.New Path.New getProject().createClassLoader AntClassLoader.getResourceAsStream InputStream.New InputSource.setSystemId log 
+matchingEntry.getLocation URL.New InputSource.New URL.New 
+ZipScanner.New ZipScanner.setEncoding 
+dieOnCircularReference getRefid().getReferencedObject Object.New 
+checkAttributesAllowed 
+ZipEntry.New ZipFile.New File.New src.as FileProvider.New 
+char[].New 
+List.New List.New List.add FileNameMapper.New 
+ref.getRefId p.getReference Object.New 
+ClassLoader.New 
+p.createClassLoader AntClassLoader.New AntClassLoader.setParentFirst AntClassLoader.addJavaLibraries 
+d1.keys Enumeration<?>.New 
+StringBuilder.New 
+m1.put 
+List<T>.New List<T>.add 
+LinkedHashSet.New FileNameMapper.New 
+closeCurrent 
+openFile 
+setManagingComponent 
+managingPc.log 
+rc.iterator 
+closeCurrent 
+nextResource 
+managingPc.log 
+add 
+add 
+DateFormat.New 
+Object[].New 
+SimpleDateFormat.New TimeZone.getTimeZone TimeZone.New SimpleDateFormat.setTimeZone SimpleDateFormat.setLenient 
+cal.get 
+Calendar.getInstance Calendar.New Calendar.getTimeZone TimeZone.New TimeZone.getOffset StringBuffer.New Math.abs StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append 
+System.arraycopy 
+StringTokenizer.New StringTokenizer.countTokens 
+Math.max 
+Math.max 
+Math.max 
+StringBuffer.New StringBuffer.append 
+Math.max 
+Writer.New writeXMLDeclaration write Writer.flush 
+Writer.write 
+element.getChildNodes NodeList.New openElement closeElement 
+openElement 
+out.write out.write out.write element.getAttributes NamedNodeMap.New out.write out.write out.write out.write out.write ArrayList.New out.write 
+out.write removeNSDefinitions out.write out.write out.write out.flush 
+StringWriter.New 
+value.length 
+ent.substring 
+parent.getOwnerDocument Document.New Document.createElement Element.New parent.appendChild 
+parent.getOwnerDocument Document.New Document.createTextNode Text.New parent.appendChild 
+parent.getOwnerDocument Document.New Document.createCDATASection CDATASection.New parent.appendChild 
+Element.New appendText 
+Element.New appendCDATA 
+copyFile 
+copyFile 
+copyFile 
+copyFile 
+copyFile 
+copyFile 
+copyFile 
+copyFile 
+copyFile 
+copyFile 
+copyFile 
+copyFile 
+copyFile 
+copyFile 
+copyFile 
+ResourceUtils.copyResource 
+ResourceUtils.setLastModified 
+filename.replace('/',sep).replace filename.charAt filename.length 
+filename.length filename.replace('/',sep).replace filename.charAt filename.indexOf 
+StringBuffer.New PathTokenizer.New StringBuffer.append 
+Stack.New String[].New Stack.push StringTokenizer.New StringBuffer.New Stack.size StringBuffer.append 
+StringBuffer.replace('/',sep).replace StringBuffer.indexOf 
+normalize(f.getAbsolutePath()).getPath f.getName StringBuffer.New StringBuffer.insert 
+File.New File.deleteOnExit 
+char[].New StringBuffer.New 
+f.getParentFile File.New File.mkdirs 
+SymbolicLinkUtils.getSymbolicLinkUtils SymbolicLinkUtils.New 
+normalize(leading.getAbsolutePath()).getAbsolutePath normalize(path.getAbsolutePath()).getAbsolutePath 
+normalize(leading.getAbsolutePath()).getAbsolutePath normalize(path.getAbsolutePath()).getAbsolutePath 
+normalize File.New normalize File.New 
+normalize(from.getAbsolutePath()).getCanonicalFile normalize System.err.println System.err.println to.getParentFile File.New copyFile 
+normalize localFile.getName FilenameFilter.New localFile.getParentFile().list String[].New 
+source.lastModified dest.lastModified 
+close 
+close 
+close 
+close 
+close 
+String.delete 
+IdentityStack<E>.New IdentityStack<E>.addAll 
+push 
+File.New 
+File.New 
+FILE_UTILS.normalize File.New File.New 
+Vector<String>.New Vector<String>.addElement 
+buildJrePackages 
+FILE_UTILS.createTempFile File.New BufferedWriter.New 
+nsParserFactory.setNamespaceAware 
+e.getException Exception.New 
+p.setValue 
+logicalLines.iterator Iterator.New 
+FileOutputStream.New store FileOutputStream.close 
+InputStreamReader.New PushbackReader.New logicalLines.add BufferedReader.New StringBuffer.New StringBuffer.New StringBuffer.append(s).append StringBuffer.append 
+StringBuffer.New r.read 
+String.toCharArray char[].New 
+char[].New String.getChars StringBuffer.New 
+char[].New String.getChars StringBuffer.New 
+logicalLines.set 
+ensureOpened 
+ensureOpened fos.close 
+write 
+ensureOpened fos.write 
+ensureOpened fos.write 
+initAll 
+initAll 
+initAll 
+initAll 
+initAll 
+initAll 
+setBufferSize 
+setBufferSize 
+setManagingComponent 
+managingPc.log 
+StringBuffer.New StringBuffer.append 
+Thread.currentThread Thread.New Thread.setContextClassLoader 
+Thread.currentThread Thread.New 
+StringBuilder.New 
+StringBuilder.New line.length 
+setTimeout 
+dieIfClosed 
+name.substring 
+EnumSet.noneOf Set<PosixFilePermission>.New addPermissions addPermissions addPermissions 
+r.as FileProvider.New 
+r.as FileProvider.New 
+Files.readAttributes BasicFileAttributes.New 
+ManagementFactory.getRuntimeMXBean().getName String.indexOf 
+project.setNewProperty 
+System.arraycopy 
+in.reset 
+in.close 
+(new RegexpMatcherFactory()).newRegexpMatcher 
+RegexpUtil.asOptions 
+reg.getGroups Vector.New result.setLength 
+Union.New Union.addAll ResourceCollection.New 
+logFuture ResourceSelectorProvider.New 
+logTo.log Union.getInstance Union.New 
+copyResource 
+copyResource 
+copyResource 
+copyResource 
+File.New copyWithFilterSets 
+t.touch 
+r1.isExists r2.isExists r1.isDirectory r2.isDirectory 
+FileResource.New FileResource.setProject 
+InputStream.New InputStream.New 
+BufferedReader.New BufferedReader.New 
+Date.New Date.setMillis Date.setWhen Restrict.New Restrict.add Restrict.add 
+getClass().getClassLoader ClassLoader.New AntClassLoader.New File.New AntClassLoader.addPathComponent AntClassLoader.addLoaderPackageRoot AntClassLoader.addPathComponent AntClassLoader.addLoaderPackageRoot 
+beans.put 
+ScriptRunnerBase.New 
+ScriptRunnerBase.New new ScriptFixBSFPath().fixClassLoader ScriptRunnerBase.setLanguage ScriptRunnerBase.setScriptClassLoader 
+ScriptRunnerBase.New ScriptRunnerBase.setSrc ScriptRunnerBase.addText ScriptRunnerBase.loadResources ScriptRunnerBase.bindToComponent 
+getClassPathDelegate().setClasspath 
+getClassPathDelegate().setClasspathref 
+resources.add 
+Vector.New Vector.addElement Resource[].New Vector.copyInto ResourceUtils.selectOutOfDateSources Resource[].New String[].New 
+String[].New File[].New 
+StringUtils.resolveBackSlash(delims).toCharArray 
+StringBuffer.New StringBuffer.New StringBuffer.toString StringBuffer.append 
+Vector<String>.New Vector<String>.addElement Vector<String>.addElement 
+StringWriter.New PrintWriter.New t.printStackTrace PrintWriter.flush PrintWriter.close 
+StringBuffer.New 
+humanSize.charAt humanSize.charAt 
+File.New 
+File.New 
+link.getCanonicalFile File.New 
+task.log 
+task.log 
+task.log 
+task.log 
+task.log 
+left.flush right.flush 
+left.write right.write 
+left.write right.write 
+left.write right.write 
+StringBuffer.New Integer.toHexString StringBuffer.setCharAt 
+name.substring 
+encodeBegin byte[].New out.flush encodeEnd 
+PrintStream.New PrintStream.print PrintStream.flush 
+out.write out.write out.write out.write out.write out.write 
+doAdd 
+LinkedList.New ensureCapacity System.arraycopy LinkedList.size 
+observers.addElement 
+observers.removeElement 
+observers.elements Enumeration.New ((TimeoutObserver)e.nextElement()).timeoutOccured 
+Thread.New Thread.setDaemon Thread.start 
+notifyAll 
+System.currentTimeMillis fireTimeoutOccured 
+System.currentTimeMillis 
+BuildException.New 
+JAXPUtils.getDocumentBuilder().newDocument doc.createDocumentFragment 
+addText 
+Element.New fragment.appendChild 
+getProject().replaceProperties n.appendChild 
+assertTrue 
+assertContains 
+assertFalse 
+assertNotContains 
+AntClassLoader.New assertNull assertFalse assertNotNull assertTrue 
+project.executeTarget 
+configureProject 
+project.init File.New project.setProperty project.setProperty project.setUserProperty project.addBuildListener ProjectHelper.configureProject 
+PrintStream.New PrintStream.New 
+project.executeTarget 
+expectSpecificBuildException 
+executeTarget assertEquals 
+assertTrue 
+assertFalse 
+assertOutputContaining 
+assertTrue 
+assertFalse 
+executeTarget assertLogContaining 
+executeTarget assertLogNotContaining 
+executeTarget assertEquals 
+assertTrue 
+executeTarget assertEquals 
+executeTarget assertEquals assertEquals 
+configureProject 
+project.init File.New project.setUserProperty project.setProperty project.setProperty project.addBuildListener ProjectHelper.configureProject 
+PrintStream.New PrintStream.New 
+fail 
+fail 
+executeTarget assertPropertyEquals 
+project.getProperty assertEquals 
+assertPropertyEquals 
+project.getProperty fail 
+expectPropertySet 
+expectPropertySet 
+getClass().getResource URL.New assertNotNull 
+buildRule.executeTarget 
+System.err.println 
+buildRule.getProject().executeTarget DirectoryScanner.New DirectoryScanner.setBasedir DirectoryScanner.setExcludes DirectoryScanner.setFollowSymlinks DirectoryScanner.scan compareFiles DirectoryScanner.setBasedir DirectoryScanner.setExcludes DirectoryScanner.setFollowSymlinks DirectoryScanner.scan compareFiles 
+FileReader.New 
+assumeTrue 
+assertEqualsIgnoreDriveCase assertEqualsIgnoreDriveCase assertEqualsIgnoreDriveCase assertEqualsIgnoreDriveCase assertEqualsIgnoreDriveCase assertEqualsIgnoreDriveCase assertEqualsIgnoreDriveCase assertEqualsIgnoreDriveCase assertEquals assertEquals assertEquals assertEquals assertEquals assertEquals assertEquals assertEquals 
+sb1.setCharAt sb2.setCharAt assertEquals 
+buildRule.configureProject 
+assertExpandsTo assertExpandsTo assertExpandsTo assertExpandsTo buildRule.getProject().setProperty assertExpandsTo assertExpandsTo assertExpandsTo assertExpandsTo assertExpandsTo assertExpandsTo 
+assertExpandsTo assertExpandsTo assertExpandsTo assertExpandsTo assertExpandsTo assertExpandsTo assertExpandsTo 
+assertExpandsTo assertExpandsTo assertExpandsTo assertExpandsTo 
+buildRule.getProject().replaceProperties assertEquals 
+buildRule.getProject().addBuildListener buildRule.executeTarget 
+ServerThread.New Thread.New Thread.start ClientThread.New ClientThread.from ClientThread.to ClientThread.cc ClientThread.cc ClientThread.bcc ClientThread.setSubject ClientThread.setMessage Thread.New Thread.start Thread.join Thread.join ServerThread.getResult assertEquals assertEquals assertFalse 
+ServerThread.New Thread.New Thread.start ClientThread.New ClientThread.from ClientThread.to ClientThread.setSubject ClientThread.setMessage Thread.New Thread.start Thread.join Thread.join ServerThread.getResult assertEquals assertEquals assertFalse 
+ServerThread.New Thread.New Thread.start ClientThread.New ClientThread.from ClientThread.cc ClientThread.setSubject ClientThread.setMessage Thread.New Thread.start Thread.join Thread.join ServerThread.getResult assertEquals assertEquals assertFalse 
+ServerThread.New Thread.New Thread.start ClientThread.New ClientThread.from ClientThread.bcc ClientThread.setSubject ClientThread.setMessage Thread.New Thread.start Thread.join Thread.join ServerThread.getResult assertEquals assertEquals assertFalse 
+ServerThread.New Thread.New Thread.start ClientThread.New ClientThread.from ClientThread.to ClientThread.setMessage Thread.New Thread.start Thread.join Thread.join ServerThread.getResult assertEquals assertEquals assertFalse 
+ServerThread.New Thread.New Thread.start ClientThread.New ClientThread.from ClientThread.to ClientThread.setSubject ClientThread.setMessage Thread.New Thread.start Thread.join Thread.join ServerThread.getResult assertEquals assertEquals assertFalse 
+ServerThread.New Thread.New Thread.start ClientThread.New ClientThread.from ClientThread.to ClientThread.setSubject ClientThread.setMessage Thread.New Thread.start Thread.join Thread.join ServerThread.getResult ByteArrayOutputStream.New ByteArrayOutputStream.New PrintStream.New PrintStream.New PrintStream.print PrintStream.print assertEquals assertEquals assertFalse 
+testLongRoundTripping 
+testLongRoundTripping 
+AsiExtraField.New AsiExtraField.setMode assertEquals AsiExtraField.setDirectory assertEquals AsiExtraField.setLinkedFile assertEquals 
+AsiExtraField.New AsiExtraField.setMode AsiExtraField.setUserId AsiExtraField.setGroupId AsiExtraField.getLocalFileDataData byte[].New byte[].New assertEquals assertEquals AsiExtraField.setLinkedFile AsiExtraField.getLocalFileDataData assertEquals assertEquals 
+byte[].New AsiExtraField.New AsiExtraField.parseFromLocalFileData assertEquals assertTrue assertTrue assertEquals assertEquals assertEquals AsiExtraField.parseFromLocalFileData assertEquals assertTrue assertTrue assertEquals assertEquals assertEquals assertEquals AsiExtraField.parseFromLocalFileData assertEquals assertTrue assertTrue assertEquals assertEquals assertEquals 
+ExtraFieldUtils.parse ZipExtraField[].New assertEquals assertTrue assertEquals assertTrue assertEquals byte[].New System.arraycopy 
+byte[].New assertEquals assertEquals dummy.getCentralDirectoryData byte[].New byte[].New System.arraycopy System.arraycopy System.arraycopy byte[].New assertEquals assertEquals 
+AsiExtraField.New AsiExtraField.setDirectory AsiExtraField.setMode UnrecognizedExtraField.New UnrecognizedExtraField.setHeaderId UnrecognizedExtraField.setLocalFileDataData ZipEntry.New ZipEntry.setExtraFields ZipEntry.getExtra byte[].New ZipEntry.getExtraFields ZipExtraField[].New assertEquals assertSame assertSame UnrecognizedExtraField.New UnrecognizedExtraField.setHeaderId UnrecognizedExtraField.setLocalFileDataData ZipEntry.addExtraField ZipEntry.getExtra byte[].New ZipEntry.getExtraFields assertEquals assertSame assertSame assertEquals UnrecognizedExtraField.New UnrecognizedExtraField.setHeaderId UnrecognizedExtraField.setLocalFileDataData ZipEntry.addExtraField ZipEntry.getExtraFields assertEquals ZipEntry.removeExtraField ZipEntry.getExtra byte[].New ZipEntry.getExtraFields assertEquals assertSame assertSame assertEquals 
+AsiExtraField.New AsiExtraField.setDirectory AsiExtraField.setMode UnrecognizedExtraField.New UnrecognizedExtraField.setHeaderId UnrecognizedExtraField.setLocalFileDataData ZipEntry.New ZipEntry.setExtraFields ExtraFieldUtilsTest.UNRECOGNIZED_HEADER.getBytes byte[].New ZipEntry.setCentralDirectoryExtra ZipEntry.getExtraFields ZipExtraField[].New assertEquals assertSame assertEquals assertEquals assertEquals ZipEntry.setCentralDirectoryExtra ZipEntry.getExtraFields assertEquals ZipEntry.setExtra ZipEntry.getExtraFields assertEquals assertSame assertEquals assertEquals assertEquals 
+AsiExtraField.New AsiExtraField.setDirectory AsiExtraField.setMode UnrecognizedExtraField.New UnrecognizedExtraField.setHeaderId UnrecognizedExtraField.setLocalFileDataData ZipEntry.New ZipEntry.setExtraFields ZipEntry.getExtra byte[].New UnrecognizedExtraField.New UnrecognizedExtraField.setHeaderId UnrecognizedExtraField.setLocalFileDataData ZipEntry.addAsFirstExtraField ZipEntry.getExtra byte[].New ZipEntry.getExtraFields ZipExtraField[].New assertEquals assertSame assertSame assertEquals UnrecognizedExtraField.New UnrecognizedExtraField.setHeaderId UnrecognizedExtraField.setLocalFileDataData ZipEntry.addAsFirstExtraField ZipEntry.getExtraFields assertEquals assertSame assertSame assertSame 
+ZipEntry.New ZipEntry.New assertFalse 
+ZipLong.New ZipLong.getBytes byte[].New assertEquals assertEquals assertEquals assertEquals assertEquals 
+byte[].New ZipLong.New assertEquals 
+ZipLong.New ZipLong.New ZipLong.New assertTrue assertTrue assertTrue assertTrue assertTrue assertTrue 
+ZipLong.New assertEquals 
+ZipShort.New ZipShort.getBytes byte[].New assertEquals assertEquals assertEquals 
+byte[].New ZipShort.New assertEquals 
+ZipShort.New ZipShort.New ZipShort.New assertTrue assertTrue assertTrue assertTrue assertTrue assertTrue 
+ZipShort.New assertEquals 
+Reader.New filterChains.size Vector<Object>.New ArrayList<AntClassLoader>.New Vector<Object>.size Reader.New 
+((BaseFilterReader)obj).setProject project.setProjectReference 
+it.next().cleanup 
+filter.getClassName filter.getClasspath Path.New filter.getProject Project.New 
+StringBuffer.New ByteArrayInputStream.New ClassParser.New ClassParser.parse JavaClass.New JavaClass.getFields Field[].New 
+task.log 
+attributes.getSrcdir attributes.getDestdir attributes.getEncoding attributes.getDebug attributes.getOptimize attributes.getDeprecation attributes.getDepend attributes.getVerbose attributes.getTarget attributes.getRelease attributes.getBootclasspath attributes.getExtdirs attributes.getFileList attributes.getClasspath attributes.getModulepath attributes.getUpgrademodulepath attributes.getSourcepath attributes.getModulesourcepath attributes.getProject attributes.getLocation attributes.getIncludeantruntime attributes.getIncludejavaruntime attributes.getMemoryInitialSize attributes.getMemoryMaximumSize 
+Path.New Path.setLocation Path.New Path.addExisting Path.addJavaRuntime 
+Path.New Path.addExisting 
+Path.New Path.addExisting 
+Path.New Path.add 
+Path.New Path.New cmd.createArgument().setValue cmd.createArgument().setValue cmd.createArgument().setValue cmd.createArgument().setFile cmd.createArgument().setValue Path.append Path.append cmd.createArgument().setPath cmd.createArgument().setValue cmd.createArgument().setValue cmd.createArgument().setValue cmd.createArgument().setValue addCurrentCompilerArgs 
+setupJavacCommandlineSwitches Path.New cmd.createArgument().setValue cmd.createArgument().setPath Path.New cmd.createArgument().setValue cmd.createArgument().setPath Path.New cmd.createArgument().setValue cmd.createArgument().setPath 
+Commandline.New setupModernJavacCommandlineSwitches logAndAddFilesToCompile 
+Commandline.New setupJavacCommandlineSwitches logAndAddFilesToCompile 
+attributes.log StringBuffer.New StringBuffer.append StringBuffer.append StringBuffer.append Commandline.createArgument().setValue StringBuffer.append StringBuffer.append StringBuffer.append attributes.log 
+String[].New File.New 
+Path.addExtdirs 
+Commandline.addArguments 
+Path.New Path.append 
+Commandline.New attributes.log Commandline.size logAndAddFilesToCompile 
+Commandline.New Path.New Path.New Path.append Path.addExtdirs Path.append Path.append getJavac().getExecutable Commandline.setExecutable Commandline.createArgument().setValue Commandline.createArgument().setFile Commandline.createArgument().setValue Commandline.createArgument().setPath Commandline.createArgument().setValue Commandline.createArgument().setValue Commandline.createArgument().setValue Commandline.createArgument().setValue Commandline.createArgument().setValue Commandline.createArgument().setValue addCurrentCompilerArgs 
+getJavac().getCurrentCompilerArgs String[].New 
+attributes.log Commandline.New OutputStream.New 
+attributes.log Commandline.New 
+attributes.log Commandline.New Commandline.setExecutable setupModernJavacCommandlineSwitches logAndAddFilesToCompile 
+File.New 
+attributes.log Commandline.New Path.New Commandline.createArgument().setValue Commandline.createArgument().setPath Path.New Path.append System.getProperty Path.append Commandline.createArgument().setValue Commandline.createArgument().setPath getJavac().getExecutable Commandline.setExecutable Commandline.createArgument().setValue Commandline.createArgument().setValue Commandline.createArgument().setFile Commandline.createArgument().setValue Commandline.createArgument().setPath Commandline.createArgument().setValue Commandline.createArgument().setValue Commandline.createArgument().setValue Commandline.createArgument().setValue Commandline.createArgument().setValue Commandline.createArgument().setValue Commandline.createArgument().setValue addPropertyParams Commandline.createArgument().setValue addCurrentCompilerArgs Commandline.size Path.New Commandline.createArgument().setValue Commandline.createArgument().setPath logAndAddFilesToCompile 
+attributes.log Path.New Path.New Path.append Path.addExtdirs Path.append Path.append Commandline.New getJavac().getExecutable Commandline.setExecutable Commandline.createArgument().setValue Commandline.createArgument().setFile Commandline.createArgument().setValue Commandline.createArgument().setPath getProject().getProperty Commandline.createArgument().setValue Commandline.createArgument().setValue Commandline.createArgument().setValue Commandline.createArgument().setValue Commandline.createArgument().setValue Commandline.createArgument().setValue addCurrentCompilerArgs Commandline.size logAndAddFilesToCompile 
+attributes.log Commandline.New Commandline.setExecutable ExecuteJava.New ExecuteJava.setJavaCommand 
+Commandline.New Path.New Commandline.createArgument().setValue Commandline.createArgument().setValue Commandline.createArgument().setFile Commandline.createArgument().setValue Path.New Path.New Path.append Path.addExtdirs Path.append Path.append Commandline.createArgument().setPath Commandline.createArgument().setValue Commandline.createArgument().setValue Commandline.createArgument().setValue Commandline.createArgument().setValue Commandline.createArgument().setValue addCurrentCompilerArgs logAndAddFilesToCompile 
+attributes.log Commandline.New getJavac().getExecutable Commandline.setExecutable 
+validate DeweyDecimal.New 
+conditions.addElement 
+conditions.addElement 
+conditions.addElement 
+conditions.addElement 
+conditions.addElement 
+conditions.addElement 
+conditions.addElement 
+conditions.addElement 
+conditions.addElement 
+conditions.addElement 
+conditions.addElement 
+conditions.addElement 
+conditions.addElement 
+conditions.addElement 
+conditions.addElement 
+conditions.addElement 
+conditions.addElement 
+conditions.addElement 
+setArg1 
+setArg1Internal 
+setArg2 
+setArg2Internal 
+validate 
+createClasspath().append 
+createClasspath().setRefid 
+ClassLoader.New 
+validate File.New FileSelector.New 
+dfFactory.getPrimaryFormat DateFormat.New ParseException.New 
+validate resource.getLastModified log 
+log InetAddress.New log Method.New log 
+ZipFile.New 
+log log 
+regularExpression.setPattern 
+setFamily 
+f.toLowerCase 
+name.toLowerCase 
+arch.toLowerCase 
+version.toLowerCase 
+JAXPUtils.getParser 
+XMLReader.New Project.toBoolean 
+XMLReader.New 
+validate BufferedReader.New 
+resources.add 
+ComponentHelper.getComponentHelper ComponentHelper.New ProjectHelper.genComponentName ComponentHelper.getDefinition AntTypeDefinition.New log 
+Enumeration.New 
+CVSEntry[].New 
+System.getProperty saveEntry 
+line.substring saveEntry 
+CVSEntry.New entries.put CVSEntry.addFile 
+cvsUsers.addElement 
+setStart 
+filesets.addElement 
+File.New 
+Vector.New Vector.addElement CVSEntry[].New Vector.copyInto 
+FileOutputStream.New 
+doc.createElement Element.New DOMUtils.appendTextElement DOMUtils.appendTextElement DOMUtils.appendCDATAElement entry.getFiles().elements Enumeration.New DOMUtils.appendCDATAElement DOMUtils.appendTextElement DOMUtils.appendCDATAElement DOM_WRITER.write 
+files.addElement 
+files.addElement 
+validate addCommandArgument addCommandArgument addCommandArgument addCommandArgument addCommandArgument addCommandArgument setCommand File.New 
+BufferedReader.New 
+FileOutputStream.New 
+doc.createElement Element.New DOMUtils.createChildElement Element.New DOMUtils.appendCDATAElement DOMUtils.appendTextElement DOMUtils.appendTextElement DOM_WRITER.write 
+packageNames.add 
+StringBuffer.New StringBuffer.append StringBuffer.append 
+StringTokenizer.New 
+ByteArrayOutputStream.New this.setOutputStream ByteArrayOutputStream.New this.setErrorStream setCommand ByteArrayOutputStream.toString log StringTokenizer.New getProject().setNewProperty getProject().setNewProperty 
+parser.stdout 
+email.length trim trim 
+t.length 
+encoding.getValue 
+this.message.setProject 
+this.message.setProject 
+this.replyToList.add 
+this.replyToList.add 
+toList.addElement 
+StringTokenizer.New toList.addElement 
+ccList.addElement 
+StringTokenizer.New ccList.addElement 
+bccList.addElement 
+StringTokenizer.New bccList.addElement 
+StringTokenizer.New createAttachments().add 
+createAttachments().add 
+Header.New headers.add 
+Message.New 
+addText 
+buffer.append 
+BufferedWriter.New 
+byte[].New 
+project.log 
+CommandLauncher.New 
+CommandLauncher.New 
+project.addReference 
+project.addReference 
+System.getProperties().put 
+File.New File.getAbsolutePath String[].New String.substring String.substring System.arraycopy 
+project.getProperty FILE_UTILS.resolveFile(project.getBaseDir(),antHome + File.separator + myScript).toString File.New String[].New File.getAbsolutePath System.arraycopy 
+project.getProperty FILE_UTILS.resolveFile(project.getBaseDir(),antHome + File.separator + myScript).toString File.New String[].New File.getAbsolutePath System.arraycopy 
+File.New Process.New deleteAfter 
+File.New Process.New deleteAfter 
+File.New String[].New File.getAbsolutePath System.arraycopy 
+commandline.setVm commandline.setClassname 
+log 
+log 
+setGlib 
+addClasspathEntry 
+LoaderUtils.getResourceSource File.New log createClasspath().setLocation 
+validateAttributes File.New populateAttributes commandline.createArgument().setValue log 
+commandline.createArgument().setValue commandline.createArgument().setValue commandline.createArgument().setValue commandline.createArgument().setValue commandline.createArgument().setValue commandline.createArgument().setValue commandline.createArgument().setValue commandline.createArgument().setValue commandline.createArgument().setValue commandline.createArgument().setValue 
+PumpStreamHandler.New Execute.New Execute.setAntRun Execute.setWorkingDirectory Execute.setCommandline 
+filesets.addElement 
+ExecTask.New 
+files.size 
+FILE_UTILS.createTempFile File.New BufferedWriter.New 
+ds.getIncludedFiles String[].New files.addElement 
+Vector.New appendFiles 
+checkConfiguration Vector.New log log sb.append("\n").append(cabFile.getAbsolutePath()).append 
+ps.setProject ps.appendPrefix addPropertyset 
+ps.setProject ps.appendRegex addPropertyset 
+propertySets.addElement 
+ea.getValue 
+Hashtable.New Hashtable.putAll propertySets.elements Enumeration.New Hashtable.putAll OutputStream.New 
+List.New Collections.sort Properties.New List.size Properties.setProperty jdkSaveProperties 
+getDocumentBuilder().newDocument Document.New Document.createElement Element.New List.New List.iterator Iterator.New propElement.setAttribute propElement.setAttribute Element.appendChild Writer.New 
+ClassArgument.New classes.addElement 
+files.add 
+ArrayList.New classes.elements Enumeration.New ArrayList.add 
+createClasspath().setRefid 
+createBootclasspath().setRefid 
+facade.setImplementation 
+ImplementationSpecificArgument.New facade.addImplementationArgument 
+JavahAdapter.New 
+logAndAddFilesToCompile 
+log StringBuffer.New String[].New cmd.createArgument().setValue StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.New StringBuffer.append StringBuffer.append StringBuffer.append log 
+facade.setImplementation 
+createMapper().add 
+ImplementationSpecificArgument.New facade.addImplementationArgument 
+DirectoryScanner.New String[].New FileNameMapper.New DirectoryScanner.getIncludedFiles SourceFileScanner.New SourceFileScanner.restrict log convert 
+File.New File.New File.getParent log Native2AsciiAdapter.New 
+log 
+trace.getValue 
+TraceAttr.New TraceAttr.setValue setTrace 
+verbose.getValue 
+VerboseAttr.New VerboseAttr.setValue setVerbose 
+setTrace setVerbose 
+DirectoryScanner.New DirectoryScanner.getIncludedFiles String[].New scanDir copyFilesToDestination log doNetRexxCompile 
+log 
+log 
+log StringBuffer.New String[].New String[].New compileList.elements Enumeration.New String[].New StringBuffer.append StringBuffer.append StringBuffer.append log System.getProperty StringBuffer.New compileList.size StringBuffer.append StringBuffer.append StringBuffer.append log System.getProperty System.getProperties Properties.New Properties.put 
+StringBuffer.New StringBuffer.append addExistingToClasspath 
+Vector.New Vector.addElement Vector.addElement Vector.addElement Vector.addElement Vector.addElement Vector.addElement Vector.addElement Vector.addElement Vector.addElement Vector.addElement Vector.addElement Vector.addElement Vector.addElement Vector.addElement Vector.addElement Vector.addElement Vector.addElement Vector.addElement Vector.addElement Vector.addElement Vector.addElement Vector.addElement Vector.addElement Vector.addElement Vector.addElement Vector.addElement String[].New Vector.copyInto 
+StringTokenizer.New 
+checkParameters readFile executeOperation writeFile 
+Entry.New entries.addElement 
+globType.setValue 
+log log log log log log log log log Move.New Move.bindToOwner Move.setOwningTarget Move.setTaskName Move.setLocation Move.setTodir Move.setOverwrite fileset.setDir Move.addFileset Move.createMapper Mapper.New Mapper.setType Mapper.setFrom Mapper.setTo Move.execute 
+regex.setPattern 
+subs.setExpression 
+Boolean.valueOf Boolean.New Boolean.booleanValue 
+addConfigured 
+resources.add 
+r.getRegexp Regexp.New log 
+FILE_UTILS.createTempFile File.New 
+RegexpUtil.asOptions 
+Commandline.New Commandline.setExecutable Commandline.createArgument().setValue Commandline.createArgument().setValue Commandline.createArgument().setLine Commandline.createArgument().setValue Commandline.createArgument().setValue Commandline.createArgument().setValue Commandline.createArgument().setValue ExecuteStreamHandler.New OutputStream.New OutputStream.New Execute.New 
+Execute.getEnvironmentVariables Map.New 
+Execute.New Execute.setAntRun Execute.setWorkingDirectory Execute.setCommandline 
+setLenient 
+setProperty 
+log location.validateNamespace SchemaLocation.New schemaLocations.put 
+anonymousSchema.setNamespace 
+createAnonymousSchema this.anonymousSchema.setUrl 
+createAnonymousSchema this.anonymousSchema.setFile 
+setFeature setFeature setFeatureIfSupported addSchemaLocations 
+SAXParserFactory.newInstance SAXParserFactory.New SAXParserFactory.setValidating SAXParserFactory.setNamespaceAware XMLReader.New 
+schemaLocations.values().iterator Iterator.New StringBuffer.New StringBuffer.append log setProperty 
+log 
+helper.setProjectComponent 
+helper.getScriptRunner().executeScript 
+helper.setManager 
+helper.setLanguage 
+helper.setSrc 
+helper.addText 
+helper.setClasspath 
+helper.setClasspathRef 
+helper.setSetBeans 
+FileResource.New FileResource.setProject FileResource.setFile setStylesheet 
+createTransformer InputStream.New OutputStream.New 
+Source.New Source.setSystemId 
+readTemplates templates.newTransformer transformer.setErrorListener transformer.setURIResolver outputProperties.size transformer.setOutputProperty 
+transformer.setParameter 
+applyReflectionHackForExtensionMethods tfactory.setErrorListener attributes.size tfactory.setAttribute tfactory.setURIResolver 
+Object[].New attributes.add 
+features.put 
+String[].New outputProperties.addElement 
+params.put 
+params.put 
+logError 
+logError 
+logError 
+xsltTask.getProject xsltTask.getFactory XSLTProcess.Factory.New setFactory xsltTask.getXMLCatalog XMLCatalog.New setEntityResolver setURIResolver setOutputProperty xsltTask.getSuppressWarnings xsltTask.getTraceConfiguration 
+createClasspath().setRefid 
+xmlCatalog.addConfiguredXMLCatalog 
+filesets.addElement 
+Attribute.New attributeList.addElement 
+Property.New propertyList.addElement 
+xmlCatalog.setProject 
+DTDLocation.New xmlCatalog.addDTD 
+log 
+xmlReader.setEntityResolver xmlReader.setErrorHandler 
+Object.New XMLReader.New log 
+readerLoader.cleanup 
+Object.New 
+log 
+initValidator log 
+Path.New Path.setLocation attributes.getClasspath Path.New Path.addExisting Path.addJavaRuntime 
+Commandline.New Path.New Commandline.createArgument().setValue Commandline.createArgument().setFile Commandline.createArgument().setValue Commandline.createArgument().setPath Commandline.createArgument().setValue Commandline.createArgument().setPath Commandline.createArgument().setValue Commandline.createArgument().setValue attributes.log Commandline.createArgument().setValue Commandline.createArgument().setValue attributes.log Commandline.createArgument().setValue attributes.getCurrentCompilerArgs String[].New Commandline.addArguments verifyArguments logAndAddFilesToCompile 
+attributes.getStubVersion 
+List.New List.size 
+attributes.getCompileList Vector.New attributes.log StringBuffer.New Vector.size StringBuffer.append StringBuffer.append Commandline.createArgument().setValue StringBuffer.append StringBuffer.append attributes.log 
+Rmic.New Commandline.New Rmic.getProject Project.New Rmic.getExecutable Commandline.setExecutable Commandline.getCommandline String[].New 
+getRmic().log Commandline.New Class.New buf.append Commandline.setExecutable Commandline.createArgument().setValue getRmic().log ExecuteJava.New ExecuteJava.setJavaCommand 
+getRmic().log Commandline.New LogOutputStream.New 
+getRmic().log Commandline.New AntClassLoader.New 
+getRmic().getStubVersion getRmic().log 
+String[].New Commandline.New 
+sourceFileName.replace('/',fileSep).replace String.indexOf 
+helper.setProjectComponent 
+initScriptRunner 
+helper.setSrc 
+helper.addText 
+helper.setManager 
+helper.setLanguage 
+helper.setProjectComponent helper.getScriptRunner 
+helper.setClasspath 
+helper.setClasspathRef 
+getRunner().executeScript 
+helper.setSetBeans 
+initScriptRunner executeScript 
+helper.setProjectComponent 
+helper.setLanguage 
+helper.getScriptRunner 
+init setToken runner.executeScript 
+helper.setSrc 
+helper.addText 
+helper.setManager 
+helper.setClasspath 
+helper.setClasspathRef 
+helper.setSetBeans 
+files.add 
+initScriptRunner getRunner().addBean clear executeScript 
+helper.setProjectComponent 
+helper.setManager 
+helper.setLanguage 
+helper.getScriptRunner 
+helper.setSrc 
+helper.addText 
+helper.setClasspath 
+helper.setClasspathRef 
+helper.setSetBeans 
+init setSelected runner.addBean runner.addBean runner.addBean runner.executeScript 
+Catalog.New ApacheCatalog.New ApacheCatalog.setResolver 
+checkAttributesAllowed setChecked 
+checkChildrenAllowed setChecked 
+checkAttributesAllowed createClasspath().setRefid 
+dieOnCircularReference 
+dieOnCircularReference 
+checkAttributesAllowed 
+dieOnCircularReference InputStream.New 
+dieOnCircularReference ClassLoaderWithFlag.New 
+ClassLoader.New 
+setChecked 
+dieOnCircularReference 
+getResourceCollection().iterator Iterator<Resource>.New List<Resource>.New Iterator<Resource>.next List<Resource>.add 
+List<Resource>.New 
+setArchive 
+addConfigured 
+checkAttributesAllowed 
+checkAttributesAllowed 
+checkChildrenAllowed a.iterator().next 
+checkEntry 
+checkEntry 
+checkEntry 
+checkEntry 
+checkEntry 
+ArchiveResource.New 
+dieOnCircularReference Resource.New fetchEntry 
+setChecked 
+setChecked 
+dieOnCircularReference 
+dieOnCircularReference List<Resource>.New List<Resource>.addAll 
+List<ArchiveFileSet>.New 
+afs.setProject afs.setSrcResource 
+setProject 
+rc.clear FailFast.invalidate setChecked 
+rc.add FailFast.invalidate setChecked 
+dieOnCircularReference 
+dieOnCircularReference 
+dieOnCircularReference 
+dieOnCircularReference 
+FileResourceIterator.New FileResourceIterator.addFiles FileResourceIterator.addFiles 
+out.write 
+addConfigured 
+getResource().getInputStream InputStream.New 
+getResource().getOutputStream OutputStream.New 
+List<ResourceCollection>.New List<ResourceCollection>.size Set<Resource>.New List<Resource>.New 
+MAP.get Set<FailFast>.New Set<FailFast>.clear 
+add 
+failFast 
+failFast 
+FILE_UTILS.resolveFile 
+setFile 
+setProject 
+checkAttributesAllowed setBaseDir 
+dieOnCircularReference 
+checkAttributesAllowed 
+dieOnCircularReference 
+File.New 
+another.as FileProvider.New 
+FileResource.New 
+file.getAbsolutePath 
+dieOnCircularReference 
+((FileResource)getCheckedRef()).touch log 
+dieOnCircularReference 
+FILE_UTILS.resolveFile File.New FileResource.New FileResource.setBaseDir 
+addFiles 
+String[].New System.arraycopy System.arraycopy 
+FileResource.New FileResource.setProject 
+setProject 
+PatternSet.New additionalPatterns.addElement setChecked 
+checkAttributesAllowed defaultPatterns.setIncludes 
+checkAttributesAllowed 
+checkAttributesAllowed defaultPatterns.setExcludes 
+checkAttributesAllowed 
+checkAttributesAllowed defaultPatterns.setIncludesfile 
+checkAttributesAllowed defaultPatterns.setExcludesfile 
+checkAttributesAllowed 
+checkAttributesAllowed 
+checkAttributesAllowed 
+ensureDirectoryScannerSetup ds.scan ds.getIncludedFilesCount ds.getIncludedDirsCount FileResourceIterator.New FileResourceIterator.addFiles FileResourceIterator.addFiles 
+ensureDirectoryScannerSetup ds.scan 
+dieOnCircularReference 
+Iterator<Resource>.New StringBuffer.New StringBuffer.append 
+Files.New 
+dieOnCircularReference PatternSet.New PatternSet.append additionalPatterns.size PatternSet.append 
+getResourceCollection().iterator Iterator<Resource>.New List<Resource>.New List<Resource>.add 
+List<ResourceCollection>.New List<ResourceCollection>.size List<ResourceCollection>.iterator Iterator<ResourceCollection>.New Set<Resource>.New Set<Resource>.retainAll 
+String.lastIndexOf String.substring String.substring 
+setName setClasspath 
+InputStream.New 
+AbstractClasspathResource.ClassLoaderWithFlag.New 
+ResourceCollection.New ResourceCollection.iterator Iterator<Resource>.New ResourceCollection.size Iterator<Resource>.next List<Resource>.New List<Resource>.add List<Resource>.size log 
+getResource().getName mapper.mapFileName String[].New 
+MappedResource.New MappedResource.getName 
+setChecked 
+setChecked 
+createMapper().add 
+checkInitialized 
+checkInitialized 
+checkInitialized 
+Iterator<Resource>.New StringBuffer.New StringBuffer.append 
+baseDirs.add 
+setProject 
+Project.New 
+Project.New 
+Object.New 
+Object.New 
+Object.New 
+addConfigured 
+checkChildrenAllowed setChecked a.iterator().next 
+dieOnCircularReference 
+textDocuments.add setChecked 
+filterChains.add setChecked 
+setProject 
+rc.add invalidateExistingIterators setChecked 
+validate 
+validate 
+validate 
+validate StringBuffer.New 
+FailFast.invalidate 
+w.add setChecked 
+w.setCache 
+FailFast.invalidate 
+dieOnCircularReference 
+dieOnCircularReference 
+dieOnCircularReference 
+dieOnCircularReference 
+checkAttributesAllowed 
+getResourceCollection().size 
+ResourceCollection.New ResourceCollection.iterator Iterator<Resource>.New List<Resource>.New Collections.sort 
+comp.add FailFast.invalidate setChecked 
+DataType.pushAndInvokeCircularReferenceCheck setChecked 
+setProject setValue 
+setName 
+checkChildrenAllowed setValue 
+checkAttributesAllowed 
+setValue 
+setEntry 
+setEntry 
+Resource.New TarInputStream.New TarEntry.New FileUtils.close 
+Resource.New TarInputStream.New setEntry 
+ResourceCollection.New ConcatResourceInputStream.New ConcatResourceInputStream.setManagingComponent InputStreamReader.New 
+setChecked 
+setChecked 
+add 
+Collection<String>.New 
+Collection<Resource>.New 
+Set<Resource>.New ArrayList<String>.New 
+List<ResourceCollection>.New LinkedHashSet<Resource>.New 
+setURL 
+setURL 
+setFile 
+checkAttributesAllowed 
+checkAttributesAllowed 
+checkAttributesAllowed 
+getURL().getFile 
+URLResource.New 
+connect 
+connect 
+connect 
+URL.New 
+setEncoding setEntry 
+setArchive 
+getArchive().as FileProvider.New 
+checkAttributesAllowed 
+ZipFile.New ZipFile.getEntry ZipEntry.New ZipFile.close 
+checkEntry 
+ZipFile.New 
+dieOnCircularReference 
+dieOnCircularReference 
+dieOnCircularReference FileSelector[].New selectorsList.copyInto 
+dieOnCircularReference 
+StringBuilder.New Enumeration<FileSelector>.New 
+selectorsList.addElement setChecked 
+appendSelector 
+appendSelector 
+appendSelector 
+appendSelector 
+appendSelector 
+appendSelector 
+appendSelector 
+appendSelector 
+appendSelector 
+appendSelector 
+appendSelector 
+appendSelector 
+appendSelector 
+appendSelector 
+appendSelector 
+appendSelector 
+appendSelector 
+appendSelector 
+appendSelector 
+validate Enumeration<FileSelector>.New 
+verifySettings dieOnCircularReference 
+dieOnCircularReference 
+dieOnCircularReference 
+dieOnCircularReference FileSelector[].New selectorsList.copyInto 
+dieOnCircularReference 
+dieOnCircularReference StringBuilder.New Enumeration<FileSelector>.New StringBuilder.append 
+selectorsList.addElement setChecked 
+setError 
+BufferedReader.New validate myRegExp.setPattern 
+setError 
+validate BufferedReader.New 
+FILE_UTILS.getFileTimestampGranularity 
+validate 
+setWhen 
+setError 
+validate 
+SelectorUtils.isOutOfDate 
+setError setError 
+validate basedir.getAbsolutePath file.getAbsolutePath StringTokenizer.New StringTokenizer.New 
+paramVec.addElement 
+createClasspath().setRefid 
+selectorCreate setError 
+validate paramVec.copyInto ((ExtendFileSelector)dynselector).setParameters 
+pattern.replace('/',File.separatorChar).replace 
+setError 
+validate 
+validate Enumeration<FileSelector>.New 
+setError 
+validate map.mapFileName String[].New FILE_UTILS.resolveFile File.New 
+validate Enumeration<FileSelector>.New 
+appendSelector 
+setError 
+validate Enumeration<FileSelector>.New 
+setError 
+validate map.mapFileName String[].New FileUtils.getFileUtils().resolveFile File.New 
+String[].New String[].New 
+String[].New 
+String[].New 
+pattern.toCharArray char[].New str.toCharArray char[].New 
+Vector<String>.New Vector<String>.add StringTokenizer.New Vector<String>.addElement 
+path.length String[].New 
+src.getLastModified target.getLastModified 
+StringBuffer.New 
+getCheckedRef Object.New 
+setError 
+PropertyHelper.getPropertyHelper PropertyHelper.New 
+setIf 
+setUnless 
+validate Enumeration<FileSelector>.New Enumeration<FileSelector>.nextElement FileSelector.New 
+isSigned.setName 
+isSigned.setProject isSigned.setFile 
+StringBuilder.New StringBuilder.append StringBuilder.append("compare: ").append StringBuilder.append 
+units.getIndex 
+validate 
+System.arraycopy 
+String[].New 
+StringBuilder.New StringBuilder.append String[].New System.arraycopy 
+fileTypes.getValue 
+setError 
+validate 
+Provider.New Provider.setClassName providerList.add 
+Provider.check providerList.add 
+ByteArrayOutputStream.New Writer.New Writer.close 
+reset 
+determineDependencies 
+determineDependencies 
+this.sourcePath.append this.sourcePath.setProject 
+this.classPath.append this.classPath.setProject 
+rootClasses.addElement 
+rootClasses.removeAllElements 
+args.add 
+List<String>.New String[].New 
+ProxySelector.getDefault ProxySelector.New ProxySelector.select List.New StringBuffer.New List.listIterator Iterator.New 
+checkLanguage ClassLoader.New 
+evaluateScript 
+checkLanguage ClassLoader.New 
+BuildException.New Throwable.New 
+Hashtable.New getProject().log 
+checkLanguage ClassLoader.New 
+checkLanguage ClassLoader.New 
+Throwable.New be.getTargetException Throwable.New 
+Pattern.New 
+Vector.New matcher.getMatch MatchResult.New MatchResult.groups Vector.addElement 
+StringBuffer.New Substitution.New 
+RegexpUtil.hasFlag 
+RE.New Vector.New RE.getParenCount Vector.addElement 
+Vector.New StringBuffer.New StringBuffer.toString RE.New 
+Pattern.New Pattern.matcher Matcher.New Vector.New Matcher.groupCount Vector.addElement 
+StringBuffer.New StringBuffer.toString Pattern.New StringBuffer.New Pattern.matcher Matcher.New StringBuffer.append 
+buildRule.executeTarget FileUtilities.getFileContents assertTrue assertTrue 
+buildRule.executeTarget 
+Locator.fromURI assertResolved assertResolved 
+assertEquals 
+new File(path).toURI().toASCIIString 
+resolveTo 
+Locator.fromJarURI assertResolved assertResolved 
+Locator.fromJarURI File.New File.getAbsolutePath assertEquals 
+System.getProperty 
+buildRule.executeTarget assertEquals 
+buildRule.configureProject 
+buildRule.executeTarget 
+File.New File.delete buildRule.executeTarget assertTrue 
+test3 File.New File.length buildRule.executeTarget File.New File.length assertEquals 
+buildRule.executeTarget assertEquals 
+buildRule.executeTarget assertTrue 
+buildRule.executeTarget assertTrue assertTrue 
+buildRule.executeTarget assertContains 
+buildRule.executeTarget assertContains 
+buildRule.configureProject 
+buildRule.executeTarget 
+System.getProperty System.err.println 
+System.getProperty System.err.println 
+buildRule.executeTarget buildRule.getProject().setProperty buildRule.getProject().setProperty buildRule.executeTarget 
+buildRule.getProject().setProperty buildRule.executeTarget 
+buildRule.executeTarget 
+assertNull project.setProperty assertNull javac.setFork assertNotNull assertContains project.setProperty javac.setFork assertNotNull assertContains project.setProperty assertNull javac.setFork javac.setExecutable assertEquals 
+javac.getCurrentCompilerArgs String[].New assertNotNull assertEquals javac.createCompilerArg Javac.ImplementationSpecificArgument.New Javac.ImplementationSpecificArgument.setValue javac.getCurrentCompilerArgs assertEquals assertEquals Javac.ImplementationSpecificArgument.setCompiler javac.getCurrentCompilerArgs assertNotNull assertEquals project.setProperty javac.getCurrentCompilerArgs assertNotNull assertEquals project.setProperty javac.getCurrentCompilerArgs assertEquals assertEquals Javac.ImplementationSpecificArgument.setLine javac.getCurrentCompilerArgs assertEquals assertEquals assertEquals 
+javac.createCompilerArg Javac.ImplementationSpecificArgument.New Javac.ImplementationSpecificArgument.setValue Javac.ImplementationSpecificArgument.setCompiler javac.setFork javac.getCurrentCompilerArgs String[].New assertEquals assertEquals 
+javac.getCompiler assertNotNull assertEquals javac.setFork assertNotNull assertEquals assertEquals javac.setProject project.setUserProperty javac.getCompiler assertNotNull assertEquals javac.setFork javac.getCompiler assertNotNull assertEquals javac.setFork javac.setCompiler javac.getCompiler assertNotNull assertEquals javac.setFork javac.getCompiler assertNotNull assertEquals 
+buildRule.configureProject buildRule.executeTarget System.getProperty 
+Assume.assumeTrue buildRule.executeTarget 
+buildRule.executeTarget assertNull 
+buildRule.executeTarget fail 
+buildRule.executeTarget assertNotNull 
+buildRule.executeTarget fail 
+buildRule.executeTarget fail 
+buildRule.executeTarget buildRule.getProject().getProperty buildRule.getProject().getProperty assertEquals 
+buildRule.executeTarget assertPropertyContains URL.New URL.openStream InputStream.New InputStream.close 
+String.substring assertEquals 
+assertTrue 
+buildRule.executeTarget Manifest.New Manifest.getManifestVersion assertEquals 
+buildRule.executeTarget Manifest.New Manifest.getManifestVersion assertEquals 
+buildRule.executeTarget buildRule.getLog assertTrue 
+buildRule.getLog assertTrue 
+buildRule.executeTarget assertTrue 
+buildRule.executeTarget Manifest.New Manifest.getMainSection Manifest.Section.New Manifest.Section.getAttributeValue assertEquals Manifest.getSection Manifest.Section.New Manifest.Section.getAttributeValue assertEquals 
+buildRule.executeTarget Manifest.New Manifest.getMainSection Manifest.Section.New Manifest.Section.getAttributeValue assertEquals 
+buildRule.getProject Project.New Project.setUserProperty Project.setUserProperty Project.setUserProperty Project.setUserProperty Project.setUserProperty buildRule.executeTarget Manifest.New Manifest.getMainSection Manifest.Section.New Manifest.Section.getAttributeValue assertEquals Manifest.Section.getAttributeValue assertEquals Manifest.Section.getAttributeValue assertEquals Manifest.Section.getAttributeValue assertEquals Set.New FileReader.New assertTrue assertTrue assertTrue assertTrue 
+buildRule.executeTarget Manifest.New Manifest.getSectionNames Enumeration.New assertEquals assertEquals Manifest.getSection Manifest.Section.New Manifest.Section.getAttributeKeys Manifest.Section.getAttribute(attr1Key).getName Manifest.Section.getAttribute(attr2Key).getName assertEquals assertEquals 
+buildRule.executeTarget Manifest.New Manifest.getSectionNames Enumeration.New assertEquals assertEquals Manifest.getSection Manifest.Section.New Manifest.Section.getAttributeKeys Manifest.Section.getAttribute(attr1Key).getName Manifest.Section.getAttribute(attr2Key).getName assertEquals assertEquals 
+buildRule.executeTarget getManifest Manifest.New assertNotNull assertEquals 
+buildRule.executeTarget getManifest Manifest.New assertNotNull assertTrue Manifest.toString assertNotNull assertTrue assertTrue getManifest assertNotNull Manifest.toString assertNotNull assertEquals assertTrue 
+FileReader.New 
+buildRule.executeTarget buildRule.getProject().getProperty assertTrue assertTrue assertTrue assertTrue assertTrue assertTrue assertTrue assertTrue 
+buildRule.executeTarget buildRule.getProject().getProperty assertTrue assertTrue assertTrue assertTrue 
+buildRule.configureProject 
+buildRule.getProject Project.New Project.setUserProperty Project.setUserProperty buildRule.executeTarget assertEquals assertEquals buildRule.getLog assertEquals 
+buildRule.getProject Project.New Project.setUserProperty Project.setUserProperty buildRule.executeTarget assertEquals assertEquals buildRule.getLog 
+s.indexOf s.indexOf s.indexOf Integer.parseInt 
+buildRule.getProject Project.New Project.setUserProperty Project.setUserProperty 
+buildRule.getProject Project.New Project.addTaskDefinition 
+buildRule.configureProject 
+buildRule.executeTarget 
+buildRule.executeTarget 
+buildRule.executeTarget 
+buildRule.executeTarget 
+buildRule.executeTarget 
+buildRule.executeTarget 
+buildRule.executeTarget 
+buildRule.executeTarget 
+buildRule.executeTarget 
+buildRule.executeTarget 
+buildRule.executeTarget 
+buildRule.executeTarget 
+buildRule.executeTarget 
+buildRule.executeTarget 
+buildRule.executeTarget 
+buildRule.executeTarget 
+buildRule.executeTarget 
+buildRule.executeTarget 
+AntAssert.assertContains 
+buildRule.executeTarget 
+buildRule.executeTarget 
+buildRule.executeTarget 
+buildRule.executeTarget 
+buildRule.executeTarget 
+buildRule.executeTarget 
+xnewTest 
+xnewTest 
+xnewTest 
+xnewTest 
+buildRule.executeTarget 
+buildRule.executeTarget 
+buildRule.executeTarget 
+buildRule.executeTarget 
+rmic.getCurrentCompilerArgs String[].New assertNotNull assertEquals rmic.createCompilerArg Rmic.ImplementationSpecificArgument.New Rmic.ImplementationSpecificArgument.setValue rmic.getCurrentCompilerArgs assertEquals assertEquals Rmic.ImplementationSpecificArgument.setCompiler rmic.getCurrentCompilerArgs assertNotNull assertEquals project.setProperty rmic.getCurrentCompilerArgs assertNotNull assertEquals project.setProperty rmic.getCurrentCompilerArgs assertEquals assertEquals 
+rmic.getCompiler assertNotNull assertEquals project.setNewProperty rmic.getCompiler assertNotNull assertEquals rmic.setCompiler rmic.getCompiler assertNotNull assertEquals 
+Properties.New sql.setCaching 
+SQLExec.New SQLExec.setProject SQLExec.setDriver SQLExec.setUserid SQLExec.setPassword SQLExec.setUrl SQLExec.createClasspath().setLocation SQLExec.addText 
+getClass().getClassLoader().getResource URL.New URL.toString 
+Properties.New findResourcePath Properties.put Properties.put 
+Properties.New Properties.put Properties.put Properties.put Properties.put 
+buildRule.executeTarget getTargetTime 
+buildRule.executeTarget getTargetTime 
+touchFile 
+System.currentTimeMillis buildRule.executeTarget assertTimesNearlyMatch 
+touchFile 
+touchFile 
+touchFile 
+touchFile 
+buildRule.executeTarget 
+buildRule.executeTarget 
+buildRule.executeTarget 
+buildRule.executeTarget 
+buildRule.executeTarget assertTimesNearlyMatch 
+FILE_UTILS.getFileTimestampGranularity assertTimesNearlyMatch 
+assertTrue 
+tstamp.createFormat Tstamp.CustomFormat.New Tstamp.CustomFormat.setProperty Tstamp.CustomFormat.setPattern Tstamp.CustomFormat.setTimezone Calendar.getInstance().getTime Date.New Tstamp.CustomFormat.execute project.getProperty SimpleDateFormat.New SimpleDateFormat.setTimeZone SimpleDateFormat.format assertEquals 
+tstamp.setPrefix tstamp.execute project.getProperty assertNotNull 
+buildRule.executeTarget assertContains 
+assertEquals 
+assertTrue 
+assertTrue 
+buildRule.executeTarget assertFileMissing assertFileExists 
+buildRule.executeTarget File.New assertTrue 
+getFiles Enumeration.New xmlproperty.setProject xmlproperty.setFile xmlproperty.setKeeproot xmlproperty.setCollapseAttributes xmlproperty.setSemanticAttributes xmlproperty.setIncludeSemanticAttribute xmlproperty.setRootDirectory p.setNewProperty xmlproperty.execute props.load ensureProperties ensureReferences 
+p.getProperties Hashtable.New properties.propertyNames Enumeration.New 
+Hashtable.keys Enumeration.New 
+references.keys Enumeration.New 
+input.getName().toLowerCase input.getParentFile().getParentFile File.New 
+Vector.New getFiles 
+FileFilter.New startingDir.listFiles File[].New 
+FilterSet.New FilterSet.addFilter FilterSet.addFilter FilterSet.addFilter FilterSet.setBeginToken FilterSet.setEndToken assertEquals 
+FilterSet.New FilterSet.addFilter FilterSet.addFilter FilterSet.addFilter FilterSet.addFilter FilterSet.setBeginToken FilterSet.setEndToken assertEquals 
+FilterSet.New FilterSet.addFilter FilterSet.addFilter FilterSet.addFilter FilterSet.setBeginToken FilterSet.setEndToken FilterSet.setRecurse assertEquals 
+perms.setSecurityManager 
+perms.setSecurityManager 
+perms.setSecurityManager 
+perms.setSecurityManager 
+System.getProperty perms.setSecurityManager 
+perms.setSecurityManager 
+FileOutputStream.New FileOutputStream.write FileOutputStream.close assumeTrue removeThis.lastModified assertTrue FILE_UTILS.setFileLastModified removeThis.lastModified assertTrue FILE_UTILS.setFileLastModified removeThis.lastModified assertTrue 
+FILE_UTILS.resolveFile File.New assertEquals 
+FILE_UTILS.createTempFile File.New System.getProperty File.getName assertTrue assertTrue assertTrue assertEquals File.delete File.New File.mkdir FILE_UTILS.createTempFile File.New File.getName assertTrue assertTrue assertTrue assertEquals File.delete File.delete File.New FILE_UTILS.createTempFile assertTrue File.getName assertTrue assertTrue assertEquals FILE_UTILS.createTempFile assertTrue FILE_UTILS.createTempFile File.New System.getProperty assertEquals 
+assertTrue assertTrue assertTrue assertTrue assertTrue 
+assertTrue FILE_UTILS.createNewFile assertTrue 
+assertEquals assertEquals assertEquals assertEquals assertEquals assertEquals assertEquals assertEquals assertEquals assertEquals assertEquals assertEquals assertEquals assertEquals "foo/bar".replace('\\',File.separatorChar).replace assertEquals assertEquals assertEquals 
+assertEquals assertEquals assertEquals assertTrue assertTrue assertEquals assertEquals assertEquals 
+assertEqualsIgnoreDriveCase assertEqualsIgnoreDriveCase assertEqualsIgnoreDriveCase assertEquals assertEquals assertEquals 
+sb1.setCharAt sb2.setCharAt assertEquals 
+File.New FileInputStream.New LayoutPreservingProperties.New LayoutPreservingProperties.load File.createTempFile File.New File.deleteOnExit LayoutPreservingProperties.saveAs Properties.New Properties.load Properties.New Properties.load assertEquals assertTrue assertTrue 
+LayoutPreservingProperties.New LayoutPreservingProperties.setProperty LayoutPreservingProperties.setProperty LayoutPreservingProperties.setProperty LayoutPreservingProperties.setProperty LayoutPreservingProperties.setProperty LayoutPreservingProperties.setProperty LayoutPreservingProperties.setProperty LayoutPreservingProperties.setProperty LayoutPreservingProperties.setProperty LayoutPreservingProperties.setProperty File.createTempFile File.New File.deleteOnExit LayoutPreservingProperties.saveAs assertTrue assertTrue assertTrue assertTrue assertTrue assertTrue assertTrue assertTrue assertTrue 
+File.New FileInputStream.New LayoutPreservingProperties.New LayoutPreservingProperties.load LayoutPreservingProperties.setProperty LayoutPreservingProperties.setProperty LayoutPreservingProperties.setProperty File.createTempFile File.New File.deleteOnExit LayoutPreservingProperties.saveAs assertTrue assertTrue assertTrue assertTrue assertTrue assertTrue 
+log 
+filesets.addElement 
+doit filesets.size 
+Commandline.New Commandline.setExecutable Commandline.createArgument().setValue checkOptions 
+cmd.createArgument().setValue cmd.createArgument().setValue cmd.createArgument().setValue cmd.createArgument().setValue cmd.createArgument().setValue 
+setCcmAction setComment 
+setCcmAction setTask 
+setCcmAction 
+setCcmAction 
+Commandline.New Commandline.setExecutable Commandline.createArgument().setValue checkOptions Commandline.New Commandline.setExecutable Commandline.createArgument().setValue Commandline.createArgument().setValue log 
+cmd.createArgument().setValue cmd.createArgument().setValue cmd.createArgument().setValue cmd.createArgument().setValue cmd.createArgument().setValue cmd.createArgument().setValue cmd.createArgument().setValue cmd.createArgument().setValue cmd.createArgument().setValue cmd.createArgument().setValue 
+setCcmAction 
+Commandline.New Commandline.setExecutable Commandline.createArgument().setValue checkOptions 
+cmd.createArgument().setValue cmd.createArgument().setValue cmd.createArgument().setValue cmd.createArgument().setValue 
+FileUtils.translatePath 
+Commandline.New Project.New setViewPath Commandline.setExecutable Commandline.createArgument().setValue checkOptions getProject().log 
+getCommentCommand cmd.createArgument().setValue cmd.createArgument().setValue cmd.createArgument().setValue cmd.createArgument().setValue cmd.createArgument().setValue 
+cmd.createArgument().setValue cmd.createArgument().setValue 
+cmd.createArgument().setValue cmd.createArgument().setValue 
+Commandline.New Project.New setViewPath Commandline.setExecutable Commandline.createArgument().setValue checkOptions getProject().log getProject().log 
+Commandline.New Commandline.setExecutable Commandline.createArgument().setValue Commandline.createArgument().setValue Commandline.createArgument().setValue Commandline.createArgument().setValue Commandline.createArgument().setValue 
+cmd.createArgument().setValue getOutCommand getBranchCommand cmd.createArgument().setValue getCommentCommand cmd.createArgument().setValue 
+cmd.createArgument().setValue cmd.createArgument().setValue 
+cmd.createArgument().setValue cmd.createArgument().setValue 
+cmd.createArgument().setValue cmd.createArgument().setValue 
+cmd.createArgument().setValue cmd.createArgument().setValue 
+Commandline.New Project.New setViewPath Commandline.setExecutable Commandline.createArgument().setValue checkOptions getProject().log 
+cmd.createArgument().setValue cmd.createArgument().setValue getCommentCommand getPnameCommand cmd.createArgument().setValue 
+Commandline.New Project.New setViewPath Commandline.setExecutable Commandline.createArgument().setValue checkOptions getProject().log 
+cmd.createArgument().setValue cmd.createArgument().setValue getVersionCommand getCommentCommand getTypeCommand getTypeValueCommand cmd.createArgument().setValue 
+cmd.createArgument().setValue cmd.createArgument().setValue 
+cmd.createArgument().setValue cmd.createArgument().setValue 
+cmd.createArgument().setValue cmd.createArgument().setValue 
+cmd.createArgument().setValue 
+cmd.createArgument().setValue 
+Commandline.New Project.New setViewPath Commandline.setExecutable Commandline.createArgument().setValue checkOptions getProject().log 
+getCommentCommand cmd.createArgument().setValue cmd.createArgument().setValue cmd.createArgument().setValue cmd.createArgument().setValue 
+cmd.createArgument().setValue cmd.createArgument().setValue 
+cmd.createArgument().setValue cmd.createArgument().setValue 
+Commandline.New Project.New setViewPath Commandline.setExecutable Commandline.createArgument().setValue checkOptions getProject().log 
+getCommentCommand cmd.createArgument().setValue cmd.createArgument().setValue 
+cmd.createArgument().setValue cmd.createArgument().setValue 
+cmd.createArgument().setValue cmd.createArgument().setValue 
+Commandline.New Project.New setViewPath Commandline.setExecutable Commandline.createArgument().setValue checkOptions getProject().log 
+getCommentCommand cmd.createArgument().setValue cmd.createArgument().setValue cmd.createArgument().setValue cmd.createArgument().setValue getEltypeCommand cmd.createArgument().setValue 
+cmd.createArgument().setValue cmd.createArgument().setValue 
+cmd.createArgument().setValue cmd.createArgument().setValue 
+cmd.createArgument().setValue cmd.createArgument().setValue 
+Commandline.New Project.New setViewPath Commandline.setExecutable Commandline.createArgument().setValue checkOptions getProject().log 
+cmd.createArgument().setValue cmd.createArgument().setValue getVersionCommand getCommentCommand getTypeCommand cmd.createArgument().setValue 
+cmd.createArgument().setValue cmd.createArgument().setValue 
+cmd.createArgument().setValue cmd.createArgument().setValue 
+cmd.createArgument().setValue cmd.createArgument().setValue 
+cmd.createArgument().setValue 
+Commandline.New Commandline.setExecutable Commandline.createArgument().setValue checkOptions getProject().log 
+cmd.createArgument().setValue cmd.createArgument().setValue cmd.createArgument().setValue cmd.createArgument().setValue getCommentCommand cmd.createArgument().setValue 
+cmd.createArgument().setValue cmd.createArgument().setValue 
+cmd.createArgument().setValue cmd.createArgument().setValue 
+Commandline.New Commandline.setExecutable Commandline.createArgument().setValue checkOptions getProject().log 
+cmd.createArgument().setValue cmd.createArgument().setValue cmd.createArgument().setValue getCommentCommand cmd.createArgument().setValue 
+cmd.createArgument().setValue cmd.createArgument().setValue 
+cmd.createArgument().setValue cmd.createArgument().setValue 
+Commandline.New Project.New setViewPath Commandline.setExecutable Commandline.createArgument().setValue checkOptions getProject().log 
+cmd.createArgument().setValue cmd.createArgument().setValue 
+Commandline.New Project.New setViewPath Commandline.setExecutable Commandline.createArgument().setValue checkOptions getProject().log 
+getCommentCommand getPnameCommand cmd.createArgument().setValue 
+setObjSelect 
+setObjSelect 
+Commandline.New Project.New setViewPath Commandline.setExecutable Commandline.createArgument().setValue checkOptions getProject().log getProject().log 
+cmd.createArgument().setValue cmd.createArgument().setValue 
+FileUtils.translatePath 
+ExecTask.New ExecTask.createArg Commandline.Argument.New ExecTask.setExecutable Commandline.Argument.setLine ExecTask.setOutputproperty ExecTask.execute 
+Hashtable<String,String>.New Hashtable<File,File>.New Hashtable<String,String>.New Hashtable<String,String>.put Hashtable<String,String>.New Hashtable<String,String>.clear files.removeAllElements classes.removeAllElements 
+DataInputStream.New DataInputStream.readUnsignedShort DataInputStream.readUnsignedShort constantPool.read constantPool.resolve DataInputStream.readUnsignedShort DataInputStream.readUnsignedShort DataInputStream.readUnsignedShort ClassCPInfo.New ClassCPInfo.getClassName 
+Vector<String>.New constantPool.size 
+createClasspath().setRefid 
+Hashtable.New BufferedReader.New 
+destPath.list String[].New dependClasspath.list String[].New Path.New log 
+Hashtable.New File.New getClassFiles(destPath).elements Enumeration.New log classFileInfoMap.put Path.New writeCachedDependencies 
+Hashtable.New log affectedClassInfo.absoluteFile.delete 
+log 
+log affectedClassMap.keys Enumeration.New log log 
+classLocations.list String[].New Vector.New 
+classname.indexOf 
+dir.list String[].New root.getPath().length File.New 
+Vector.New Vector.elements 
+Vector.New directory.list String[].New 
+ClassFile.New 
+ZipEntry.New ClassFile.New 
+DescriptorHandler.New DescriptorHandler.registerDTD DescriptorHandler.registerDTD 
+log File.New log ejbFiles.put 
+verifyBorlandJarV4 verifyBorlandJarV5 log 
+log 
+org.apache.tools.ant.taskdefs.Java.New log 
+getTask().getProject().addTaskDefinition org.apache.tools.ant.taskdefs.optional.ejb.BorlandGenerateClient.New log 
+Execute.New getTask().getProject Project.New Execute.setAntRun Execute.setWorkingDirectory Commandline.New Commandline.setExecutable Commandline.createArgument().setValue Commandline.createArgument().setValue Commandline.createArgument().setPath Commandline.createArgument().setValue Commandline.createArgument().setValue log Commandline.createArgument().setLine Commandline.createArgument().setValue Commandline.createArgument().setValue Commandline.createArgument().setValue Commandline.createArgument().setValue 
+Vector.New files.keySet().iterator Iterator.New buildBorlandStubs files.putAll verifyBorlandJar generateClient genfiles.clear 
+filename.substring String.replace 
+filename.substring 
+BufferedReader.New BufferedReader.readLine log 
+createClasspath().setRefid 
+log log setMode log executeFork 
+executeForkV4 executeForkV5 
+File.New 
+File.New URL.New owningTask.log 
+processElement 
+deploymentTool.setTask deploymentTools.add 
+WeblogicDeploymentTool.New addDeploymentTool 
+WebsphereDeploymentTool.New addDeploymentTool 
+log BorlandDeploymentTool.New BorlandDeploymentTool.setTask deploymentTools.add 
+log IPlanetDeploymentTool.New addDeploymentTool 
+JbossDeploymentTool.New addDeploymentTool 
+log JonasDeploymentTool.New addDeploymentTool 
+log WeblogicTOPLinkDeploymentTool.New addDeploymentTool 
+DTDLocation.New config.dtdLocations.add 
+FileSet.New config.supportFileSets.add 
+config.namingScheme.setValue 
+version.getValue 
+config.namingScheme.setValue 
+validateConfig genericTool.setTask genericTool.setDestdir genericTool.setGenericJarSuffix deploymentTools.add WeblogicTOPLinkDeploymentTool.configure WeblogicTOPLinkDeploymentTool.validateConfigured 
+Path.New 
+getTask().log 
+createAnalyzer 
+FileInputStream.New 
+DescriptorHandler.New registerKnownDTDs DescriptorHandler.registerDTD 
+checkConfiguration 
+FileInputStream.New Hashtable.New 
+task.getProject Project.New supportScanner.scan 
+File.New 
+JarOutputStream.New 
+dependencyAnalyzer.reset checkEntries.keySet().iterator Iterator.New dependencyAnalyzer.getClassDependencies Enumeration.New 
+Path.New 
+baseclass.lastIndexOf baseclass.substring 
+log 
+log 
+descriptorFileName.substring File.New 
+Hashtable.New IPlanetEjbc.New IPlanetEjbc.setRetainSource IPlanetEjbc.setDebugOutput IPlanetEjbc.setIasHomeDir IPlanetEjbc.getDisplayName IPlanetEjbc.getEjbFiles IPlanetEjbc.getCmpDescriptors String[].New 
+ejbFiles.put 
+File.New log 
+descriptorName.lastIndexOf 
+List.New 
+handler.registerDTD 
+List.New handler.getEjbs EjbInfo[].New List.addAll 
+File.New File.New File.New SAXParser.New IPlanetEjbc.New usage SAXParserFactory.newInstance SAXParserFactory.New SAXParserFactory.setValidating IPlanetEjbc.setDebugOutput IPlanetEjbc.setRetainSource 
+checkConfiguration EjbInfo[].New log log ejb.checkConfiguration 
+StringBuffer.New StringBuffer.append(arguments[i]).append log 
+EjbInfo[].New SAXParser.parse SAXParser.parse handler.getEjbs 
+List.New List.add List.add List.add List.add List.add List.add List.add List.add List.add List.add List.add List.add List.add 
+checkConfiguration executeEjbc 
+SAXParser.New 
+IPlanetEjbc.New IPlanetEjbc.setRetainSource IPlanetEjbc.setDebugOutput IPlanetEjbc.setIasHomeDir 
+Path.New 
+File.New ejbFiles.put File.New ejbFiles.put 
+log log deleteAllFiles 
+File.New addGenICGeneratedFiles log File.delete 
+File.New ejbFiles.put 
+descriptorName.lastIndexOf descriptorName.indexOf descriptorName.substring descriptorName.substring log log 
+log 
+handler.registerDTD handler.registerDTD handler.registerDTD handler.registerDTD 
+Java.New Java.setTaskName Java.setFork Java.createJvmarg().setValue File.New Java.createJvmarg().setValue log Java.createArg().setValue Java.createArg().setFile File.New ejbFiles.keys Enumeration.New File.getParentFile().mkdirs log Path.New Path.append Path.append Path.append log Java.setClasspath log Java.createArg().setValue Java.createArg().setValue Java.createArg().setValue Java.createArg().setValue Java.createArg().setLine Java.createArg().setValue Java.createArg().setLine Java.createArg().setValue Java.createArg().setLine Java.createArg().setValue Java.createArg().setValue Java.createArg().setValue Java.createArg().setValue Java.createArg().setValue log log deleteAllFiles addAllFiles 
+log 
+aFile.delete 
+sysprops.add 
+Boolean.valueOf(inValue).booleanValue 
+handler.registerDTD handler.registerDTD handler.registerDTD handler.registerDTD 
+DescriptorHandler.New DescriptorHandler.registerDTD DescriptorHandler.registerDTD DescriptorHandler.registerDTD DescriptorHandler.registerDTD DescriptorHandler.registerDTD DescriptorHandler.registerDTD DescriptorHandler.registerDTD 
+File.New ejbFiles.put log log 
+Java.New 
+File.New buildWeblogicJar log File.delete 
+JarFile.New JarFile.New File.New JarOutputStream.New ClassLoader.New 
+Path.New Path.setLocation Path.New Path.append 
+DescriptorHandler.New DescriptorHandler.registerDTD 
+File.New ejbFiles.put 
+DescriptorHandler.New DescriptorHandler.registerDTD DescriptorHandler.registerDTD 
+DescriptorHandler.New DescriptorHandler.registerDTD 
+File.New ejbFiles.put File.New ejbFiles.put log log 
+StringBuffer.New StringBuffer.append(" -dbvendor ").append StringBuffer.append(" -dbname \"").append(dbName).append StringBuffer.append(" -dbschema \"").append(dbSchema).append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append(" -rmic \"").append(rmicOptions).append 
+JarFile.New JarFile.New File.New JarOutputStream.New ClassLoader.New 
+Path.New Path.setLocation Path.New Path.append 
+ArrayList.New manifest.getMainAttributes Attributes.New manifest.getEntries Map.New Map.keySet().iterator Iterator.New 
+addExtension 
+attributes.putValue extension.getSpecificationVendor attributes.putValue extension.getSpecificationVersion DeweyDecimal.New attributes.putValue extension.getImplementationVendorID attributes.putValue extension.getImplementationVendor attributes.putValue extension.getImplementationVersion DeweyDecimal.New attributes.putValue extension.getImplementationURL attributes.putValue 
+required.getSpecificationVersion DeweyDecimal.New required.getImplementationVendorID required.getImplementationVersion DeweyDecimal.New 
+StringBuffer.New StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append 
+ArrayList.New manifest.getMainAttributes Attributes.New getExtension manifest.getEntries Map.New Map.keySet().iterator Iterator.New getExtension 
+attributes.getValue String[].New 
+StringTokenizer.New String[].New 
+getTrimmedString getTrimmedString getTrimmedString getTrimmedString getTrimmedString getTrimmedString getTrimmedString 
+verifyNotAReference 
+verifyNotAReference 
+verifyNotAReference 
+verifyNotAReference 
+verifyNotAReference 
+verifyNotAReference 
+verifyNotAReference 
+dieOnCircularReference 
+setChecked extensions.add 
+setChecked extensionsFilesets.add 
+setChecked extensionsFilesets.add 
+dieOnCircularReference ExtensionUtil.toExtensions ArrayList.New ExtensionUtil.extractExtensions 
+ArrayList.New adapters.size ArrayList.add 
+ArrayList.New libraries.iterator Iterator.New 
+JarFile.New 
+Extension.New extensionList.add 
+JarFile.New 
+extensionFileSets.addElement 
+validate requiredExtension.toExtension Extension.New 
+libraryFileSets.addElement 
+validate LibraryDisplayer.New 
+extensionAdapter.toExtension 
+dependencies.add 
+optionals.add 
+extraAttributes.add 
+validate Manifest.New Manifest.getMainAttributes Attributes.New Attributes.put Attributes.putValue appendExtraAttributes Extension.addExtension ArrayList.New appendExtensionList appendLibraryList ArrayList.New appendExtensionList appendLibraryList 
+extraAttributes.iterator Iterator.New Attributes.putValue 
+FileOutputStream.New 
+extensions.size Extension.addExtension 
+StringBuffer.New StringBuffer.append StringBuffer.append StringBuffer.append Attributes.put 
+ArrayList.New extensionSets.size 
+resolvers.add 
+resolvers.add 
+resolvers.add 
+extension.toExtension 
+validate getProject().log getProject().getProperty getProject().log resolvers.size getProject().log missingExtension 
+getProject().log 
+getProject().log setLibraryProperty 
+getProject().setNewProperty 
+ExtensionUtil.getManifest Manifest.New displayLibrary 
+Extension.getAvailable Extension[].New Extension.getRequired Extension[].New Extension.getOptions Extension[].New Specification[].New String.length printLine printLine 
+specification.getSections String[].New 
+ArrayList.New manifest.getEntries Map.New Map.keySet().iterator Iterator.New ArrayList.New 
+String[].New System.arraycopy 
+String[].New System.arraycopy 
+other.getSpecificationVersion DeweyDecimal.New other.getImplementationVendor other.getImplementationVersion 
+StringBuffer.New StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append 
+ArrayList.New ArrayList.New ArrayList.add ArrayList.clear 
+sectionsToAdd.addAll String[].New 
+getTrimmedString getTrimmedString getTrimmedString getTrimmedString getTrimmedString getTrimmedString 
+filesets.addElement 
+toDir.mkdirs loadResourceMaps translate 
+Locale.New processBundle processBundle processBundle processBundle Locale.getDefault System.getProperty processBundle processBundle processBundle 
+getProject().resolveFile File.New FileInputStream.New 
+filesets.size log 
+filesets.addElement 
+instructions.add 
+instructions.add 
+instructions.add 
+instructions.add 
+addImageOperation 
+createMapper().add 
+System.gc 
+processFile 
+validateAttributes 
+java.setClassname java.setClasspath java.setFork java.setFailonerror java.execute 
+Path.New Path.append 
+Java.New getTask().getAction setClassName Java.createJvmarg().setValue Java.createJvmarg().setValue Java.createArg().setLine Java.createArg().setLine 
+getTask().getAction 
+tool.setTask vendorTools.addElement 
+tool.setTask vendorTools.addElement 
+tool.setTask vendorTools.addElement 
+tool.validateAttributes tool.deploy 
+Java.New Java.setFork Java.setFailonerror Java.setClasspath Java.setClassname Java.createArg().setLine Java.execute 
+getTask().getAction 
+getTask().getAction 
+getTask().getAction 
+ServerDeploy.New 
+buildArgsPrefix().append(application).append(" ").append(getTask().getSource()).toString 
+optionalAttrs.put 
+optionalAttrs.put 
+optionalAttrs.put 
+optionalAttrs.put 
+optionalAttrs.put 
+optionalAttrs.put 
+optionalAttrs.put 
+optionalAttrs.put 
+optionalAttrs.put 
+optionalAttrs.put 
+optionalAttrs.put 
+optionalAttrs.put 
+optionalAttrs.put 
+optionalAttrs.put 
+optionalAttrs.put 
+optionalAttrs.put 
+optionalAttrs.put 
+optionalAttrs.put 
+optionalAttrs.put 
+optionalAttrs.put 
+optionalAttrs.put 
+optionalAttrs.put 
+cmdl.setVm 
+optionalAttrs.keys Enumeration.New cmdl.createArgument().setValue cmdl.createArgument().setValue File.New log cmdl.createArgument().setValue cmdl.createClasspath Path.New JavaCC.getArchiveFile File.New Path.createPathElement().setPath Path.addJavaRuntime cmdl.setClassname cmdl.setMaxmemory cmdl.createVmArgument Commandline.Argument.New Commandline.Argument.setValue Execute.runCommand 
+Path.New Path.createPathElement().setLocation Path.addJavaRuntime 
+srcfile.getPath String.lastIndexOf String.lastIndexOf 
+optionalAttrs.put 
+optionalAttrs.put 
+cmdl.setVm 
+optionalAttrs.keys Enumeration.New cmdl.createArgument().setValue cmdl.createArgument().setValue File.New log cmdl.createArgument().setValue cmdl.createClasspath Path.New JavaCC.getArchiveFile File.New Path.createPathElement().setPath Path.addJavaRuntime cmdl.setClassname cmdl.setMaxmemory cmdl.createVmArgument Commandline.Argument.New Commandline.Argument.setValue Execute.New log Execute.setCommandline 
+optionalAttrs.put 
+optionalAttrs.put 
+optionalAttrs.put 
+optionalAttrs.put 
+optionalAttrs.put 
+optionalAttrs.put 
+optionalAttrs.put 
+optionalAttrs.put 
+optionalAttrs.put 
+optionalAttrs.put 
+optionalAttrs.put 
+cmdl.setVm 
+optionalAttrs.keys Enumeration.New cmdl.createArgument().setValue File.New cmdl.createArgument().setValue log cmdl.createArgument().setValue cmdl.createArgument().setValue cmdl.createClasspath Path.New JavaCC.getArchiveFile File.New Path.createPathElement().setPath Path.addJavaRuntime cmdl.setClassname cmdl.setMaxmemory cmdl.createVmArgument Commandline.Argument.New Commandline.Argument.setValue Execute.New log Execute.setCommandline 
+setOutputfile getRoot(new File(destFile)).getAbsolutePath 
+file.getAbsoluteFile File.New 
+SunJavah.setupJavahCommand Commandline.New javah.getProject Project.New JavaEnvUtils.getJdkExecutable javah.log Commandline.setExecutable Commandline.getCommandline String[].New 
+Commandline.New 
+Commandline.New 
+Commandline.New ExecuteJava.New Class.New Commandline.setExecutable ExecuteJava.setJavaCommand Locator.getClassSource File.New ExecuteJava.setClasspath 
+createClasspath().setRefid 
+ea.getValue 
+LoaderUtils.getResourceSource File.New log runtimeClasses.createPath().setLocation 
+CommandlineJava.New CommandlineJava.setClassname CommandlineJava.setVm 
+jdepend.textui.JDepend.New FileWriter.New PrintWriter.New jdepend.textui.JDepend.setWriter log 
+addClasspathEntry createClasspath createJvmarg(commandline).setValue createJvmarg(commandline).setValue log CommandlineJava.createClasspath(getProject()).createPath().append CommandlineJava.createArgument().setValue CommandlineJava.createArgument().setValue Execute.New Execute.setCommandline Execute.setWorkingDirectory Execute.setAntRun log log 
+data.readUnsignedShort 
+mergefiles.addElement 
+addfiles.addElement 
+addMergeFile 
+addAddFile 
+ZipOutputStream.New ZipOutputStream.setMethod ZipOutputStream.setLevel mergefiles.elements Enumeration.New addfiles.elements Enumeration.New FileUtils.close 
+System.exit jlink.New jlink.setOutfile jlink.addMergeFile 
+log log jlink.New jlink.setOutfile jlink.setCompression log jlink.addMergeFiles log jlink.addAddFiles 
+jspFile.getAbsolutePath String.length StringBuffer.New StringBuffer.append 
+Integer.toHexString char[].New 
+log 
+createClasspath().setRefid 
+File.New 
+File.New 
+compiler.setJspc 
+compileList.removeAllElements 
+(new Date()).getTime 
+log 
+mangler.mapJspToJavaName 
+StringBuffer.New String.charAt StringBuffer.append 
+Integer.toHexString char[].New 
+this.destinationPackage.replace DirectoryScanner.New compileClasspath.concatSystemClasspath DirectoryScanner.getIncludedFiles String[].New Java.New Java.setFork Java.setClassname Java.setTaskName String[].New File.New destinationDirectory.getAbsolutePath().trim sourceDirectory.getAbsolutePath().trim compileClasspath.toString this.scanDir log filesToDo.size Java.clearArgs Java.setClasspath 
+(new Date()).getTime File.New 
+StringTokenizer.New StringTokenizer.countTokens 
+xsltTask.bindToOwner 
+format.getValue 
+task.log 
+checkOptions task.getProject Project.New TempFile.New TempFile.bindToOwner xsltTask.setXslResource xsltTask.setIn File.New TempFile.setDestDir TempFile.setProperty TempFile.execute xsltTask.setOut xsltTask.createParam XSLTProcess.Param.New XSLTProcess.Param.setProject XSLTProcess.Param.setName XSLTProcess.Param.setExpression configureForRedirectExtension System.currentTimeMillis task.log delete.bindToOwner delete.setFile delete.execute 
+File.New 
+XSLTProcess.Factory.New XSLTProcess.Factory.getName XSLTProcess.Factory.addFeature 
+setIf 
+setUnless 
+formatters.addElement 
+resources.setCache 
+add fs.setProject 
+resources.add 
+JUnitTest[].New 
+JUnitTest[].New v.ensureCapacity v.addElement 
+String[].New JUnitTest[].New 
+Vector.New String[].New Vector.copyInto 
+JUnitTest.New JUnitTest.setName JUnitTest.setHaltonerror JUnitTest.setHaltonfailure JUnitTest.setFiltertrace JUnitTest.setFork JUnitTest.setIf JUnitTest.setUnless JUnitTest.setTodir JUnitTest.setFailureProperty JUnitTest.setErrorProperty JUnitTest.setSkipNonTests this.formatters.elements Enumeration.New JUnitTest.addFormatter 
+StringBuffer.New StringBuffer.append StringBuffer.append 
+StringBuffer.New StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append("------------- Standard Output ---------------").append(StringUtils.LINE_SEP).append(systemOutput).append("------------- ---------------- ---------------").append StringBuffer.append("------------- Standard Error -----------------").append(StringUtils.LINE_SEP).append(systemError).append("------------- ---------------- ---------------").append 
+formatError 
+addFailure 
+formatError 
+endTest 
+NodeListImpl.New parent.getChildNodes NodeList.New 
+parent.getChildNodes NodeList.New NodeList.getLength 
+Node.New parent.getOwnerDocument Document.New parent.appendChild 
+project.getBuildListeners Vector.New Vector.size verbose project.addBuildListener 
+failedTests.add 
+failedTests.add 
+FileUtils.close 
+getProject().log 
+getProject().log 
+writeJavaClass 
+setIf 
+setUnless 
+PropertyHelper.getPropertyHelper PropertyHelper.New 
+ignored.add 
+skipped.add 
+methodNames.clone CustomJUnit4TestAdapterCache.getInstance Request.New Request.getRunner 
+value.getValue value.asBoolean 
+getCommandline().setMaxmemory 
+getCommandline().setVm 
+getCommandline().addSysproperty 
+sysp.getContent getProject().log getCommandline().addSysproperty 
+getCommandline().addSyspropertyset 
+env.addVariable 
+test.setFiltertrace test.setHaltonerror test.setErrorProperty test.setHaltonfailure test.setFailureProperty test.setFork 
+tests.addElement preConfigure 
+BatchTest.New batchTests.addElement preConfigure 
+formatters.addElement 
+getCommandline().setAssertions 
+getCommandline().setCloneVm 
+getProject().getProperty 
+addClasspathEntry addClasspathEntry addClasspathEntry addClasspathEntry 
+JUnitTask.class.getClassLoader ClassLoader.New path.add 
+checkMethodLists checkModules setupJUnitDelegate List<List>.New forkMode.getValue().equals List<List>.addAll 
+validateTestName JUnitTest.New JUnitTest.setThread JUnitTest.setTodir JUnitTest.setOutfile TestResultHolder.New actOnTestResult 
+execute 
+JUnitTest.New File.New BufferedWriter.New 
+execute 
+log CommandlineJava.New CommandlineJava.createArgument().setValue CommandlineJava.createArgument().setValue CommandlineJava.createArgument().setValue CommandlineJava.createArgument().setValue CommandlineJava.createArgument().setValue checkIncludeAntRuntime checkIncludeSummary CommandlineJava.createArgument().setValue CommandlineJava.createArgument().setValue CommandlineJava.createArgument().setValue CommandlineJava.createArgument().setValue CommandlineJava.createArgument().setValue StringBuffer.New FormatterElement[].New File.New CommandlineJava.createArgument().setValue File.New CommandlineJava.createArgument().setValue getProject().getProperties Hashtable.New Properties.New Properties.put Execute.New Execute.setCommandline Execute.setAntRun Execute.setWorkingDirectory env.getVariables String[].New Execute.setNewenvironment Execute.setEnvironment log checkForkedPath TestResultHolder.New 
+log CommandlineJava.createClasspath(getProject()).createPath().append 
+FILE_UTILS.createTempFile File.New 
+log 
+runner.handleFlush 
+runner.handleErrorOutput 
+runner.handleErrorFlush 
+setupJUnitDelegate JUnitTest.New JUnitTest.setProperties log log log getCommandline().getSystemProperties CommandlineJava.SysProperties.New CommandlineJava.SysProperties.setSystem 
+batchTests.size Enumeration[].New tests.elements 
+tests.elements Enumeration<JUnitTest>.New 
+Path.New 
+Enumeration[].New 
+addClasspathResource 
+LoaderUtils.getResourceSource File.New log antRuntimeClasses.createPath().setLocation 
+logVmExit 
+logVmExit 
+setupJUnitDelegate 
+getCommandline().getClasspath Path.New getCommandline().getModulepath Path.New 
+deleteClassLoader 
+classLoader.cleanup ((SplitClassLoader)mirrorLoader).cleanup 
+commandline.setClassname 
+Map<ForkedTestConfiguration,List>.New 
+TestResultHolder.New actOnTestResult 
+JUnitTest.New JUnitTest.getName().lastIndexOf JUnitTest.setName 
+JUnitResultFormatter.New JUnitResultFormatter.setOutput JUnitResultFormatter.startTestSuite TestCase.New JUnitResultFormatter.startTest JUnitResultFormatter.addError JUnitResultFormatter.endTestSuite 
+resolveMethods 
+methodNames.trim methodNames.length methodNames.toCharArray char[].New String[].New 
+props.put 
+PropertyHelper.getPropertyHelper PropertyHelper.New 
+FormatterElement[].New formatters.copyInto 
+formatters.size v.addElement 
+res.addListener formatters.size res.addListener ByteArrayOutputStream.New ByteArrayOutputStream.New setupIOStreams Test.New Throwable.New fireEndTestSuite 
+JUnitVersionHelper.getTestCaseName logTestListenerEvent 
+JUnitVersionHelper.getTestCaseName logTestListenerEvent 
+JUnitVersionHelper.getTestCaseName logTestListenerEvent res.stop 
+addFailure 
+JUnitVersionHelper.getTestCaseName logTestListenerEvent res.stop 
+test.getClass().getName 
+setWithOutAndErr 
+StringBuffer.New StringBuffer.append StringBuffer.append 
+testStarts.put failed.put 
+formatError 
+addFailure 
+formatError 
+System.getProperty StringBuffer.New suite.getThread StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append writeOutputLine 
+addFailure 
+System.getProperty StringBuffer.New StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append StringBuffer.append 
+suite.getName 
+tearDown 
+formatOutput 
+formatOutput 
+getDocumentBuilder().newDocument doc.createElement suite.getName rootElement.setAttribute DateUtils.format rootElement.setAttribute rootElement.setAttribute doc.createElement Element.New rootElement.appendChild suite.getProperties Properties.New 
+rootElement.setAttribute rootElement.setAttribute rootElement.setAttribute rootElement.setAttribute rootElement.setAttribute 
+testStarts.put 
+startTest Element.New Element.setAttribute Element.setAttribute rootElement.appendChild testElements.put testStarts.get Long.New Element.setAttribute 
+formatError 
+addFailure 
+formatError 
+AggregateTransformer.New transformers.addElement 
+filesets.addElement 
+Element.New File.New transformers.elements Enumeration.New AggregateTransformer.setXmlDocument AggregateTransformer.transform 
+Vector.New filesets.size ds.scan File[].New Vector.copyInto 
+Commandline.New setup addFiles 
+Commandline.createArgument().setValue Commandline.createArgument().setValue Commandline.addArguments 
+Commandline.createArgument().setFile Commandline.createArgument().setFile 
+ExecuteJava.New Class.New cmd.setExecutable ExecuteJava.setJavaCommand ExecuteJava.execute 
+cmd.createArgument().setValue 
+filesets.addElement 
+log Action.New Action.setValue Action.getAction 
+action.getAction 
+configurationHasBeenSet 
+configurationHasBeenSet 
+configurationHasBeenSet 
+configurationHasBeenSet 
+configurationHasBeenSet 
+configurationHasBeenSet 
+h.execute 
+DirectoryScanner.New String[].New BufferedWriter.New 
+log log 
+File.New Vector.New Vector.addElement ftp.changeWorkingDirectory 
+File.New 
+FTPFile[].New 
+log ftp.listFiles FTPFile[].New localFile.lastModified StringBuffer.New log log 
+String[].New log ftp.sendSiteCommand log 
+InputStream.New 
+log 
+log 
+OutputStream.New 
+log ftp.listFiles FTPFile[].New BufferedWriter.write BufferedWriter.newLine 
+ftp.printWorkingDirectory ftp.changeWorkingDirectory StringTokenizer.New log ftp.changeWorkingDirectory 
+ftp.getReplyCode 
+checkAttributes FTPClient.New 
+task.log FTPClientConfig.New task.getSystemTypeKey task.log task.getDefaultDateFormatConfig FTPClientConfig.setDefaultDateFormatStr task.log task.getRecentDateFormatConfig FTPClientConfig.setRecentDateFormatStr task.log task.getServerLanguageCodeConfig FTPClientConfig.setServerLanguageCode task.log task.getServerTimeZoneConfig FTPClientConfig.setServerTimeZoneId task.log task.getShortMonthNamesConfig FTPClientConfig.setShortMonthNames task.log client.configure 
+filesets.addElement 
+log Action.New Action.setValue Action.getAction 
+action.getAction 
+configurationHasBeenSet 
+configurationHasBeenSet 
+configurationHasBeenSet 
+configurationHasBeenSet 
+configurationHasBeenSet 
+configurationHasBeenSet 
+checkAttributes 
+h.execute 
+DirectoryScanner.New String[].New BufferedWriter.New 
+task.log task.log 
+File.New Vector.New Vector.addElement ftp.changeWorkingDirectory 
+File.New 
+FTPFile[].New 
+task.log ftp.listFiles FTPFile[].New localFile.lastModified StringBuffer.New task.log task.log 
+String[].New task.log ftp.sendSiteCommand task.log 
+InputStream.New 
+task.log 
+task.log 
+OutputStream.New 
+task.log ftp.listFiles FTPFile[].New BufferedWriter.write BufferedWriter.newLine 
+ftp.printWorkingDirectory ftp.changeWorkingDirectory StringTokenizer.New task.log ftp.changeWorkingDirectory 
+ftp.getReplyCode 
+log 
+RExecSubTask.New rexecTasks.addElement 
+RExecSubTask.New rexecTasks.addElement 
+AntRExecClient.New 
+AntRExecClient.sendString AntRExecClient.waitForString AntRExecClient.sendString AntRExecClient.waitForString AntRExecClient.sendString 
+login rexecTasks.elements Enumeration.New RExecSubTask.execute 
+System.getProperties Properties.New 
+log 
+applyWebProxySettings 
+AntTelnetClient.New 
+AntTelnetClient.sendString AntTelnetClient.waitForString AntTelnetClient.sendString AntTelnetClient.waitForString AntTelnetClient.sendString 
+TelnetSubTask.New telnetTasks.addElement 
+TelnetSubTask.New telnetTasks.addElement 
+BufferedReader.New 
+BufferedReader.New BufferedWriter.New 
+pvcsProjects.addElement 
+f.toString 
+helper.setProjectComponent helper.setSetBeans 
+attributes.add 
+nestedElements.add 
+helper.setClassLoader attributeSet.add nestedElementMap.put Map.New ProjectHelper.genComponentName Map.put AntTypeDefinition.New AntTypeDefinition.setName AntTypeDefinition.setClass ComponentHelper.getComponentHelper(getProject()).addDataTypeDefinition 
+Map.New Project.New 
+NestedElement.New Object.New 
+executeScript 
+helper.getScriptRunner ScriptRunnerBase.New ScriptRunnerBase.addBean ScriptRunnerBase.addBean ScriptRunnerBase.addBean ScriptRunnerBase.addBean ScriptRunnerBase.executeScript 
+helper.setManager 
+helper.setLanguage 
+helper.setSrc 
+helper.addText 
+helper.add 
+getScript().executeScript 
+List.New nestedElementMap.put getScript().createNestedElement Object.New List.add 
+ScriptDef.New attributes.put 
+getProject().replaceProperties 
+FileUtils.translatePath 
+path.toString 
+commandLine.createArgument().setValue commandLine.createArgument().setValue commandLine.createArgument().setValue commandLine.createArgument().setValue getRequiredAttributes getOptionalAttributes commandLine.createArgument().setValue commandLine.createArgument().setValue 
+commandLine.createArgument().setValue commandLine.createArgument().setValue commandLine.createArgument().setValue commandLine.createArgument().setValue getRequiredAttributes getOptionalAttributes 
+commandLine.createArgument().setValue commandLine.createArgument().setValue commandLine.createArgument().setValue commandLine.createArgument().setValue getRequiredAttributes getOptionalAttributes 
+commandLine.createArgument().setValue commandLine.createArgument().setValue getRequiredAttributes commandLine.createArgument().setValue commandLine.createArgument().setValue commandLine.createArgument().setValue commandLine.createArgument().setValue commandLine.createArgument().setValue 
+Clip.New AudioInputStream.New 
+line.close 
+play 
+AntSoundPlayer.New log log getProject().addBuildListener 
+splash.setVisible getProject().removeBuildListener splash.dispose log InputStream.New splash.setVisible splash.toFront getProject().addBuildListener 
+ChannelExec.New ChannelExec.setCommand 
+ChannelSftp.New 
+byte[].New out.write out.flush 
+in.read 
+childDirectories.add 
+files.add 
+Directory.New 
+StringTokenizer.New String[].New 
+setFromUri isRemoteUri 
+setToUri isRemoteUri 
+setFromUri 
+validateRemoteUri setFromUri 
+setToUri 
+validateRemoteUri setToUri 
+setToUri 
+validateRemoteUri setToUri 
+Integer.parseInt 
+Integer.parseInt 
+add 
+rcs.add 
+Channel.New log 
+remoteFile.lastIndexOf 
+ChannelSftp.New log 
+doMultipleTransfer doSingleTransfer log 
+doMultipleTransfer doSingleTransfer log 
+userInfo.setName 
+userInfo.setPassword 
+userInfo.setKeyfile 
+userInfo.setPassphrase 
+userInfo.setTrust 
+JSch.New SSHBase.New JSch.setLogger JSch.addIdentity log JSch.setKnownHosts JSch.getSession Session.New Session.setConfig Session.setUserInfo Session.setServerAliveCountMax Session.setServerAliveInterval log Session.connect 
+Session.New StringBuffer.New 
+nestedTasks.addElement 
+tunnels.split String[].New 
+tunnels.split String[].New 
+Session.New 
+String[].New 
+getProject().replaceProperties 
+log 
+logOverride 
+logOverride 
+logOverride 
+logOverride 
+logOverride 
+logOverride 
+logOverride 
+unit.getMultiplier 
+unit.getMultiplier 
+task.bindToOwner task.init 
+Parallel.New bind Parallel.setFailOnAny Parallel.setTimeout 
+Parallel.New Parallel.addTask 
+validateTask validateTask validateTask validateTask validateTask log Parallel.New WorkerAnt.New Parallel.addTask Sequential.New bind ta.bindToOwner validateTask Sequential.addTask Sequential.addTask Sequential.addTask WorkerAnt.getBuildException processExceptions 
+log 
+log 
+FileSet.New FileSet.setFile addFileset 
+createArg().setValue 
+createArg().setValue 
+setDefaults 
+setAction fileSets.clear 
+fileSets.addElement 
+SYMLINK_UTILS.deleteSymbolicLink 
+SYMLINK_UTILS.deleteSymbolicLink 
+BufferedOutputStream.New 
+log 
+File.New String[].New 
+HashSet.New v.size 
+Properties.New v.size fs.setupDirectoryScanner ds.setFollowSymlinks ds.scan 
+Commandline.New Commandline.setExecutable Commandline.createArgument().setValue Commandline.createArgument().setValue Commandline.createArgument().setValue Commandline.createArgument().setValue Commandline.createArgument().setValue Commandline.createArgument().setValue Commandline.createArgument().setValue 
+localPath.toString 
+Commandline.New Commandline.setExecutable Commandline.createArgument().setValue Commandline.createArgument().setValue Commandline.createArgument().setValue Commandline.createArgument().setValue Commandline.createArgument().setValue Commandline.createArgument().setValue Commandline.createArgument().setValue Commandline.createArgument().setValue 
+Commandline.New Commandline.setExecutable Commandline.createArgument().setValue Commandline.createArgument().setValue Commandline.createArgument().setValue Commandline.createArgument().setValue Commandline.createArgument().setValue Commandline.createArgument().setValue Commandline.createArgument().setValue Commandline.createArgument().setValue Commandline.createArgument().setValue Commandline.createArgument().setValue 
+Commandline.New Commandline.setExecutable Commandline.createArgument().setValue Commandline.createArgument().setValue Commandline.createArgument().setValue Commandline.createArgument().setValue 
+Commandline.New Commandline.setExecutable Commandline.createArgument().setValue Commandline.createArgument().setValue Commandline.createArgument().setValue Commandline.createArgument().setValue Commandline.createArgument().setValue Commandline.createArgument().setValue 
+Commandline.New Commandline.setExecutable Commandline.createArgument().setValue Commandline.createArgument().setValue Commandline.createArgument().setValue Commandline.createArgument().setValue Commandline.createArgument().setValue Commandline.createArgument().setValue Commandline.createArgument().setValue Commandline.createArgument().setValue Commandline.createArgument().setValue Commandline.createArgument().setValue Commandline.createArgument().setValue 
+Commandline.New Commandline.setExecutable Commandline.createArgument().setValue Commandline.createArgument().setValue Commandline.createArgument().setValue Commandline.createArgument().setValue Commandline.createArgument().setValue Commandline.createArgument().setValue Commandline.createArgument().setValue Commandline.createArgument().setValue Commandline.createArgument().setValue 
+attr.getValue 
+Commandline.New Commandline.setExecutable Commandline.createArgument().setValue Commandline.createArgument().setValue Commandline.createArgument().setValue Commandline.createArgument().setValue Commandline.createArgument().setValue Commandline.createArgument().setValue Commandline.createArgument().setValue 
+FileSet.New FileSet.setFile addFileset 
+addArg 
+addArg 
+addArg 
+addArg 
+log 
+XZOutputStream.New 
+rootFileSets.add setChecked 
+rootClasses.addAll 
+rootClasses.add 
+dieOnCircularReference DirectoryScanner.New DependScanner.New Vector<String>.New DependScanner.setBasedir DependScanner.setRootClasses DependScanner.scan 
+rootClasses.add 
+String[].New 
+DependencyAnalyzer.New DependencyAnalyzer.addClassPath DependencyAnalyzer.addClassPath DependencyAnalyzer.addRootClass DependencyAnalyzer.getClassDependencies Enumeration<String>.New parentScanner.getIncludedFiles String[].New Hashtable<String,String>.New Hashtable<String,String>.put 
+BufferedImage.New Graphics2D.New Graphics2D.setColor Graphics2D.setStroke Graphics2D.draw Graphics2D.setColor Graphics2D.fill instructions.size 
+instructions.add 
+instructions.add 
+instructions.add 
+instructions.add 
+image.getAsBufferedImage BufferedImage.New Graphics2D.New instructions.size PlanarImage.wrapRenderedImage 
+BufferedImage.New Graphics2D.New Graphics2D.setColor Graphics2D.setStroke Graphics2D.draw Graphics2D.setColor Graphics2D.fill instructions.size 
+instructions.add 
+instructions.add 
+instructions.add 
+instructions.add 
+instructions.add 
+log BufferedImage.New Graphics2D.New Graphics2D.setColor Graphics2D.setStroke Graphics2D.setColor instructions.size 
+Float.parseFloat 
+ParameterBlock.New ParameterBlock.addSource ParameterBlock.add ParameterBlock.add ParameterBlock.add ParameterBlock.add 
+BufferedImage.New instructions.size 
+instructions.size 
+pa.getValue 
+widthStr.indexOf 
+heightStr.indexOf 
+ParameterBlock.New ParameterBlock.addSource ParameterBlock.add ParameterBlock.add log 
+BufferedImage.New instructions.size 
+instructions.size 
+Integer.parseInt 
+log ColorMapper.getColorByName Color.New BufferedImage.New Graphics2D.New Graphics2D.setRenderingHint Graphics2D.setRenderingHint Font.New Graphics2D.getFontMetrics FontMetrics.New FontMetrics.stringWidth Graphics2D.setRenderingHint Graphics2D.setRenderingHint Graphics2D.setFont Graphics2D.setColor Graphics2D.drawString PlanarImage.wrapRenderedImage PlanarImage.New 
+resourceComparators.add setChecked 
+List<ResourceComparator>.New 
+foo.isExists 
+foo.as FileProvider.New FileProvider.getFile File.New bar.as FileProvider.New FileProvider.getFile File.New 
+dieOnCircularReference ResourceComparator.New 
+add 
+setChecked 
+foo.isDirectory 
+comp.add setChecked 
+setChecked 
+dieOnCircularReference 
+Class<?>.New 
+r.getName r.toString 
+add 
+add 
+resourceSelectors.add setChecked 
+dieOnCircularReference 
+dieOnCircularReference 
+dieOnCircularReference 
+setType 
+type.getIndex 
+initChecksum 
+StringBuilder.New StringBuilder.append StringBuilder.append("algorithm=").append StringBuilder.append 
+initMessageDigest 
+StringBuilder.New StringBuilder.append StringBuilder.append("algorithm=").append StringBuilder.append(";provider=").append StringBuilder.append 
+Reader.New 
+configure setError 
+Project.New File.New getProject().addBuildListener Cache.New Algorithm.New Comparator<? super String>.New useParameter 
+validate File.New String.valueOf algorithm.getValue cache.put setModified 
+cache.save setModified 
+Parameter.New Parameter.setName Parameter.setValue configParameter.add 
+configParameter.add 
+parameter.getName parameter.getValue cn.setValue setCache 
+Project.New IntrospectionHelper.getHelper IntrospectionHelper.New 
+StringBuffer.New StringBuffer.append(" update=").append StringBuffer.append(" seldirs=").append StringBuffer.append(" cache=").append StringBuffer.append(" algorithm=").append StringBuffer.append(" comparator=").append StringBuffer.append 
+saveCache 
+saveCache 
+saveCache 
+cachefile.delete 
+load 
+cache.put 
+Vector<String>.New cache.propertyNames Enumeration<?>.New Vector<String>.add 
+StringBuffer.New StringBuffer.append StringBuffer.append("cachefile=").append StringBuffer.append(";noOfEntries=").append StringBuffer.append 
+Hashtable<String,String>.New Hashtable<File,File>.New Hashtable<String,String>.New Hashtable<String,String>.New Hashtable<String,String>.put Hashtable<String,String>.clear files.removeAllElements classes.removeAllElements 
+dependencies.clear 
+constantClass.getConstantValue(constantPool).toString addSlashClass 
+obj.getName 
+addClasses 
+addClass 
+method.getSignature String.indexOf addClasses addClasses 
+dependencies.put 
+StringTokenizer.New 
+addClass 
+Hashtable<String,String>.New Hashtable<File,File>.New Hashtable<String,String>.New Hashtable<String,String>.put Hashtable<String,String>.clear files.removeAllElements classes.removeAllElements 
+Message.New Project.New Message.setProject Message.addText FileOutputStream.New 
+getClass().getResource URL.New 
+getFile File.New liaison.setStylesheet liaison.addParam getFile File.New File.New File.deleteOnExit 
+buildRule.executeTarget 
+buildRule.executeTarget File.New File.list String[].New assertTrue 
+buildRule.executeTarget 
+buildRule.executeTarget 
+buildRule.executeTarget 
+executeJspCompile 
+executeJspCompile 
+buildRule.executeTarget 
+buildRule.executeTarget assertJavaFileCreated 
+File.New assertTrue assertTrue 
+JspCompilerAdapterFactory.getCompiler JspCompilerAdapter.New JspCompilerAdapter.createMangler JspMangler.New assertTrue JspCompilerAdapterFactory.getCompiler JspCompilerAdapter.createMangler assertTrue 
+JspMangler.mapJspToJavaName assertTrue 
+Properties.New assertEquals assertEquals assertEquals assertEquals assertEquals assertEquals buildRule.executeTarget Properties.New assertEquals assertEquals assertEquals assertEquals assertEquals assertEquals 
+buildRule.executeTarget 
+buildRule.executeTarget 
+buildRule.executeTarget 
+buildRule.executeTarget 
+buildRule.executeTarget 
+buildRule.executeTarget 
+buildRule.executeTarget 
+buildRule.executeTarget 
+buildRule.executeTarget 
+buildRule.executeTarget 
+buildRule.executeTarget fail 
+StringBuilder.New 
+ContainsSelector.New Parameter.New Parameter.setName Parameter.setValue Parameter[].New ContainsSelector.setParameters 
+ContainsSelector.New ContainsSelector.setText selectorRule.selectionString assertEquals ContainsSelector.setText selectorRule.selectionString assertEquals ContainsSelector.setText ContainsSelector.setCasesensitive selectorRule.selectionString assertEquals ContainsSelector.setText ContainsSelector.setCasesensitive selectorRule.selectionString assertEquals ContainsSelector.setText ContainsSelector.setIgnorewhitespace selectorRule.selectionString assertEquals ContainsSelector.setText ContainsSelector.setIgnorewhitespace selectorRule.selectionString assertEquals 
+DateSelector.New DateSelector.setDatetime DateSelector.setDatetime Parameter.New Parameter.setName Parameter.setValue Parameter[].New DateSelector.setParameters Parameter.setName Parameter.setValue DateSelector.setParameters Parameter.setName Parameter.setValue DateSelector.setParameters 
+DateSelector.New DateSelector.TimeComparisons.New DateSelector.TimeComparisons.setValue DateSelector.TimeComparisons.New DateSelector.TimeComparisons.setValue DateSelector.TimeComparisons.New DateSelector.TimeComparisons.setValue DateSelector.setDatetime DateSelector.setWhen selectorRule.selectionString assertEquals DateSelector.setDatetime DateSelector.setWhen DateSelector.setCheckdirs selectorRule.selectionString assertEquals DateSelector.setDatetime DateSelector.setWhen selectorRule.selectionString assertEquals DateSelector.setDatetime DateSelector.setWhen selectorRule.selectionString assertEquals DateSelector.setDatetime DateSelector.getMillis DateSelector.setWhen selectorRule.selectionString assertEquals DateSelector.setMillis DateSelector.setWhen selectorRule.selectionString assertEquals DateSelector.setDatetime DateSelector.setWhen selectorRule.selectionString assertEquals Parameter.New Parameter.New Parameter.setName Parameter.setValue Parameter.setName Parameter.setValue Parameter[].New DateSelector.setParameters selectorRule.selectionString assertEquals DateSelector.setMillis DateSelector.setWhen DateSelector.setGranularity Assume.assumeTrue selectorRule.mirrorSelectionString assertEquals selectorRule.getMirrorFiles()[6].lastModified DateSelector.setMillis DateSelector.setWhen DateSelector.setGranularity Assume.assumeTrue selectorRule.mirrorSelectionString assertEquals 
+DepthSelector.New DepthSelector.setMin DepthSelector.setMax Parameter.New Parameter.setName Parameter.setValue Parameter[].New DepthSelector.setParameters Parameter.setName Parameter.setValue DepthSelector.setParameters Parameter.setName Parameter.setValue DepthSelector.setParameters 
+DepthSelector.New DepthSelector.setMin DepthSelector.setMax selectorRule.selectionString assertEquals DepthSelector.setMin selectorRule.selectionString assertEquals DepthSelector.setMin selectorRule.selectionString assertEquals DepthSelector.setMax selectorRule.selectionString assertEquals DepthSelector.setMin DepthSelector.setMax selectorRule.selectionString assertEquals 
+FilenameSelector.New Parameter.New Parameter.setName Parameter.setValue Parameter[].New FilenameSelector.setParameters 
+FilenameSelector.New FilenameSelector.setName selectorRule.selectionString assertEquals FilenameSelector.setName selectorRule.selectionString FilenameSelector.setName FilenameSelector.setNegate selectorRule.selectionString assertEquals FilenameSelector.setName FilenameSelector.setCasesensitive selectorRule.selectionString assertEquals Parameter.New Parameter.setName Parameter.setValue Parameter[].New FilenameSelector.setParameters selectorRule.selectionString assertEquals 
+ModifiedSelector.New ModifiedSelector.setProject ModifiedSelector.addClasspath ModifiedSelector.setAlgorithmClass ModifiedSelector.validate ModifiedSelector.toString String.indexOf String.substring 
+Cache.New fail 
+File.New PropertiesfileCache.New PropertiesfileCache.setCachefile PropertiesfileCache.put PropertiesfileCache.save assertTrue PropertiesfileCache.delete assertFalse 
+File.New ModifiedSelector.New ModifiedSelector.setDelayUpdate ModifiedSelector.addParam ModifiedSelector.CacheName.New ModifiedSelector.CacheName.setValue ModifiedSelector.setCache ModifiedSelector.setUpdate selectorRule.selectionString assertTrue File.delete 
+FILE_UTILS.createTempFile File.New ExtendSelector.New ExtendSelector.setClassname ExtendSelector.addParam ExtendSelector.addParam ExtendSelector.addParam selectorRule.selectionString assertTrue File.delete 
+assertTrue PropertiesfileCache.iterator Iterator.New assertFalse PropertiesfileCache.put PropertiesfileCache.put assertEquals assertEquals PropertiesfileCache.iterator Iterator.New Iterator.next Object.New assertTrue PropertiesfileCache.delete PropertiesfileCache.iterator Iterator.New assertFalse 
+assertTrue 
+Object.New Object.New Object.New assertTrue assertTrue assertTrue 
+ModifiedSelector.New StringBuffer.New StringBuffer.New ModifiedSelector.setSeldirs performTests ModifiedSelector.getCache().delete ModifiedSelector.setSeldirs performTests ModifiedSelector.getCache().delete ModifiedSelector.getCache().delete 
+BFT.New ModifiedSelector.New 
+ExtendSelector.New BFT.New 
+Parameter.New Parameter.setName Parameter.setValue 
+selectorRule.selectionString assertEquals 
+expected.length String.length StringBuffer.New StringBuffer.append 
+StringBuffer.New 
+PresentSelector.New 
+PresentSelector.New Mapper.New Mapper.MapperType.New Mapper.MapperType.setValue Mapper.MapperType.New Mapper.MapperType.setValue Mapper.MapperType.New Mapper.MapperType.setValue Mapper.MapperType.New Mapper.MapperType.setValue selectorRule.getBeddir File.New PresentSelector.setTargetdir selectorRule.selectionString assertEquals PresentSelector.setTargetdir PresentSelector.createMapper Mapper.setType selectorRule.selectionString assertEquals File.New PresentSelector.setTargetdir PresentSelector.createMapper Mapper.setType selectorRule.selectionString assertEquals PresentSelector.setTargetdir PresentSelector.createMapper Mapper.setType Mapper.setTo selectorRule.selectionString assertEquals PresentSelector.setTargetdir PresentSelector.createMapper Mapper.setType Mapper.setFrom Mapper.setTo selectorRule.selectionString assertEquals PresentSelector.setTargetdir selectorRule.selectionString assertEquals selectorRule.selectionString assertEquals 
+SizeSelector.New SizeSelector.setValue Parameter.New Parameter.setName Parameter.setValue Parameter[].New SizeSelector.setParameters Parameter.setName Parameter.setValue SizeSelector.setParameters Parameter.New Parameter.New Parameter.setName Parameter.setValue Parameter.setName Parameter.setValue 
+SizeSelector.New SizeSelector.ByteUnits.New SizeSelector.ByteUnits.setValue SizeSelector.ByteUnits.New SizeSelector.ByteUnits.setValue SizeSelector.ByteUnits.New SizeSelector.ByteUnits.setValue SizeSelector.SizeComparisons.New SizeSelector.SizeComparisons.setValue SizeSelector.SizeComparisons.New SizeSelector.SizeComparisons.setValue SizeSelector.SizeComparisons.New SizeSelector.SizeComparisons.setValue SizeSelector.setValue SizeSelector.setWhen selectorRule.selectionString assertEquals SizeSelector.setValue SizeSelector.setWhen selectorRule.selectionString assertEquals SizeSelector.setValue SizeSelector.setWhen selectorRule.selectionString assertEquals SizeSelector.setValue SizeSelector.setWhen SizeSelector.setUnits selectorRule.selectionString assertEquals SizeSelector.setValue SizeSelector.setWhen SizeSelector.setUnits selectorRule.selectionString assertEquals SizeSelector.setValue SizeSelector.setWhen SizeSelector.setUnits selectorRule.selectionString assertEquals Parameter.New Parameter.New Parameter.New Parameter.setName Parameter.setValue Parameter.setName Parameter.setValue Parameter.setName Parameter.setValue Parameter[].New SizeSelector.setParameters selectorRule.selectionString assertEquals 
+TypeSelector.New 
+TypeSelector.New TypeSelector.FileType.New TypeSelector.FileType.setValue TypeSelector.FileType.New TypeSelector.FileType.setValue TypeSelector.setType selectorRule.selectionString assertEquals TypeSelector.setType selectorRule.selectionString assertEquals 
+cpStream.readUnsignedShort 
+((Utf8CPInfo)constantPool.getEntry(index)).getValue 
+entries.add 
+classStream.readUnsignedShort addEntry 
+entries.size entries.add entry.getNumEntries entries.add utf8Indexes.put 
+utf8Indexes.get 
+entries.size 
+entries.size 
+entries.size 
+entries.size 
+entries.size 
+entries.size 
+StringBuilder.New entries.size StringBuilder.append('[').append(i).append("] = ").append(getEntry(i)).append 
+ConstantPoolEntry.New cpStream.readUnsignedByte ConstantPoolEntry.read 
+setValue 
+cpStream.readUnsignedShort cpStream.readUnsignedShort 
+ClassCPInfo.New ClassCPInfo.resolve ClassCPInfo.getClassName NameAndTypeCPInfo.New NameAndTypeCPInfo.resolve NameAndTypeCPInfo.getName NameAndTypeCPInfo.getType 
+setValue 
+setValue 
+cpStream.readUnsignedShort cpStream.readUnsignedShort 
+ClassCPInfo.New ClassCPInfo.resolve ClassCPInfo.getClassName NameAndTypeCPInfo.New NameAndTypeCPInfo.resolve NameAndTypeCPInfo.getName NameAndTypeCPInfo.getType 
+cpStream.readUnsignedShort cpStream.readUnsignedShort 
+nameAndTypeCPInfo.resolve 
+setValue 
+cpStream.readUnsignedShort 
+constantPool.getEntry reference.resolve 
+cpStream.readUnsignedShort cpStream.readUnsignedShort 
+ClassCPInfo.New ClassCPInfo.resolve ClassCPInfo.getClassName NameAndTypeCPInfo.New NameAndTypeCPInfo.resolve NameAndTypeCPInfo.getName NameAndTypeCPInfo.getType 
+cpStream.readUnsignedShort 
+Utf8CPInfo.New Utf8CPInfo.resolve Utf8CPInfo.getValue 
+cpStream.readUnsignedShort cpStream.readUnsignedShort 
+((Utf8CPInfo)constantPool.getEntry(nameIndex)).getValue ((Utf8CPInfo)constantPool.getEntry(descriptorIndex)).getValue 
+cpStream.readUnsignedShort setValue 
+setValue 
+cpStream.readUTF 
+validate Ant.New Ant.setProject Ant.setInheritAll Ant.setAntfile Ant.setTarget Ant.execute 
+validate File.New Get.New Get.setProject Get.setDest Get.setSrc Get.execute 
+jspc.log StringBuffer.New StringBuffer.append StringBuffer.append StringBuffer.append compileList.elements Enumeration.New cmd.createArgument().setValue StringBuffer.append StringBuffer.append StringBuffer.append jspc.log 
+cmd.createArgument().setValue 
+cmd.createArgument().setValue cmd.createArgument().setValue 
+cmd.createArgument().setValue cmd.createArgument().setFile 
+getJspc().log CommandlineJava.New 
+CommandlineJava.New JspC.New addArg addArg addArg addArg addArg addArg addArg addArg addArg addArg addArg logAndAddFilesToCompile 
+buildRule.executeTarget buildRule.executeTarget FileUtilities.rollbackTimetamps FileUtilities.rollbackTimetamps buildRule.executeTarget Hashtable.New assertEquals assertTrue assertTrue 
+buildRule.executeTarget buildRule.executeTarget FileUtilities.rollbackTimetamps FileUtilities.rollbackTimetamps buildRule.executeTarget Hashtable.New assertTrue assertTrue 
+buildRule.executeTarget buildRule.executeTarget FileUtilities.rollbackTimetamps FileUtilities.rollbackTimetamps buildRule.executeTarget assertEquals 
+buildRule.executeTarget buildRule.executeTarget FileUtilities.rollbackTimetamps FileUtilities.rollbackTimetamps buildRule.executeTarget assertEquals 
+FileSet.New FileSet.getDirectoryScanner DirectoryScanner.New DirectoryScanner.getIncludedFiles String[].New Hashtable.New Hashtable.put 
+buildRule.executeTarget assertEquals 
+buildRule.executeTarget 
+buildRule.executeTarget buildRule.executeTarget FileUtilities.rollbackTimetamps FileUtilities.rollbackTimetamps buildRule.executeTarget buildRule.getLog assertContains assertContains 
+buildRule.executeTarget AntAssert.assertContains 
+buildRule.executeTarget AntAssert.assertContains 
+buildRule.executeTarget AntAssert.assertContains 
+buildRule.executeTarget AntAssert.assertContains 
+buildRule.executeTarget AntAssert.assertContains 
+buildRule.executeTarget AntAssert.assertContains 
+buildRule.executeTarget assertFalse 
+buildRule.configureProject 
+assertResultFilesExist 
+Assume.assumeTrue Assume.assumeTrue buildRule.getProject().executeTarget myFTPTask.newScanner FTP.FTPDirectoryScanner.New FTP.FTPDirectoryScanner.setBasedir FTP.FTPDirectoryScanner.setExcludes FTP.FTPDirectoryScanner.scan compareFiles myFTPTask.newScanner Assume.assumeTrue FTP.FTPDirectoryScanner.setBasedir FTP.FTPDirectoryScanner.setExcludes FTP.FTPDirectoryScanner.scan compareFiles 
+CountLogListener.New buildRule.getProject().executeTarget buildRule.getProject().addBuildListener buildRule.getProject().executeTarget assertEquals 
+CountLogListener.New buildRule.getProject().executeTarget buildRule.getProject().addBuildListener buildRule.getProject().executeTarget assertEquals 
+int[].New performConfigTest 
+int[].New performConfigTest 
+int[].New performConfigTest 
+int[].New performConfigTest 
+buildRule.getProject().executeTarget 
+String[].New SOSGet.New SOSGet.setProject SOSGet.setVssServerPath SOSGet.setSosServerPath SOSGet.setProjectPath SOSGet.setFile SOSGet.setUsername SOSGet.setPassword SOSGet.setVersion SOSGet.setLocalPath SOSGet.setNoCache SOSGet.setNoCompress SOSGet.setVerbose SOSGet.setRecursive SOSGet.buildCmdLine checkCommandLines 
+String[].New SOSGet.New SOSGet.setProject SOSGet.setVssServerPath SOSGet.setSosServerPath SOSGet.setProjectPath SOSGet.setLabel SOSGet.setUsername SOSGet.setSosHome SOSGet.setNoCache SOSGet.setNoCompress SOSGet.setVerbose SOSGet.setRecursive SOSGet.buildCmdLine checkCommandLines 
+buildRule.configureProject expectSpecificBuildException expectSpecificBuildException expectSpecificBuildException expectSpecificBuildException 
+String[].New SOSCheckin.New SOSCheckin.setProject SOSCheckin.setVssServerPath SOSCheckin.setSosServerPath SOSCheckin.setProjectPath SOSCheckin.setFile SOSCheckin.setComment SOSCheckin.setUsername SOSCheckin.setPassword SOSCheckin.setLocalPath SOSCheckin.setNoCache SOSCheckin.setNoCompress SOSCheckin.setVerbose SOSCheckin.setRecursive SOSCheckin.buildCmdLine checkCommandLines 
+String[].New SOSCheckin.New SOSCheckin.setProject SOSCheckin.setVssServerPath SOSCheckin.setSosServerPath SOSCheckin.setProjectPath SOSCheckin.setComment SOSCheckin.setUsername SOSCheckin.setSosHome SOSCheckin.setNoCache SOSCheckin.setNoCompress SOSCheckin.setVerbose SOSCheckin.setRecursive SOSCheckin.buildCmdLine checkCommandLines 
+buildRule.configureProject expectSpecificBuildException expectSpecificBuildException expectSpecificBuildException expectSpecificBuildException 
+String[].New SOSCheckout.New SOSCheckout.setProject SOSCheckout.setVssServerPath SOSCheckout.setSosServerPath SOSCheckout.setProjectPath SOSCheckout.setFile SOSCheckout.setUsername SOSCheckout.setPassword SOSCheckout.setLocalPath SOSCheckout.setNoCache SOSCheckout.setNoCompress SOSCheckout.setVerbose SOSCheckout.setRecursive SOSCheckout.buildCmdLine checkCommandLines 
+String[].New SOSCheckout.New SOSCheckout.setProject SOSCheckout.setVssServerPath SOSCheckout.setSosServerPath SOSCheckout.setProjectPath SOSCheckout.setUsername SOSCheckout.setSosHome SOSCheckout.setNoCache SOSCheckout.setNoCompress SOSCheckout.setVerbose SOSCheckout.setRecursive SOSCheckout.buildCmdLine checkCommandLines 
+buildRule.configureProject expectSpecificBuildException expectSpecificBuildException expectSpecificBuildException expectSpecificBuildException 
+String[].New SOSLabel.New SOSLabel.setVssServerPath SOSLabel.setSosServerPath SOSLabel.setProjectPath SOSLabel.setUsername SOSLabel.setSosHome SOSLabel.setComment SOSLabel.setLabel SOSLabel.setNoCache SOSLabel.setNoCompress SOSLabel.setVerbose SOSLabel.buildCmdLine checkCommandLines 
+buildRule.configureProject expectSpecificBuildException expectSpecificBuildException expectSpecificBuildException expectSpecificBuildException expectSpecificBuildException 
+fail 
+buildRule.configureProject expectSpecificBuildException 
+String[].New MSVSSLABEL.New MSVSSLABEL.setProject MSVSSLABEL.setComment MSVSSLABEL.setLogin MSVSSLABEL.setVersion MSVSSLABEL.setAutoresponse MSVSSLABEL.setLabel MSVSSLABEL.setVsspath MSVSSLABEL.buildCmdLine checkCommandLines 
+String[].New MSVSSLABEL.New MSVSSLABEL.setProject MSVSSLABEL.setComment MSVSSLABEL.setLogin MSVSSLABEL.setLabel MSVSSLABEL.setVsspath MSVSSLABEL.buildCmdLine checkCommandLines 
+buildRule.configureProject expectSpecificBuildException expectSpecificBuildException 
+String[].New MSVSSHISTORY.New MSVSSHISTORY.setProject MSVSSHISTORY.setLogin MSVSSHISTORY.setFromLabel MSVSSHISTORY.setToLabel MSVSSHISTORY.setVsspath MSVSSHISTORY.setRecursive MSVSSHISTORY.setOutput MSVSSHISTORY.buildCmdLine checkCommandLines 
+String[].New MSVSSHISTORY.New MSVSSHISTORY.setProject MSVSSHISTORY.setLogin MSVSSHISTORY.setFromDate MSVSSHISTORY.setToDate MSVSSHISTORY.setVsspath MSVSSHISTORY.setRecursive MSVSSHISTORY.buildCmdLine checkCommandLines 
+Tstamp.New Location.New Tstamp.setLocation Tstamp.setProject Tstamp.createFormat Tstamp.CustomFormat.New Tstamp.CustomFormat.setProperty Tstamp.CustomFormat.setPattern Tstamp.CustomFormat.setTimezone Calendar.getInstance().getTime Date.New Tstamp.CustomFormat.execute project.getProperty SimpleDateFormat.New SimpleDateFormat.setTimeZone SimpleDateFormat.format MSVSSHISTORY.New MSVSSHISTORY.setProject MSVSSHISTORY.setLogin MSVSSHISTORY.setToDate MSVSSHISTORY.setVsspath String[].New MSVSSHISTORY.buildCmdLine checkCommandLines 
+buildRule.configureProject expectSpecificBuildException 
+String[].New MSVSSCHECKIN.New MSVSSCHECKIN.setProject MSVSSCHECKIN.setComment MSVSSCHECKIN.setLogin MSVSSCHECKIN.setAutoresponse MSVSSCHECKIN.setVsspath MSVSSCHECKIN.setWritable MSVSSCHECKIN.buildCmdLine checkCommandLines 
+buildRule.configureProject expectSpecificBuildException 
+String[].New MSVSSCHECKOUT.New MSVSSCHECKOUT.setProject MSVSSCHECKOUT.setLogin MSVSSCHECKOUT.setVsspath MSVSSCHECKOUT.setRecursive MSVSSCHECKOUT.setDate MSVSSCHECKOUT.setLabel MSVSSCHECKOUT.setSsdir MSVSS.CurrentModUpdated.New MSVSS.CurrentModUpdated.setValue MSVSSCHECKOUT.setFileTimeStamp MSVSSCHECKOUT.setGetLocalCopy MSVSSCHECKOUT.buildCmdLine checkCommandLines 
+buildRule.configureProject expectSpecificBuildException expectSpecificBuildException 
+String[].New MSVSSADD.New MSVSSADD.setProject MSVSSADD.setLogin MSVSSADD.setVsspath MSVSSADD.setRecursive MSVSSADD.setSsdir MSVSSADD.setWritable MSVSSADD.setLocalpath MSVSSADD.buildCmdLine checkCommandLines 
+buildRule.configureProject expectSpecificBuildException 
+String[].New MSVSSCP.New MSVSSCP.setProject MSVSSCP.setLogin MSVSSCP.setVsspath MSVSSCP.buildCmdLine checkCommandLines 
+buildRule.configureProject expectSpecificBuildException 
+String[].New MSVSSCREATE.New MSVSSCREATE.setProject MSVSSCREATE.setComment MSVSSCREATE.setLogin MSVSSCREATE.setVsspath MSVSSCREATE.setFailOnError MSVSSCREATE.setAutoresponse MSVSSCREATE.setQuiet MSVSSCREATE.buildCmdLine checkCommandLines 
+buildRule.configureProject expectSpecificBuildException 
+fail 
+buildRule.getProject Project.New buildRule.executeTarget FileSet.New FileSet.getDirectoryScanner DirectoryScanner.New DirectoryScanner.getIncludedFiles String[].New Hashtable.New Hashtable.put assertEquals assertTrue assertTrue assertTrue assertTrue 
+buildRule.getProject Project.New buildRule.executeTarget FileSet.New FileSet.getDirectoryScanner DirectoryScanner.New DirectoryScanner.getIncludedFiles String[].New Hashtable.New Hashtable.put assertEquals assertTrue assertTrue 
+buildRule.getProject Project.New buildRule.executeTarget FileSet.New FileSet.getDirectoryScanner DirectoryScanner.New DirectoryScanner.getIncludedFiles String[].New Hashtable.New Hashtable.put assertEquals assertTrue 
+buildRule.executeTarget 
+buildRule.getProject Project.New buildRule.executeTarget FileSet.New FileSet.getDirectoryScanner DirectoryScanner.New DirectoryScanner.getIncludedFiles String[].New Hashtable.New Hashtable.put assertEquals assertTrue assertTrue assertTrue assertTrue assertTrue 
+buildRule.getProject Project.New buildRule.executeTarget FileSet.New FileSet.getDirectoryScanner DirectoryScanner.New DirectoryScanner.getIncludedFiles String[].New Hashtable.New Hashtable.put assertEquals assertTrue assertTrue assertTrue assertTrue 
