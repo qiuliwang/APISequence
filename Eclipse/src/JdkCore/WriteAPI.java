@@ -49,7 +49,7 @@ public class WriteAPI {
     }
 
     //set api list prepare to write
-    public void setApisq(List<String> aps)
+    public Boolean setApisq(List<String> aps)
     {
         //System.out.println("hello~~~");
         List<String> apisq = new ArrayList<>();
@@ -64,6 +64,10 @@ public class WriteAPI {
         if(contentToWrite.contains("\n"))
         	contentToWrite = contentToWrite.substring(0, contentToWrite.indexOf('\n'));
         contentToWrite += "\n";
+        if(contentToWrite.contains("List") ||contentToWrite.contains("Byte") ||contentToWrite.contains("byte"))
+        	return true;
+        else 
+        	return false;
     }
 
     //write api sequence to file

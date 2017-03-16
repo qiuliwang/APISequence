@@ -302,22 +302,25 @@ public class JdkCore {
             }
             if(api.size() != 0)
             {
-            	writeApi.setApisq(api);
-       	 		String comment = "";
-       	 		for(Comment com : comments)
-       	 		{
-       	 			if(com.getStartPosition() == pos)
-       	 			{
-       	 				comment = com.toString();
-       	 				comment = cleanComments(comment);
-       	 			}
-       	 		}
-       	 		comment += "\n";
-       	 		if(comment.charAt(0) != '@' && comment.charAt(0) != '<')
-       	 		{
-       	 			writeApi.writeapi();
-       	 			writeCom.writeString(comment);
-       	 		}
+            	
+            	if(writeApi.setApisq(api))
+            	{
+           	 		String comment = "";
+           	 		for(Comment com : comments)
+           	 		{
+           	 			if(com.getStartPosition() == pos)
+           	 			{
+           	 				comment = com.toString();
+           	 				comment = cleanComments(comment);
+           	 			}
+           	 		}
+           	 		comment += "\n";
+           	 		if(comment.charAt(0) != '@' && comment.charAt(0) != '<')
+           	 		{
+           	 			writeApi.writeapi();
+           	 			writeCom.writeString(comment);
+           	 		}
+            	}
             }
    	 	}    	 	
 	}

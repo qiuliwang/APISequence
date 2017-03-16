@@ -9,7 +9,7 @@ public class start {
 		String path = "";
 		if(osName.contains("Mac"))
 		{
-			path = "/Users/WangQL/Downloads/ant";
+			path = "/Users/WangQL/Documents/git/hbase";
 		}
 		else if(osName.contains("Windows"))
 		{
