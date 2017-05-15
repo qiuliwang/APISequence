@@ -13,12 +13,12 @@ public class start {
 		}
 		else if(osName.contains("Windows"))
 		{
-			path = "C:\\Users\\WangQL\\Desktop\\hbase";
+			path = "C:\\Users\\WangQL\\Desktop\\test\\buildinggame\\build\\apk";
 		}		
 		getAllFileName gaf = new getAllFileName(path);
 		List<String> filenames = gaf.getAllfiles();
-		//JdkCore jcore = new JdkCore(filenames.get(0), path.substring(path.lastIndexOf("\\"), path.length()));
-		JdkCore jcore = new JdkCore(filenames.get(0), path.substring(path.lastIndexOf("/"), path.length()));
+		JdkCore jcore = new JdkCore(filenames.get(0), path.substring(path.lastIndexOf("\\"), path.length()));
+		//JdkCore jcore = new JdkCore(filenames.get(0), path.substring(path.lastIndexOf("/"), path.length()));
 
 		for(int i = 1; i < filenames.size(); i ++)
 		{
