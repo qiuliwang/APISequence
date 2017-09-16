@@ -7,16 +7,18 @@ import java.util.List;
 
 /**
  * Created by WangQL on 2/14/17.
+ * Get files' name under a folder
  */
+
 public class getAllFileName {
     String path;
     List<String> allfiles;
 
     public static void main(String args[])
     {
-    	String str1 = "C:\\Users\\WangQL\\Documents\\Code\\Java";
-    	String str2 = "/Users/WangQL/Documents/git/Java";
-        getAllFileName gaf = new getAllFileName(str2);
+    	String str1 = "C:\\Users\\WangQL\\Documents\\GitCode\\Java";
+    	//String str2 = "/Users/WangQL/Documents/git/Java";
+        getAllFileName gaf = new getAllFileName(str1);
         List<String> names = gaf.getAllfiles();
         for(int i = 0; i < names.size(); i ++)
         {

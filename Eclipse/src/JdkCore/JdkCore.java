@@ -120,12 +120,11 @@ public class JdkCore {
    	 		//position for the function
    	 		Integer pos = method.getStartPosition();
    	 		
-   	 		//如果注释和方法位置可以对应，则继续处理
-   	 		//如果没有，continue结束本次循环进行下一次循环
+   	 		//if a comment and a function is in the same position, we can process
+   	 		//otherwise, continue
    	 		if(commentsPos.contains(pos))
    	 			;
    	 		else
-   	 			//continue被注释掉的时候是看api
    	 			;
    	 			//continue;
          	Block body=method.getBody();  
@@ -250,6 +249,7 @@ public class JdkCore {
                 //ReturnStatement
                 else if(stmt instanceof ReturnStatement)
     			{
+                	
     			}
                 
                 else if(stmt instanceof ForStatement)
